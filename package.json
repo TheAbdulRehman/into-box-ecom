@@ -1,0 +1,28 @@
+{
+  "name": "legal-consultancy-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/js/app.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css",
+    "minify-css": "postcss assets/css/purged-bot.css > assets/css/style.min.css",
+    "purge-css": "purgecss --css ./assets/css/style.css --config purgecss.config.js --output ./assets/css/purged.css"
+  },
+  "keywords": [],
+  "author": "Hiba Logics",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "cssnano": "^5.1.13",
+    "purgecss": "^5.0.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.4.11",
+    "bootstrap": "^5.2.1",
+    "postcss-cli": "^10.0.0",
+    "swiper": "^8.4.2"
+  }
+}

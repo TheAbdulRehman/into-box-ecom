@@ -1,0 +1,140 @@
+$primary: #1a4b80;
+$success: #2dc071;
+$secondary: #bdbdbd;
+$body-color: #505050;
+
+// enale shadows
+$enable-shadows: true;
+$input-box-shadow: 0;
+// box-shadow
+$box-shadow-sm: 4px 4px 24px rgba(0, 0, 0, 0.05);
+$box-shadow-lg: 0.75rem 0.75rem 2rem rgba(rgb(8, 8, 8), 0.1);
+$navbar-light-toggler-border-color: rgba(55, 75, 255, 1);
+
+//
+//custom spacing for margin and padding
+$spacer: 1rem !default;
+$spacers: (
+  // from 0 to 10 for giving spacing for elements
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  13: $spacer * 3.25,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
+  16: $spacer * 4,
+  // spacing for sections
+  60: $spacer * 3.75,
+  70: $spacer * 4.75,
+  80: $spacer * 5,
+  100: $spacer * 6.25,
+  120: $spacer * 7.5,
+  140: $spacer * 8.75
+);
+// breakpoints values for different screens
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+  xxxxl: 1800px,
+);
+// maximum widths for relative breakpoints mentioned above
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1400px,
+  xxxxl: 1600px,
+);
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Custom colors added
+$green-50: #f4feff;
+$grey-700: #505050;
+
+// Extend the Bootstrap color map
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "green-50": $green-50,
+    "grey-700": $grey-700,
+  )
+);
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/utilities/api";
+$utilities: map-merge(
+  $utilities,
+  (
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "width"), "values"),
+              (
+                65: 65%,
+              )
+            ),
+        )
+      ),
+  )
+);
+// etcs
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./_varaibles";
+@import "./_utilities";
+
+li {
+  list-style: none;
+}
+ul {
+  list-style: none;
+}
+
+::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+:-moz-placeholder {
+  color: #fff !important;
+}
+:-ms-input-placeholder {
+  color: #fff !important;
+}
