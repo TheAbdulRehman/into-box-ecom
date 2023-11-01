@@ -1,10 +1,10 @@
-$mobile: 575px;
-$tablet: 767px;
-$tab-lg: 991px;
-$desktop: 1200px;
+$breakpoint-xl: 1920px;
+$breakpoint-lg: 1400px;
+$breakpoint-md: 991px;
+$breakpoint-sm: 767px;
 
 // color variables
-$black: #333333;
+$gray-900: #333333;
 $gray: #999999;
 $gray-500: #666666;
 $gray-300: #e6e6e6;
@@ -18,7 +18,8 @@ $white: #fff;
 $yellow: #ffd536;
 
 // fonts
-$font-size-heading-3xl: 55px;
+$font-size-heading-4xl: 55px;
+$font-size-heading-3xl: 42px;
 $font-size-heading-2xl: 35px;
 $font-size-heading-xl: 30px;
 $font-size-heading-lg: 25px;
