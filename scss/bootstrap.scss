@@ -1,6 +1,9 @@
 $primary: #1a4b80;
 $success: #2dc071;
+$danger: #ff6363;
 $secondary: #bdbdbd;
+$dark: #333333;
+$muted: #666666;
 $body-color: #505050;
 
 // enale shadows
@@ -49,8 +52,8 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1600px,
-  xxxxl: 1800px,
+  3xl: 1600px,
+  4xl: 1800px,
 );
 // maximum widths for relative breakpoints mentioned above
 $container-max-widths: (
@@ -59,8 +62,8 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px,
-  xxxl: 1400px,
-  xxxxl: 1600px,
+  3xl: 1400px,
+  4xl: 1600px,
 );
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -110,6 +113,7 @@ $utilities: map-merge(
               map-get(map-get($utilities, "width"), "values"),
               (
                 65: 65%,
+                fit: fit-content,
               )
             ),
         )

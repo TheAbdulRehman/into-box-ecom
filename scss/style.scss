@@ -1,8 +1,41 @@
 @import "./_varaibles";
 // Create Reusable Font Size Mixins
-@mixin font-size($size) {
-  font-size: $size;
+@mixin basic-styling(
+  $color: null,
+  $font-size: null,
+  $font-weight: null,
+  $line-height: null,
+  $background-color: null
+) {
+  @if $color {
+    color: $color;
+  }
+  @if $font-size {
+    font-size: $font-size;
+  }
+  @if $font-weight {
+    font-weight: $font-weight;
+  }
+  @if $line-height {
+    line-height: $line-height;
+  }
+  @if $background-color {
+    background-color: $background-color;
+  }
 }
+
+@mixin backgroundImage($image-url, $position: center center, $gradient: false) {
+  @if $gradient {
+    background: $gradient, url($image-url) $position;
+  } @else {
+    background: url($image-url) $position;
+  }
+}
+
+// bg images paths
+$bannerPath: "/assets/images/backgrounds";
+// #{$bannerPath}/header-bg.png
+
 // Create Reusable Breakpoint Mixins
 @mixin media-xl {
   @media (max-width: $breakpoint-xl) {
@@ -50,24 +83,28 @@ h6,
 .h5,
 .h6 {
 }
-.heading-3xl {
-  .my-heading {
-    @include font-size($font-size-heading-3xl);
+.heading-h1 {
+  @include basic-styling($font-size: $heading-4xl, $font-weight: 500);
+  @include media-lg {
+    @include basic-styling($font-size: $heading-3xl);
+  }
+  @include media-md {
+  }
 
-    @include media-lg {
-      @include font-size($font-size-heading-xl);
-    }
-    @include media-md {
-      @include font-size($font-size-heading-xl);
-    }
-
-    @include media-sm {
-      @include font-size($font-size-heading-2xl);
-    }
+  @include media-sm {
+    @include basic-styling($font-size: $heading-2xl);
   }
 }
-.heading-2xl {
-  font-size: 35px;
+.heading-h2 {
+  @include basic-styling($font-size: $heading-2xl, $font-weight: bold);
+  @include media-lg {
+  }
+  @include media-md {
+  }
+
+  @include media-sm {
+    @include basic-styling($font-size: $heading-xl, $font-weight: bold);
+  }
 }
 .heading-xl {
   font-size: 30px;
@@ -96,6 +133,9 @@ h6,
 .text-xm {
   font-size: 10px;
 }
+p {
+  font-size: 15px;
+}
 a {
   text-decoration: none;
 }
@@ -103,6 +143,20 @@ ul,
 li {
   list-style: none;
 }
+
+//  #####  into box styling  ###### //
+.hero-section {
+  background: linear-gradient(
+      to right,
+      rgba(255, 42, 42, 0.2),
+      rgba(255, 11, 162, 0.7)
+    ),
+    url(#{$bannerPath}/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+//  #####  into box styling  ###### //
+
 // navbar css
 .custom-navbar {
   position: relative;

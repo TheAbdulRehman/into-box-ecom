@@ -7,27 +7,30 @@ body {
   font-weight: 400;
 }
 
-.heading-3xl .my-heading {
-  font-size: 42px;
+.heading-h1 {
+  font-size: 55px;
+  font-weight: 500;
 }
-@media (max-width: 1400px) {
-  .heading-3xl .my-heading {
-    font-size: 30px;
-  }
-}
-@media (max-width: 991px) {
-  .heading-3xl .my-heading {
-    font-size: 30px;
+@media (max-width: 1440px) {
+  .heading-h1 {
+    font-size: 42px;
   }
 }
 @media (max-width: 767px) {
-  .heading-3xl .my-heading {
+  .heading-h1 {
     font-size: 35px;
   }
 }
 
-.heading-2xl {
+.heading-h2 {
   font-size: 35px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .heading-h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
 }
 
 .heading-xl {
@@ -66,6 +69,10 @@ body {
   font-size: 10px;
 }
 
+p {
+  font-size: 15px;
+}
+
 a {
   text-decoration: none;
 }
@@ -73,6 +80,12 @@ a {
 ul,
 li {
   list-style: none;
+}
+
+.hero-section {
+  background: linear-gradient(to right, rgba(255, 42, 42, 0.2), rgba(255, 11, 162, 0.7)), url(/assets/images/backgrounds/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .custom-navbar {
