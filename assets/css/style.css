@@ -7,7 +7,8 @@
   --lead: #9e9e9c;
   --text-light: #f5f5f5;
   --lightish-grey: #f1f0f0;
-  --white: #000;
+  --white: #fff;
+  --red: #ffaaaa;
   --font-family-main: "DM Sans", sans-serif;
   --font-family-heading: "Poppins", sans-serif;
 }
@@ -43,80 +44,48 @@ h6,
   color: #000;
 }
 
-h1 {
-  font-size: 84px;
-  font-weight: 700;
-}
-@media (max-width: 1366px) {
-  h1 {
-    font-size: 72px;
-  }
-}
-@media (max-width: 991px) {
-  h1 {
-    font-size: 60px;
-  }
-}
-@media (max-width: 767px) {
-  h1 {
-    font-size: 42px;
-  }
+.heading-3xl {
+  font-size: 55px;
 }
 
-h2 {
-  font-size: 60px;
-  font-weight: bold;
-}
-@media (max-width: 1366px) {
-  h2 {
-    font-size: 52px;
-  }
-}
-@media (max-width: 991px) {
-  h2 {
-    font-size: 42px;
-  }
-}
-@media (max-width: 767px) {
-  h2 {
-    font-size: 36px;
-  }
+.heading-2xl {
+  font-size: 35px;
 }
 
-h3 {
-  font-size: 36px;
-  font-weight: 700;
-}
-@media (max-width: 1200px) {
-  h3 {
-    font-size: 32px;
-  }
-}
-@media (max-width: 991px) {
-  h3 {
-    font-size: 32px;
-  }
-}
-@media (max-width: 767px) {
-  h3 {
-    font-size: 28px;
-  }
+.heading-xl {
+  font-size: 30px;
 }
 
-h4 {
-  font-size: 24px;
-  font-weight: 700;
+.heading-lg {
+  font-size: 25px;
 }
 
-h5 {
+.heading-md {
+  font-size: 22px;
+}
+
+.heading-base {
   font-size: 20px;
-  font-weight: 700;
 }
 
-h6 {
+.text-lg {
   font-size: 18px;
-  font-weight: 700;
-  line-height: 2rem;
+}
+
+.text-base {
+  font-size: 16px;
+}
+
+.text-md {
+  font-size: 15px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-xm {
+  font-size: 10px;
 }
 
 a,
