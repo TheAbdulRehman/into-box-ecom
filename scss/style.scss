@@ -65,7 +65,10 @@
     transform: translate($translateX, $translateY);
   }
 }
-
+@mixin dimension($width, $height) {
+  width: $width;
+  height: $height;
+}
 // ### some custom text and bg color classes
 .text-gray-300 {
   color: $gray-300;
@@ -270,6 +273,59 @@ li {
   @media (max-width: 767px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  .logo-wrap {
+    border-style: solid;
+    border-color: rgba(230, 230, 230, 1);
+    &:nth-child(1) {
+      border-width: 1px 1px 1px 1px;
+    }
+
+    // Style the second element
+    &:nth-child(2) {
+      border-width: 1px 1px 1px 0px;
+      @media (max-width: 991px) {
+      }
+
+      @media (max-width: 767px) {
+      }
+    }
+
+    // Style the third element
+    &:nth-child(3) {
+      border-width: 1px 1px 1px 0px;
+      @media (max-width: 767px) {
+        border-width: 0px 1px 1px 1px;
+      }
+    }
+
+    // Style the fourth element
+    &:nth-child(4) {
+      border-width: 1px 1px 1px 0px;
+      @media (max-width: 991px) {
+        border-width: 0px 1px 1px 1px;
+      }
+      @media (max-width: 767px) {
+        border-width: 0px 1px 1px 0px;
+      }
+    }
+
+    // Style the fifth element
+    &:nth-child(5) {
+      border-width: 1px 1px 1px 0px;
+      @media (max-width: 991px) {
+        border-width: 0px 1px 1px 0px;
+      }
+      @media (max-width: 767px) {
+        border-width: 0px 1px 1px 1px;
+      }
+    }
+  }
+}
+.subscrie-btn {
+  @include dimension(60px, 60px);
+}
+.submit-form {
+  border: 1px solid rgba(102, 102, 102, 1);
 }
 //  #####  into box styling  ###### //
 

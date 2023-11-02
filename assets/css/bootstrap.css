@@ -33532,15 +33532,15 @@ ul {
 }
 
 ::-webkit-input-placeholder {
-  color: #fff !important;
+  color: #999999 !important;
 }
 
 :-moz-placeholder {
-  color: #fff !important;
+  color: #999999 !important;
 }
 
 :-ms-input-placeholder {
-  color: #fff !important;
+  color: #999999 !important;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
