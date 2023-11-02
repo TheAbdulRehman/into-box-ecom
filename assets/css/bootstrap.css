@@ -21742,6 +21742,18 @@ textarea.form-control-lg {
   width: 65% !important;
 }
 
+.w-80 {
+  width: 80% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
 .w-fit {
   width: fit-content !important;
 }
@@ -23928,6 +23940,15 @@ textarea.form-control-lg {
   .w-sm-65 {
     width: 65% !important;
   }
+  .w-sm-80 {
+    width: 80% !important;
+  }
+  .w-sm-85 {
+    width: 85% !important;
+  }
+  .w-sm-90 {
+    width: 90% !important;
+  }
   .w-sm-fit {
     width: fit-content !important;
   }
@@ -25277,6 +25298,15 @@ textarea.form-control-lg {
   }
   .w-md-65 {
     width: 65% !important;
+  }
+  .w-md-80 {
+    width: 80% !important;
+  }
+  .w-md-85 {
+    width: 85% !important;
+  }
+  .w-md-90 {
+    width: 90% !important;
   }
   .w-md-fit {
     width: fit-content !important;
@@ -26628,6 +26658,15 @@ textarea.form-control-lg {
   .w-lg-65 {
     width: 65% !important;
   }
+  .w-lg-80 {
+    width: 80% !important;
+  }
+  .w-lg-85 {
+    width: 85% !important;
+  }
+  .w-lg-90 {
+    width: 90% !important;
+  }
   .w-lg-fit {
     width: fit-content !important;
   }
@@ -27977,6 +28016,15 @@ textarea.form-control-lg {
   }
   .w-xl-65 {
     width: 65% !important;
+  }
+  .w-xl-80 {
+    width: 80% !important;
+  }
+  .w-xl-85 {
+    width: 85% !important;
+  }
+  .w-xl-90 {
+    width: 90% !important;
   }
   .w-xl-fit {
     width: fit-content !important;
@@ -29328,6 +29376,15 @@ textarea.form-control-lg {
   .w-xxl-65 {
     width: 65% !important;
   }
+  .w-xxl-80 {
+    width: 80% !important;
+  }
+  .w-xxl-85 {
+    width: 85% !important;
+  }
+  .w-xxl-90 {
+    width: 90% !important;
+  }
   .w-xxl-fit {
     width: fit-content !important;
   }
@@ -30678,6 +30735,15 @@ textarea.form-control-lg {
   .w-3xl-65 {
     width: 65% !important;
   }
+  .w-3xl-80 {
+    width: 80% !important;
+  }
+  .w-3xl-85 {
+    width: 85% !important;
+  }
+  .w-3xl-90 {
+    width: 90% !important;
+  }
   .w-3xl-fit {
     width: fit-content !important;
   }
@@ -32027,6 +32093,15 @@ textarea.form-control-lg {
   }
   .w-4xl-65 {
     width: 65% !important;
+  }
+  .w-4xl-80 {
+    width: 80% !important;
+  }
+  .w-4xl-85 {
+    width: 85% !important;
+  }
+  .w-4xl-90 {
+    width: 90% !important;
   }
   .w-4xl-fit {
     width: fit-content !important;

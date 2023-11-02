@@ -32,6 +32,30 @@
   }
 }
 
+@mixin cat-prod-img(
+  $width: 100%,
+  $height: auto,
+  $object-fit: cover,
+  $object-position: center
+) {
+  width: $width;
+  height: $height;
+  object-fit: $object-fit;
+  object-position: $object-position;
+}
+// ### some custom text and bg color classes
+.text-gray-300 {
+  color: $gray-300;
+}
+.bg-gray-100 {
+  background-color: $gray-100;
+}
+.bg-red-400 {
+  background-color: $red-400;
+}
+.footer-bg {
+  background-color: $footer-bg;
+}
 // bg images paths
 $bannerPath: "/assets/images/backgrounds";
 // #{$bannerPath}/header-bg.png
@@ -106,8 +130,16 @@ h6,
     @include basic-styling($font-size: $heading-xl, $font-weight: bold);
   }
 }
-.heading-xl {
-  font-size: 30px;
+.heading-h3 {
+  @include basic-styling($font-size: $heading-xl, $font-weight: normal);
+  @include media-lg {
+  }
+  @include media-md {
+  }
+
+  @include media-sm {
+    @include basic-styling($font-size: $heading-lg, $font-weight: normal);
+  }
 }
 .heading-lg {
   font-size: 25px;
@@ -146,14 +178,25 @@ li {
 
 //  #####  into box styling  ###### //
 .hero-section {
-  background: linear-gradient(
-      to right,
-      rgba(255, 42, 42, 0.2),
-      rgba(255, 11, 162, 0.7)
-    ),
+  background: linear-gradient(to right, rgb(223, 223, 223), rgb(223, 223, 223)),
     url(#{$bannerPath}/header-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
+}
+.cat-prod-img {
+  @include cat-prod-img(100%, 340px, cover, center);
+  @include media-lg {
+    @include cat-prod-img(100%, 260px, cover, center);
+  }
+  @include media-sm {
+    @include cat-prod-img(100%, 300px, cover, center);
+  }
+}
+.cat-left-col-img {
+  @include cat-prod-img(100%, 1055px, cover, top);
+  @include media-lg {
+    @include cat-prod-img(100%, auto, cover, top);
+  }
 }
 //  #####  into box styling  ###### //
 
