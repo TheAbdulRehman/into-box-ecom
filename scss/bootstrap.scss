@@ -99,6 +99,13 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
+    "border":
+      map-merge(
+        map-get($utilities, "border"),
+        (
+          responsive: true,
+        )
+      ),
   )
 );
 $utilities: map-merge(

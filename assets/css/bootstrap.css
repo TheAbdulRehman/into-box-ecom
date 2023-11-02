@@ -23922,6 +23922,12 @@ textarea.form-control-lg {
   .d-sm-none {
     display: none !important;
   }
+  .border-sm {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+  .border-sm-0 {
+    border: 0 !important;
+  }
   .w-sm-25 {
     width: 25% !important;
   }
@@ -25280,6 +25286,12 @@ textarea.form-control-lg {
   }
   .d-md-none {
     display: none !important;
+  }
+  .border-md {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+  .border-md-0 {
+    border: 0 !important;
   }
   .w-md-25 {
     width: 25% !important;
@@ -26640,6 +26652,12 @@ textarea.form-control-lg {
   .d-lg-none {
     display: none !important;
   }
+  .border-lg {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+  .border-lg-0 {
+    border: 0 !important;
+  }
   .w-lg-25 {
     width: 25% !important;
   }
@@ -27998,6 +28016,12 @@ textarea.form-control-lg {
   }
   .d-xl-none {
     display: none !important;
+  }
+  .border-xl {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+  .border-xl-0 {
+    border: 0 !important;
   }
   .w-xl-25 {
     width: 25% !important;
@@ -29358,6 +29382,12 @@ textarea.form-control-lg {
   .d-xxl-none {
     display: none !important;
   }
+  .border-xxl {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+  .border-xxl-0 {
+    border: 0 !important;
+  }
   .w-xxl-25 {
     width: 25% !important;
   }
@@ -30717,6 +30747,12 @@ textarea.form-control-lg {
   .d-3xl-none {
     display: none !important;
   }
+  .border-3xl {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+  .border-3xl-0 {
+    border: 0 !important;
+  }
   .w-3xl-25 {
     width: 25% !important;
   }
@@ -32075,6 +32111,12 @@ textarea.form-control-lg {
   }
   .d-4xl-none {
     display: none !important;
+  }
+  .border-4xl {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+  .border-4xl-0 {
+    border: 0 !important;
   }
   .w-4xl-25 {
     width: 25% !important;

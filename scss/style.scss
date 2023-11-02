@@ -23,7 +23,6 @@
     background-color: $background-color;
   }
 }
-
 @mixin backgroundImage($image-url, $position: center center, $gradient: false) {
   @if $gradient {
     background: $gradient, url($image-url) $position;
@@ -31,7 +30,6 @@
     background: url($image-url) $position;
   }
 }
-
 @mixin cat-prod-img(
   $width: 100%,
   $height: auto,
@@ -43,9 +41,37 @@
   object-fit: $object-fit;
   object-position: $object-position;
 }
+@mixin transform-properties(
+  $top: none,
+  $left: none,
+  $right: none,
+  $bottom: none,
+  $translateX: none,
+  $translateY: none
+) {
+  @if $top != none {
+    top: $top;
+  }
+  @if $left != none {
+    left: $left;
+  }
+  @if $right != none {
+    right: $right;
+  }
+  @if $bottom != none {
+    bottom: $bottom;
+  }
+  @if $translateX != none or $translateY != none {
+    transform: translate($translateX, $translateY);
+  }
+}
+
 // ### some custom text and bg color classes
 .text-gray-300 {
   color: $gray-300;
+}
+.text-gray-700 {
+  color: $gray-700;
 }
 .bg-gray-100 {
   background-color: $gray-100;
@@ -144,17 +170,44 @@ h6,
 .heading-lg {
   font-size: 25px;
 }
-.heading-md {
-  font-size: 22px;
+.heading-h5 {
+  @include basic-styling($font-size: $heading-md, $font-weight: normal);
+  @include media-lg {
+    @include basic-styling($font-size: $text-base, $font-weight: normal);
+  }
+  @include media-md {
+  }
+
+  @include media-sm {
+    @include basic-styling($font-size: $text-base, $font-weight: normal);
+  }
 }
-.heading-base {
-  font-size: 20px;
+.heading-h6 {
+  @include basic-styling($font-size: $heading-base, $font-weight: normal);
+  @include media-lg {
+    @include basic-styling($font-size: $text-base, $font-weight: normal);
+  }
+  @include media-md {
+  }
+
+  @include media-sm {
+    @include basic-styling($font-size: $text-base, $font-weight: normal);
+  }
 }
 .text-lg {
   font-size: 18px;
 }
 .text-base {
-  font-size: 16px;
+  @include basic-styling($font-size: $text-base, $font-weight: normal);
+  @include media-lg {
+    @include basic-styling($font-size: $text-sm, $font-weight: normal);
+  }
+  @include media-md {
+  }
+
+  @include media-sm {
+    @include basic-styling($font-size: $text-sm, $font-weight: normal);
+  }
 }
 .text-md {
   font-size: 15px;
@@ -178,7 +231,11 @@ li {
 
 //  #####  into box styling  ###### //
 .hero-section {
-  background: linear-gradient(to right, rgb(223, 223, 223), rgb(223, 223, 223)),
+  background: linear-gradient(
+      to right,
+      rgb(223, 223, 223, 0),
+      rgb(223, 223, 223, 0)
+    ),
     url(#{$bannerPath}/header-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -196,6 +253,22 @@ li {
   @include cat-prod-img(100%, 1055px, cover, top);
   @include media-lg {
     @include cat-prod-img(100%, auto, cover, top);
+  }
+}
+.luxury-text {
+  @include transform-properties($left: 0px, $bottom: 0);
+}
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  gap: 0;
+
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 //  #####  into box styling  ###### //
