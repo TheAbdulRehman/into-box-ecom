@@ -270,6 +270,35 @@ li {
   border: 1px solid rgb(102, 102, 102);
 }
 
+.off-price {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.off-price {
+  top: 12px;
+  left: 20px;
+}
+
+.cart-actions {
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cart-actions .action-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .category-navigation {
   position: absolute;
   top: 0;

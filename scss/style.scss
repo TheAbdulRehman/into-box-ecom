@@ -330,9 +330,31 @@ li {
 .submit-form {
   border: 1px solid rgba(102, 102, 102, 1);
 }
+.off-price {
+  @include dimension(48px, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.off-price {
+  top: 12px;
+  left: 20px;
+}
+.cart-actions {
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  .action-btn {
+    @include dimension(48px, 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
 //  #####  into box styling  ###### //
-
-// category navbar
 
 // intobox navbar
 .category-navigation {
