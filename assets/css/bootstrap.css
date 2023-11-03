@@ -21738,6 +21738,14 @@ textarea.form-control-lg {
   width: auto !important;
 }
 
+.w-55 {
+  width: 55% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
 .w-65 {
   width: 65% !important;
 }
@@ -23943,6 +23951,12 @@ textarea.form-control-lg {
   .w-sm-auto {
     width: auto !important;
   }
+  .w-sm-55 {
+    width: 55% !important;
+  }
+  .w-sm-60 {
+    width: 60% !important;
+  }
   .w-sm-65 {
     width: 65% !important;
   }
@@ -25307,6 +25321,12 @@ textarea.form-control-lg {
   }
   .w-md-auto {
     width: auto !important;
+  }
+  .w-md-55 {
+    width: 55% !important;
+  }
+  .w-md-60 {
+    width: 60% !important;
   }
   .w-md-65 {
     width: 65% !important;
@@ -26673,6 +26693,12 @@ textarea.form-control-lg {
   .w-lg-auto {
     width: auto !important;
   }
+  .w-lg-55 {
+    width: 55% !important;
+  }
+  .w-lg-60 {
+    width: 60% !important;
+  }
   .w-lg-65 {
     width: 65% !important;
   }
@@ -28037,6 +28063,12 @@ textarea.form-control-lg {
   }
   .w-xl-auto {
     width: auto !important;
+  }
+  .w-xl-55 {
+    width: 55% !important;
+  }
+  .w-xl-60 {
+    width: 60% !important;
   }
   .w-xl-65 {
     width: 65% !important;
@@ -29403,6 +29435,12 @@ textarea.form-control-lg {
   .w-xxl-auto {
     width: auto !important;
   }
+  .w-xxl-55 {
+    width: 55% !important;
+  }
+  .w-xxl-60 {
+    width: 60% !important;
+  }
   .w-xxl-65 {
     width: 65% !important;
   }
@@ -30768,6 +30806,12 @@ textarea.form-control-lg {
   .w-3xl-auto {
     width: auto !important;
   }
+  .w-3xl-55 {
+    width: 55% !important;
+  }
+  .w-3xl-60 {
+    width: 60% !important;
+  }
   .w-3xl-65 {
     width: 65% !important;
   }
@@ -32132,6 +32176,12 @@ textarea.form-control-lg {
   }
   .w-4xl-auto {
     width: auto !important;
+  }
+  .w-4xl-55 {
+    width: 55% !important;
+  }
+  .w-4xl-60 {
+    width: 60% !important;
   }
   .w-4xl-65 {
     width: 65% !important;

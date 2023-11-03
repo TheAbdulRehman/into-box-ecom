@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 .text-gray-300 {
   color: #b3b3b3;
 }
@@ -16,6 +17,14 @@
 
 .bg-red-400 {
   background-color: #ffaaaa;
+}
+
+.bg-red-light {
+  background-color: #fff4f3;
+}
+
+.bg-green-light {
+  background-color: #e4f4e4;
 }
 
 .footer-bg {
@@ -292,6 +301,11 @@ li {
   left: 20px;
 }
 
+.timer {
+  bottom: 27%;
+  width: 85%;
+}
+
 .heart-action {
   top: 12px;
   right: 20px;
@@ -340,6 +354,11 @@ li {
 
 .cat-prod-img:hover .action-btn {
   opacity: 1;
+}
+
+.logo {
+  width: 60%;
+  height: auto;
 }
 
 .category-navigation {
@@ -455,6 +474,12 @@ li {
   transform: scale(1);
 }
 
+.best-prod-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .services-icon {
   height: 60px;
   width: 60px;
@@ -468,28 +493,14 @@ li {
   justify-content: center;
 }
 
-footer .social-links {
-  background-color: transparent;
-}
-footer .social-links a {
-  background: transparent;
-}
-footer .social-links a i {
-  background-color: #ff6363;
-  color: #fff;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid #ff6363;
+footer .footer-icon-social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  transition: all 0.3s ease-in-out;
-  margin: 0px 3px;
-}
-footer .social-links a i:hover {
-  transform: translateY(-2px);
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  border-radius: 50%;
 }
 footer .footer-links {
   transition: all 0.5s;

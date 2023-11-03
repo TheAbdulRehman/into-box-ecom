@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 @import "./_varaibles";
 // Create Reusable Font Size Mixins
 @mixin basic-styling(
@@ -84,6 +85,12 @@
 }
 .bg-red-400 {
   background-color: $red-400;
+}
+.bg-red-light {
+  background-color: $red-light;
+}
+.bg-green-light {
+  background-color: $green-light;
 }
 .footer-bg {
   background-color: $footer-bg;
@@ -345,6 +352,10 @@ li {
   top: 12px;
   left: 20px;
 }
+.timer {
+  bottom: 27%;
+  width: 85%;
+}
 .heart-action {
   top: 12px;
   right: 20px;
@@ -389,7 +400,10 @@ li {
 .cat-prod-img:hover .action-btn {
   opacity: 1;
 }
-
+.logo {
+  width: 60%;
+  height: auto;
+}
 //  #####  into box styling  ###### //
 
 // intobox navbar
@@ -514,6 +528,15 @@ li {
     }
   }
 }
+.best-prod-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  @mixin media-lg {
+    @media (max-width: $breakpoint-lg) {
+    }
+  }
+}
 // intobox navbar
 
 // services section
@@ -533,28 +556,14 @@ li {
 // footer
 footer {
   // social links in footer
-  .social-links {
-    background-color: transparent;
+  .footer-icon-social {
     a {
-      background: transparent;
-
-      i {
-        background-color: $red;
-        color: $white;
-        height: 2.5rem;
-        width: 2.5rem;
-        border-radius: 0.25rem;
-        border: 1px solid $red;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1rem;
-        transition: all 0.3s ease-in-out;
-        margin: 0px 3px;
-        &:hover {
-          transform: translateY(-2px);
-        }
-      }
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      @include dimension(28px, 28px);
+      font-size: 16px;
+      border-radius: 50%;
     }
   }
   .footer-links {
