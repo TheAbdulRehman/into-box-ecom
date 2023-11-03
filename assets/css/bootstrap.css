@@ -709,7 +709,7 @@ progress {
 }
 
 .shadow-lg {
-  box-shadow: 0.75rem 0.75rem 2rem rgba(8, 8, 8, 0.1) !important;
+  box-shadow: 5px 5px 20px rgba(8, 8, 8, 0.3) !important;
 }
 
 .shadow-none {
@@ -21496,7 +21496,7 @@ textarea.form-control-lg {
 }
 
 .shadow-lg {
-  box-shadow: 0.75rem 0.75rem 2rem rgba(8, 8, 8, 0.1) !important;
+  box-shadow: 5px 5px 20px rgba(8, 8, 8, 0.3) !important;
 }
 
 .shadow-none {

@@ -330,21 +330,35 @@ li {
 .submit-form {
   border: 1px solid rgba(102, 102, 102, 1);
 }
-.off-price {
+.off-price,
+.heart-action {
   @include dimension(48px, 48px);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  @include media-lg {
+    @include dimension(40px, 40px);
+  }
 }
 .off-price {
   top: 12px;
   left: 20px;
 }
+.heart-action {
+  top: 12px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.4s;
+}
 .cart-actions {
-  top: 60%;
+  bottom: 15%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -15%);
+  opacity: 0;
+  transition: all 0.4s;
   .action-btn {
     @include dimension(48px, 48px);
     display: flex;
@@ -352,8 +366,30 @@ li {
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
+    @include media-lg {
+      @include dimension(40px, 40px);
+    }
   }
 }
+.prod-column {
+  transition: all 0.4s;
+  &:hover {
+    .cart-actions {
+      opacity: 1;
+      bottom: 24%;
+      left: 50%;
+      transform: translate(-50%, -24%);
+    }
+    .heart-action {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+}
+.cat-prod-img:hover .action-btn {
+  opacity: 1;
+}
+
 //  #####  into box styling  ###### //
 
 // intobox navbar
