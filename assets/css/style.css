@@ -454,6 +454,12 @@ li {
     min-height: 584px;
   }
 }
+@media (max-width: 1440px) {
+  .foodox-item-5 {
+    height: auto;
+    min-height: auto;
+  }
+}
 
 .foodox-item-2 {
   height: 458px;
@@ -461,6 +467,11 @@ li {
 @media (max-width: 1440px) {
   .foodox-item-2 {
     height: 284px;
+  }
+}
+@media (max-width: 991px) {
+  .foodox-item-2 {
+    height: auto;
   }
 }
 
@@ -472,10 +483,20 @@ li {
     height: 284px;
   }
 }
+@media (max-width: 991px) {
+  .foodox-item-3 {
+    height: auto;
+  }
+}
 
 .content-box {
   position: absolute;
   right: 32px;
+}
+@media (max-width: 991px) {
+  .content-box {
+    position: relative;
+  }
 }
 
 .content-box-1-img {
@@ -483,9 +504,11 @@ li {
   left: 10px;
   top: 80px;
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) and (max-width: 991px) {
   .content-box-1-img {
     position: relative;
+    left: auto;
+    top: auto;
   }
 }
 .content-box-1-img img {
@@ -500,6 +523,8 @@ li {
 @media (max-width: 991px) {
   .content-box-2-img {
     position: relative;
+    left: auto;
+    top: auto;
   }
 }
 .content-box-2-img img {
@@ -508,6 +533,11 @@ li {
 @media (max-width: 1440px) {
   .content-box-2-img img {
     max-width: 30%;
+  }
+}
+@media (max-width: 991px) {
+  .content-box-2-img img {
+    max-width: 60%;
   }
 }
 
