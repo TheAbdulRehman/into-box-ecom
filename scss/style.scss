@@ -252,6 +252,8 @@ li {
     url(#{$bannerPath}/header-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
 }
 .cat-prod-img {
   @include cat-prod-img(100%, 340px, cover, center);
@@ -404,6 +406,55 @@ li {
   width: 60%;
   height: auto;
 }
+.logo-wrap-main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (max-width: 1240px) {
+    left: 36%;
+    transform: translateX(-36%);
+  }
+}
+.cat-list {
+  li {
+    a {
+      text-transform: uppercase;
+    }
+  }
+  .cat-list-item {
+    &:hover {
+      .sub-cat-list {
+        display: block;
+      }
+    }
+    .sub-cat-list {
+      position: absolute;
+      top: 115%;
+      left: 0;
+      z-index: 5;
+      display: none;
+      .sub-cat-list-item {
+        width: max-content;
+        &:not(:last-child) {
+          border-bottom: 1px solid #e6e6e6;
+        }
+        &:hover {
+          background-color: $gray-100;
+        }
+      }
+    }
+  }
+}
+.food-box-item {
+  :nth-child(8) {
+    min-height: 655px;
+  }
+  img {
+    max-width: 100%;
+    height: 360px;
+    object-fit: contain;
+  }
+}
 //  #####  into box styling  ###### //
 
 // intobox navbar
@@ -478,6 +529,9 @@ li {
 }
 .category-navigation.show-nav {
   transform: translateX(0%);
+  @media (max-width: 991px) {
+    display: none;
+  }
 }
 .top-nav {
   border-bottom: 2px solid #e6e6e6;
@@ -503,8 +557,8 @@ li {
   }
 }
 .center-nav {
-  li {
-    a {
+  .cat-list-item {
+    .main-link {
       text-transform: uppercase;
       position: relative;
       &:after {
@@ -536,6 +590,9 @@ li {
     @media (max-width: $breakpoint-lg) {
     }
   }
+}
+.credits {
+  border-top: 1px solid rgba(77, 77, 77, 1);
 }
 // intobox navbar
 
@@ -569,16 +626,9 @@ footer {
   .footer-links {
     transition: all 0.5s;
     &:hover {
-      margin-left: 7px;
+      margin-left: 5px;
+      color: $red;
     }
-  }
-  #subscribe-button {
-    color: $red;
-    background-color: $red;
-    border-color: 1px solid $red;
-  }
-  .company-name {
-    color: $red;
   }
 }
 // scroll to top button
@@ -592,9 +642,13 @@ footer {
   border-radius: 0.25rem;
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   z-index: 999;
   opacity: 0;
   transform: translateY(100px);

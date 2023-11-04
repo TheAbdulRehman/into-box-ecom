@@ -12,13 +12,22 @@ $(document).ready(function () {
   $("#navbarIcon").click(function () {
     $("#navItems").toggleClass("show-nav");
     $("#closeNav").toggleClass("show-nav");
+    $(".mobile-menu").toggleClass("open");
   });
   $("#closeNav").click(function () {
     $("#navItems").toggleClass("show-nav");
   });
+  $("#closeMobileNav").click(function () {
+    $(".mobile-menu").toggleClass("open");
+  });
   $(".cs-nav-link").click(function () {
     $("#navItems").toggleClass("show-nav");
   });
+});
+
+$(".has-children").click(function () {
+  $(".has-children").removeClass("expanded active");
+  $(this).addClass("expanded active");
 });
 // active nav tab logic
 $(document).ready(function () {
@@ -121,3 +130,27 @@ $(".custom-menu-item").click(function (event) {
 
   event.preventDefault();
 });
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+// omin js
