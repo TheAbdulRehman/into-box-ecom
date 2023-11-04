@@ -92,6 +92,9 @@
 .bg-green-light {
   background-color: $green-light;
 }
+.bg-yellow-light {
+  background-color: $yellow-light;
+}
 .footer-bg {
   background-color: $footer-bg;
 }
@@ -166,7 +169,7 @@ h6,
   }
 
   @include media-sm {
-    @include basic-styling($font-size: $heading-xl, $font-weight: bold);
+    @include basic-styling($font-size: $heading-base, $font-weight: 700);
   }
 }
 .heading-h3 {
@@ -180,8 +183,17 @@ h6,
     @include basic-styling($font-size: $heading-lg, $font-weight: normal);
   }
 }
-.heading-lg {
-  font-size: 25px;
+.heading-h4 {
+  @include basic-styling($font-size: $heading-lg, $font-weight: 700);
+  @include media-lg {
+    @include basic-styling($font-size: $heading-base, $font-weight: 700);
+  }
+  @include media-md {
+  }
+
+  @include media-sm {
+    @include basic-styling($font-size: $heading-base, $font-weight: 700);
+  }
 }
 .heading-h5 {
   @include basic-styling($font-size: $heading-md, $font-weight: normal);
@@ -414,6 +426,14 @@ li {
     left: 36%;
     transform: translateX(-36%);
   }
+  @media (max-width: 991px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: 767px) {
+    left: 44%;
+    transform: translateX(-50%);
+  }
 }
 .cat-list {
   li {
@@ -429,7 +449,7 @@ li {
     }
     .sub-cat-list {
       position: absolute;
-      top: 115%;
+      top: 110%;
       left: 0;
       z-index: 5;
       display: none;
@@ -445,17 +465,93 @@ li {
     }
   }
 }
-.food-box-item {
-  :nth-child(8) {
-    min-height: 655px;
-  }
-  img {
-    max-width: 100%;
-    height: 360px;
+.cart-icons {
+  cursor: pointer;
+}
+.foodox-item-1,
+.foodox-item-4 {
+  .img-wrapp {
+    max-width: 60%;
+    height: auto;
     object-fit: contain;
+    @media (max-width: 1440px) {
+      max-width: 100%;
+      height: 220px;
+      object-fit: contain;
+    }
   }
 }
-//  #####  into box styling  ###### //
+.foodox-item-5 {
+  min-height: 858px;
+  @media (max-width: 1440px) {
+    min-height: 584px;
+  }
+
+  // .img-wrapp {
+  //   max-width: 100%;
+  //   height: 280px;
+  //   object-fit: contain;
+  //   @media (max-width: 1440px) {
+  //     max-width: 100%;
+  //     height: 220px;
+  //     object-fit: contain;
+  //   }
+  // }
+}
+.foodox-item-2 {
+  height: 458px;
+  @media (max-width: 1440px) {
+    height: 284px;
+  }
+}
+.foodox-item-3 {
+  height: 382px;
+  @media (max-width: 1440px) {
+    height: 284px;
+  }
+}
+.content-box {
+  position: absolute;
+  right: 32px;
+}
+.content-box-1-img {
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  @media (max-width: 991px) {
+    position: relative;
+  }
+  img {
+    max-width: 80%;
+  }
+}
+.content-box-2-img {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  @media (max-width: 991px) {
+    position: relative;
+  }
+  img {
+    max-width: 44%;
+    @media (max-width: 1440px) {
+      max-width: 30%;
+    }
+  }
+}
+.mob-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.mob-search.show-mob-search {
+  @media (min-width: 992px) {
+    display: none;
+  }
+  display: flex;
+}
 
 // intobox navbar
 .category-navigation {
@@ -466,7 +562,7 @@ li {
   height: 100vh;
   background-color: $white;
   z-index: 3;
-  transform: translateX(-100%);
+  transform: translateX(-125%);
   transition: all 0.4s;
   .main-category {
     &:not(:last-child) {

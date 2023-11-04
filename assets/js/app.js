@@ -29,6 +29,13 @@ $(".has-children").click(function () {
   $(".has-children").removeClass("expanded active");
   $(this).addClass("expanded active");
 });
+$("#showMobSearch").click(function () {
+  $(".mob-search").addClass("show-mob-search");
+});
+$("#hideMobSearch").click(function () {
+  $(".mob-search").removeClass("show-mob-search");
+});
+x;
 // active nav tab logic
 $(document).ready(function () {
   $(".nav-tab-btn").click(function () {
