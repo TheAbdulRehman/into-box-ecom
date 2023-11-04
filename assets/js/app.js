@@ -35,7 +35,7 @@ $("#showMobSearch").click(function () {
 $("#hideMobSearch").click(function () {
   $(".mob-search").removeClass("show-mob-search");
 });
-x;
+
 // active nav tab logic
 $(document).ready(function () {
   $(".nav-tab-btn").click(function () {
