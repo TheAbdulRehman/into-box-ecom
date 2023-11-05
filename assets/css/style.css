@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+@font-face {
+  font-family: "Einstellung";
+  src: url("../assets/fonts/Neue Einstellung Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 .text-gray-300 {
   color: #b3b3b3;
 }
@@ -38,10 +43,25 @@
 body {
   overflow-x: hidden;
   background-color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Einstellung", sans-serif;
   color: #333333;
   font-size: 16px;
   font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Einstellung", sans-serif;
 }
 
 .heading-h1 {
@@ -182,15 +202,28 @@ li {
   background: linear-gradient(to right, rgba(223, 223, 223, 0), rgba(223, 223, 223, 0)), url(/assets/images/backgrounds/header-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   min-height: 100vh;
 }
-
+@media (max-width: 1440px) {
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+  }
+}
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .cat-prod-img {
   width: 100%;
   height: 340px;
   object-fit: cover;
   object-position: center;
+  transition: all 0.3s;
 }
 @media (max-width: 1440px) {
   .cat-prod-img {
@@ -207,6 +240,9 @@ li {
     object-fit: cover;
     object-position: center;
   }
+}
+.cat-prod-img:hover {
+  transform: scale(1.1);
 }
 
 .cat-left-col-img {
@@ -229,64 +265,9 @@ li {
   bottom: 0;
 }
 
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  gap: 0;
-}
-@media (max-width: 991px) {
-  .logo-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 767px) {
-  .logo-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.logo-grid .logo-wrap {
-  border-style: solid;
-  border-color: rgb(230, 230, 230);
-}
-.logo-grid .logo-wrap:nth-child(1) {
-  border-width: 1px 1px 1px 1px;
-}
-.logo-grid .logo-wrap:nth-child(2) {
-  border-width: 1px 1px 1px 0px;
-}
-.logo-grid .logo-wrap:nth-child(3) {
-  border-width: 1px 1px 1px 0px;
-}
-@media (max-width: 767px) {
-  .logo-grid .logo-wrap:nth-child(3) {
-    border-width: 0px 1px 1px 1px;
-  }
-}
-.logo-grid .logo-wrap:nth-child(4) {
-  border-width: 1px 1px 1px 0px;
-}
-@media (max-width: 991px) {
-  .logo-grid .logo-wrap:nth-child(4) {
-    border-width: 0px 1px 1px 1px;
-  }
-}
-@media (max-width: 767px) {
-  .logo-grid .logo-wrap:nth-child(4) {
-    border-width: 0px 1px 1px 0px;
-  }
-}
-.logo-grid .logo-wrap:nth-child(5) {
-  border-width: 1px 1px 1px 0px;
-}
-@media (max-width: 991px) {
-  .logo-grid .logo-wrap:nth-child(5) {
-    border-width: 0px 1px 1px 0px;
-  }
-}
-@media (max-width: 767px) {
-  .logo-grid .logo-wrap:nth-child(5) {
-    border-width: 0px 1px 1px 1px;
-  }
+.logo-wrap {
+  border: 1px solid rgb(230, 230, 230);
+  height: 240px;
 }
 
 .subscrie-btn {
@@ -376,8 +357,23 @@ li {
 }
 
 .logo {
-  width: 60%;
+  width: 100%;
   height: auto;
+}
+@media (max-width: 1440px) {
+  .logo {
+    width: 85%;
+  }
+}
+@media (max-width: 991px) {
+  .logo {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    width: 60%;
+  }
 }
 
 .logo-wrap-main {
@@ -561,12 +557,12 @@ li {
 .category-navigation {
   position: absolute;
   top: 0;
-  left: 0;
   width: 20%;
+  left: -100px;
   height: 100vh;
   background-color: #fff;
   z-index: 3;
-  transform: translateX(-125%);
+  transform: translateX(-110%);
   transition: all 0.4s;
 }
 .category-navigation .main-category {
@@ -680,6 +676,10 @@ li {
   max-width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: all 0.4s;
+}
+.best-prod-img:hover {
+  transform: scale(1.1);
 }
 
 .credits {
@@ -1225,7 +1225,7 @@ span.pricing-feature-tick {
 }
 
 [data-aos=animate-down] {
-  transform: translateY(-10%);
+  transform: translateY(-12px);
   opacity: 0;
   transition-property: transform, opacity;
 }

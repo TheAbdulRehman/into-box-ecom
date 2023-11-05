@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="assets/css/plugins/aos.css" />
     <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css" />
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
-
     <link
       rel="shortcut icon"
       href="assets/images/favicon.ico"
@@ -26,11 +25,13 @@
   </head>
   <body>
     <!-- searchbar for mobile and tab -->
-    <div class="mob-search align-items-center px-4 bg-white py-4 py-md-8 shadow-sm w-100">
+    <div
+      class="mob-search align-items-center px-4 bg-white py-4 py-md-8 shadow-sm w-100"
+    >
       <form class="d-flex border align-items-center flex-grow-1">
         <input
           type="text"
-          class="form-control text-muted fs-14  border-0 bg-transparent"
+          class="form-control text-muted fs-14 border-0 bg-transparent"
           placeholder="Start Searching . . . ."
           aria-label="search-bar"
           aria-describedby="serach-bar"
@@ -44,7 +45,10 @@
         </button>
       </form>
       <div>
-        <i id="hideMobSearch" class="fas fa-times pt-2 fs-28 ms-4 ms-lg-6 text-muted"></i>
+        <i
+          id="hideMobSearch"
+          class="fas fa-times pt-2 fs-28 ms-4 ms-lg-6 text-muted"
+        ></i>
       </div>
     </div>
     <!-- searchbar for mobile and tab -->
@@ -163,12 +167,12 @@
             <div class="widget-categories mobile-cat">
               <ul id="category_list">
                 <li class="has-children">
-                  <a class="category_search mb-0"></a>
+                  <a class="category_search mb-0">
                     Women Clothing
                     <span
                       ><i id="expandCategroy" class="fas fa-chevron-down"></i
                     ></span>
-                  </p>
+                  </a>
                   <ul id="subcategory_list">
                     <li class="">
                       <a class="subcategory" href="Womens-Underwear"
@@ -718,7 +722,7 @@
 
     <!-- top nav -->
     <div
-      class="container-fluid position-relative top-nav px-4 px-md-10 px-lg-80 pb-6 pt-15 pt-md-80 pt-lg-100 pb-lg-10"
+      class="container-fluid position-relative top-nav px-4 px-md-10 px-lg-80 pb-6 pt-60 pt-md-100 pt-lg-120 pt-xxl-140 pb-lg-10"
     >
       <div class="d-flex align-items-end justify-content-between">
         <div
@@ -754,12 +758,9 @@
             </form>
           </div>
           <div class="d-block d-lg-none">
-            <div
-                class="bg-transparent search-btn border-0"
-                id="showMobSearch"
-              >
-                <i class="fas fa-search fs-26 text-gray-600"></i>
-              </div>
+            <div class="bg-transparent search-btn border-0" id="showMobSearch">
+              <i class="fas fa-search fs-26 text-gray-600"></i>
+            </div>
           </div>
           <div class="position-relative cart-icons">
             <i class="fa-regular fa-heart ms-3 ms-lg-6 fs-28 text-gray-600"></i>
@@ -781,7 +782,9 @@
             </svg>
             <span> 3 </span>
           </div>
-          <p class="ms-4 mb-0 fs-14 fw-semibold d-none d-lg-block text-gray-600">
+          <p
+            class="ms-4 mb-0 fs-14 fw-semibold d-none d-lg-block text-gray-600"
+          >
             Cart: <span class="text-danger">₹245</span>
           </p>
         </div>
@@ -870,26 +873,54 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <section class="hero-section swiper-slide d-flex align-items-center">
+          <section
+            class="hero-section swiper-slide d-flex align-items-center"
+            id="trigger-left"
+          >
             <div class="container">
               <div
                 class="row hero-section-content align-items-center justify-content-between"
               >
                 <div class="col-md-12 col-lg-5">
-                  <p class="bg-danger w-fit px-4 py-3 text-sm text-white mb-0">
+                  <p
+                    class="bg-danger w-fit px-4 py-3 text-sm text-white mb-0"
+                    data-aos="animate-down"
+                    data-aos-duration="1000"
+                  >
                     #New Arrivals
                   </p>
-                  <h1 class="mb-0 heading-h1 mb-0 mt-4 mt-lg-6">
+                  <h1
+                    class="mb-0 heading-h1 mb-0 mt-4 mt-lg-6"
+                    data-aos="animate-down"
+                    data-aos-duration="1000"
+                    data-aos-anchor="#trigger-left"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="300"
+                  >
                     Best Designs of <br class="d-none d-lg-block" />
                     Cake Box Collections
                   </h1>
-                  <p class="mb-0 mt-4 mt-lg-6 text-muted">
+                  <p
+                    class="mb-0 mt-4 mt-lg-6 text-muted"
+                    data-aos="animate-down"
+                    data-aos-duration="1000"
+                    data-aos-anchor="#trigger-left"
+                    data-aos-delay="500"
+                    data-aos-anchor-placement="top-bottom"
+                  >
                     You will find the most original boxes for large and thick
                     cakes. You will also find other models, like cake boxes with
                     lids, making them easily transportable. Available in many
                     colours and sizes. Take your pick!
                   </p>
-                  <div class="mt-12 mt-lg-60">
+                  <div
+                    class="mt-12 mt-lg-60"
+                    data-aos="animate-down"
+                    data-aos-duration="1000"
+                    data-aos-anchor="#trigger-left"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="600"
+                  >
                     <a
                       href="#"
                       class="btn btn-outline-danger text-uppercase text-sm fw-bold w-auto border border-2 border-danger px-8 py-4 rounded-pill text-dark"
@@ -904,8 +935,8 @@
           </section>
         </div>
         <!-- swiper btns -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev d-none d-lg-flex"></div>
+        <div class="swiper-button-next d-none d-lg-flex"></div>
         <!-- swiper btns -->
       </div>
       <!-- Hero section end here -->
@@ -934,30 +965,32 @@
               </div>
               <!-- Producta row -->
               <div class="row g-4">
-                <div
-                  class="col-md-6 col-lg-4 d-flex flex-column align-items-center prod-column position-relative overflow-hidden"
-                >
-                  <img
-                    src="assets/images/cat-prod-1.png"
-                    alt="Image 1"
-                    class="img-fluid cat-prod-img"
-                  />
-                  <p class="text-muted fw-semibold mt-4 mb-3">Cake Boxes</p>
-                  <div class="d-flex">
-                    <p
-                      class="text-gray-300 fs-18 fw-bold text-decoration-line-through mb-0"
-                    >
-                      ₹48.00
-                    </p>
-                    <p class="text-danger fw-bold fs-18 mb-0 ms-4">₹35.00</p>
-                  </div>
-                  <!-- floating content -->
-                  <p
-                    class="position-absolute off-price bg-danger text-white fw-bold fs-14 mb-0"
+                <div class="col-md-6 col-lg-4 prod-column">
+                  <div
+                    class="d-flex flex-column align-items-center position-relative overflow-hidden"
                   >
-                    - 20%
-                  </p>
-                  <!-- floating content -->
+                    <img
+                      src="assets/images/cat-prod-1.png"
+                      alt="Image 1"
+                      class="img-fluid cat-prod-img"
+                    />
+                    <p class="text-muted fw-semibold mt-4 mb-3">Cake Boxes</p>
+                    <div class="d-flex">
+                      <p
+                        class="text-gray-300 fs-18 fw-bold text-decoration-line-through mb-0"
+                      >
+                        ₹48.00
+                      </p>
+                      <p class="text-danger fw-bold fs-18 mb-0 ms-4">₹35.00</p>
+                    </div>
+                    <!-- floating content -->
+                    <p
+                      class="position-absolute off-price bg-danger text-white fw-bold fs-14 mb-0"
+                    >
+                      - 20%
+                    </p>
+                    <!-- floating content -->
+                  </div>
                 </div>
                 <div
                   class="col-md-6 col-lg-4 d-flex flex-column align-items-center prod-column position-relative overflow-hidden"
@@ -1167,9 +1200,7 @@
                     </div>
                   </div>
                   <div class="col-lg-4 position-relative">
-                    <div
-                      class="p-8 bg-green-light food-box-item foodox-item-2"
-                    >
+                    <div class="p-8 bg-green-light food-box-item foodox-item-2">
                       <div class="img-wrapp content-box-1-img">
                         <img
                           src="assets/images/best-prod-2.png"
@@ -1177,31 +1208,31 @@
                           class="best-prod-img"
                         />
                       </div>
-                      <div class="content-box ">
+                      <div class="content-box">
                         <div class="ps-8 ps-lg-0">
-                        <p class="text-danger fs-14 mb-0 fw-semibold">
-                          #New Arrivals
-                        </p>
-                        <h3 class="heading-h4 fw-semibold mb-0 text-dark mt-3">
-                          Biryani Boxes
-                        </h3>
-                        <div class="mt-6">
-                          <a href="" class="fs-14 text-muted text-uppercase">
-                            View More
-                            <i
-                              class="fas ms-2 text-sm text-muted fa-arrow-right"
-                            ></i>
-                          </a>
+                          <p class="text-danger fs-14 mb-0 fw-semibold">
+                            #New Arrivals
+                          </p>
+                          <h3
+                            class="heading-h4 fw-semibold mb-0 text-dark mt-3"
+                          >
+                            Biryani Boxes
+                          </h3>
+                          <div class="mt-6">
+                            <a href="" class="fs-14 text-muted text-uppercase">
+                              View More
+                              <i
+                                class="fas ms-2 text-sm text-muted fa-arrow-right"
+                              ></i>
+                            </a>
+                          </div>
                         </div>
-                      </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 position-relative">
-                    <div
-                      class="p-8 bg-green-light food-box-item foodox-item-3"
-                    >
-                      <div class="img-wrapp content-box-2-img ">
+                    <div class="p-8 bg-green-light food-box-item foodox-item-3">
+                      <div class="img-wrapp content-box-2-img">
                         <img
                           src="assets/images/best-prod-4.png"
                           alt="first food box"
@@ -1210,21 +1241,23 @@
                       </div>
                       <div class="content-box">
                         <div class="ps-8 ps-lg-0 mt-4 mt-lg-0">
-                        <p class="text-danger fs-14 mb-0 fw-semibold">
-                          #Most popular
-                        </p>
-                        <h3 class="heading-h4 fw-semibold mb-0 text-dark mt-3">
-                          Sandwich Boxes
-                        </h3>
-                        <div class="mt-6">
-                          <a href="" class="fs-14 text-muted text-uppercase">
-                           SHop NOw
-                            <i
-                              class="fas ms-2 text-sm text-muted fa-arrow-right"
-                            ></i>
-                          </a>
+                          <p class="text-danger fs-14 mb-0 fw-semibold">
+                            #Most popular
+                          </p>
+                          <h3
+                            class="heading-h4 fw-semibold mb-0 text-dark mt-3"
+                          >
+                            Sandwich Boxes
+                          </h3>
+                          <div class="mt-6">
+                            <a href="" class="fs-14 text-muted text-uppercase">
+                              SHop NOw
+                              <i
+                                class="fas ms-2 text-sm text-muted fa-arrow-right"
+                              ></i>
+                            </a>
+                          </div>
                         </div>
-                      </div>
                       </div>
                     </div>
                   </div>
@@ -1245,6 +1278,7 @@
                         </p>
                         <h3 class="heading-h4 fw-semibold mb-0 text-dark mt-3">
                           Boat Trays
+                        </h3>
                         <div class="mt-6">
                           <a href="" class="fs-14 text-muted text-uppercase">
                             Shop now
@@ -1262,21 +1296,21 @@
                 <div class="p-8 bg-yellow-light food-box-item foodox-item-5">
                   <div class="d-flex flex-column ps-8">
                     <div>
-                    <p class="text-danger fs-14 mb-0 fw-semibold">
-                      #Treding now
-                    </p>
-                    <h3 class="heading-h4 fw-semibold mb-0 text-dark mt-3">
-                      Pizza Boxes
-                    </h3>
-                    <div class="mt-6">
-                      <a href="" class="fs-14 text-muted text-uppercase">
-                        Shop now
-                        <i
-                          class="fas ms-2 text-sm text-muted fa-arrow-right"
-                        ></i>
-                      </a>
+                      <p class="text-danger fs-14 mb-0 fw-semibold">
+                        #Treding now
+                      </p>
+                      <h3 class="heading-h4 fw-semibold mb-0 text-dark mt-3">
+                        Pizza Boxes
+                      </h3>
+                      <div class="mt-6">
+                        <a href="" class="fs-14 text-muted text-uppercase">
+                          Shop now
+                          <i
+                            class="fas ms-2 text-sm text-muted fa-arrow-right"
+                          ></i>
+                        </a>
+                      </div>
                     </div>
-                  </div>
                   </div>
                   <div class="img-wrapp mt-8">
                     <img
@@ -1565,20 +1599,20 @@
           </p>
           <div class="mt-6 mt-8">
             <div class="row g-4">
-              <div
-                class="col-md-6 position-relative col-lg-3 d-flex flex-column align-items-center"
-              >
-                <img
-                  src="assets/images/luxury-prod-1.png"
-                  alt="Image 1"
-                  class="img-fluid cat-prod-img"
-                />
-                <a
-                  href=""
-                  class="text-dark text-decoration-none mb-0 heading-h5 px-4 fw-semibold py-3 position-absolute bg-white luxury-text"
-                >
-                  Corporate Gifting
-                </a>
+              <div class="col-md-6 position-relative col-lg-3">
+                <div class="overflow-hidden">
+                  <img
+                    src="assets/images/luxury-prod-1.png"
+                    alt="Image 1"
+                    class="img-fluid cat-prod-img"
+                  />
+                  <a
+                    href=""
+                    class="text-dark text-decoration-none mb-0 heading-h5 px-4 fw-semibold py-3 position-absolute bg-white luxury-text"
+                  >
+                    Corporate Gifting
+                  </a>
+                </div>
               </div>
               <div
                 class="col-md-6 position-relative col-lg-3 d-flex flex-column align-items-center"
@@ -1719,39 +1753,47 @@
       <!--  delivery process section ends here -->
 
       <!-- logo grid section starts here -->
-      <section class="logo-section py-12 py-lg-60">
-        <div class="container">
-          <div class="w-100 w-lg-90 mx-auto">
-            <div class="logo-grid">
-              <div
-                class="p-8 logo-wrap d-flex align-items-center justify-content-center"
-              >
-                <img src="assets/images/logo-1.png" alt="" class="img-fluid" />
-              </div>
-              <div
-                class="p-8 logo-wrap d-flex align-items-center justify-content-center border-start-0"
-              >
-                <img src="assets/images/logo-2.png" alt="" class="img-fluid" />
-              </div>
-              <div
-                class="p-8 logo-wrap d-flex align-items-center justify-content-center"
-              >
-                <img src="assets/images/logo-3.png" alt="" class="img-fluid" />
-              </div>
-              <div
-                class="p-8 logo-wrap d-flex align-items-center justify-content-center"
-              >
-                <img src="assets/images/logo-4.png" alt="" class="img-fluid" />
-              </div>
-              <div
-                class="p-8 logo-wrap d-flex align-items-center justify-content-center"
-              >
-                <img src="assets/images/logo-5.png" alt="" class="img-fluid" />
-              </div>
+      <div class="logo-swiper py-12 py-lg-60 w-100 w-lg-90 mx-auto">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div
+              class="p-8 logo-wrap d-flex align-items-center justify-content-center"
+            >
+              <img src="assets/images/logo-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="p-8 logo-wrap d-flex align-items-center justify-content-center"
+            >
+              <img src="assets/images/logo-2.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="p-8 logo-wrap d-flex align-items-center justify-content-center"
+            >
+              <img src="assets/images/logo-3.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="p-8 logo-wrap d-flex align-items-center justify-content-center"
+            >
+              <img src="assets/images/logo-4.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="p-8 logo-wrap d-flex align-items-center justify-content-center"
+            >
+              <img src="assets/images/logo-5.png" alt="" class="img-fluid" />
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!--  logo grid  section ends here -->
 
       <!-- footer start -->

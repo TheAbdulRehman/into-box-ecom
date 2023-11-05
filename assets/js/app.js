@@ -139,7 +139,9 @@ $(".custom-menu-item").click(function (event) {
 });
 
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
+  autoplay: {
+    delay: 3000,
+  },
   direction: "horizontal",
   loop: true,
 
@@ -160,4 +162,26 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// omin js
+var mySwiper = new Swiper(".logo-swiper", {
+  autoplay: {
+    delay: 3000,
+  },
+  slidesPerView: 2,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+// aos init time
+AOS.init({
+  duration: 1200,
+});
