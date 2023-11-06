@@ -270,15 +270,17 @@ li {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  min-height: 100vh;
+  height: 800px;
   @include media-lg {
     padding-top: 80px;
     padding-bottom: 80px;
     background-size: cover;
+    height: auto;
   }
   @include media-md {
     padding-top: 60px;
     padding-bottom: 60px;
+    height: auto;
   }
   @include media-sm {
   }
