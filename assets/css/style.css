@@ -478,7 +478,7 @@ li {
     min-height: 584px;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 991px) {
   .foodox-item-5 {
     height: auto;
     min-height: auto;
@@ -580,6 +580,13 @@ li {
   .mob-search.show-mob-search {
     display: none;
   }
+}
+
+.shop-btn {
+  transition: all 0.3s;
+}
+.shop-btn:hover {
+  margin-left: 6px;
 }
 
 .category-navigation {

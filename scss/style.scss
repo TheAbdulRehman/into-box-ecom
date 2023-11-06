@@ -514,7 +514,7 @@ li {
   @media (max-width: 1440px) {
     min-height: 584px;
   }
-  @media (max-width: 1440px) {
+  @media (max-width: 991px) {
     height: auto;
     min-height: auto;
   }
@@ -601,7 +601,12 @@ li {
   }
   display: flex;
 }
-
+.shop-btn {
+  transition: all 0.3s;
+  &:hover {
+    margin-left: 6px;
+  }
+}
 // intobox navbar
 .category-navigation {
   position: absolute;
