@@ -615,7 +615,7 @@ li {
   display: block;
 }
 .category-navigation .main-category .sub-category {
-  right: -100%;
+  left: 100%;
   top: 0;
   background-color: #fff;
   min-width: 272px;
@@ -632,7 +632,7 @@ li {
   display: block;
 }
 .category-navigation .main-category .sub-category .sub-category-items .sub-sub-category {
-  right: -100%;
+  left: 100%;
   top: 0;
   background-color: #fff;
   min-width: 272px;

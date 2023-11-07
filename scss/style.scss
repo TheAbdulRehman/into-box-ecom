@@ -632,7 +632,7 @@ li {
       }
     }
     .sub-category {
-      right: -100%;
+      left: 100%;
       top: 0;
       background-color: $white;
       min-width: 272px;
@@ -649,7 +649,7 @@ li {
           }
         }
         .sub-sub-category {
-          right: -100%;
+          left: 100%;
           top: 0;
           background-color: $white;
           min-width: 272px;

@@ -42,7 +42,9 @@ $spacers: (
   80: $spacer * 5,
   100: $spacer * 6.25,
   120: $spacer * 7.5,
-  140: $spacer * 8.75
+  130: $spacer * 8.125,
+  140: $spacer * 8.75,
+  160: $spacer * 10
 );
 // breakpoints values for different screens
 $grid-breakpoints: (
