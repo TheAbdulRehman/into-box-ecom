@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/fontsawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/omni.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Shop page</title>
+    <meta
+      name="google-site-verification"
+      content="-Rq023FAdRkW669GpVVdd4DVgctH8-W_0QbMvGH7-m8"
+    />
+    <meta name="description" content="" />
+  </head>
+  <body>
+    <!-- searchbar for mobile and tab -->
+    <div
+      class="mob-search align-items-center px-4 bg-white py-4 py-md-8 shadow-sm w-100"
+    >
+      <form class="d-flex border align-items-center flex-grow-1">
+        <input
+          type="text"
+          class="form-control text-muted fs-14 border-0 bg-transparent"
+          placeholder="Start Searching . . . ."
+          aria-label="search-bar"
+          aria-describedby="serach-bar"
+        />
+        <button
+          type="submit"
+          class="bg-transparent search-btn pt-2 pe-2 border-0"
+          id="mobile-search-action"
+        >
+          <i class="fas fa-search fs-22 text-gray-600"></i>
+        </button>
+      </form>
+      <div>
+        <i
+          id="hideMobSearch"
+          class="fas fa-times pt-2 fs-28 ms-4 ms-lg-6 text-muted"
+        ></i>
+      </div>
+    </div>
+    <!-- searchbar for mobile and tab -->
+
+    <!-- moile menu -->
+    <div class="mobile-menu">
+      <!-- Slideable (Mobile) Menu-->
+
+      <div class="p-4 text-end">
+        <a id="closeMobileNav" href="#">
+          <i class="fas fa-times fs-20 text-dark"></i>
+        </a>
+      </div>
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation99">
+          <span
+            class=""
+            id="mmenu-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#mmenu"
+            role="tab"
+            aria-controls="mmenu"
+            aria-selected="false"
+            >Menu</span
+          >
+        </li>
+        <li class="nav-item" role="presentation99">
+          <span
+            class="active"
+            id="mcat-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#mcat"
+            role="tab"
+            aria-controls="mcat"
+            aria-selected="true"
+            >Category</span
+          >
+        </li>
+      </ul>
+      <div class="tab-content p-0">
+        <div
+          class="tab-pane fade"
+          id="mmenu"
+          role="tabpanel"
+          aria-labelledby="mmenu-tab"
+        >
+          <nav class="slideable-menu">
+            <ul>
+              <li class="">
+                <a href="/codecanyon/omnimart40"
+                  ><i class="icon-chevron-right"></i>Home</a
+                >
+              </li>
+              <li class="active">
+                <a href="/codecanyon/omnimart40/catalog"
+                  ><i class="icon-chevron-right"></i>Shop</a
+                >
+              </li>
+              <li class="">
+                <a href="/codecanyon/omnimart40/campaign/products"
+                  ><i class="icon-chevron-right"></i>Campaign</a
+                >
+              </li>
+              <li class="">
+                <a href="/codecanyon/omnimart40/brands"
+                  ><i class="icon-chevron-right"></i>Brand</a
+                >
+              </li>
+
+              <li class="">
+                <a href="/codecanyon/omnimart40/blog"
+                  ><i class="icon-chevron-right"></i>Blog</a
+                >
+              </li>
+              <li class="t-h-dropdown">
+                <a class="" href="#"
+                  ><i class="icon-chevron-right"></i>Pages
+                  <i class="fas fa-chevron-down"></i
+                ></a>
+                <div class="t-h-dropdown-menu">
+                  <a class="" href="/codecanyon/omnimart40/faq"
+                    ><i class="icon-chevron-right pr-2"></i>Faq</a
+                  >
+                  <a class=" " href="/codecanyon/omnimart40/about-us"
+                    ><i class="icon-chevron-right pr-2"></i>About Us</a
+                  >
+                  <a class=" " href="/codecanyon/omnimart40/privacy-policy"
+                    ><i class="icon-chevron-right pr-2"></i>Privacy Policy</a
+                  >
+                  <a class=" " href="/codecanyon/omnimart40/terms-and-service"
+                    ><i class="icon-chevron-right pr-2"></i>Terms &amp;
+                    Service</a
+                  >
+                  <a class=" " href="/codecanyon/omnimart40/return-policy"
+                    ><i class="icon-chevron-right pr-2"></i>Return Policy</a
+                  >
+                </div>
+              </li>
+
+              <li class="">
+                <a href="/codecanyon/omnimart40/contact"
+                  ><i class="icon-chevron-right"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="tab-pane fade active show"
+          id="mcat"
+          role="tabpanel"
+          aria-labelledby="mcat-tab"
+        >
+          <nav class="slideable-menu">
+            <div class="widget-categories mobile-cat">
+              <ul id="category_list">
+                <li class="has-children">
+                  <a class="category_search mb-0">
+                    Women Clothing
+                    <span
+                      ><i id="expandCategroy" class="fas fa-chevron-down"></i
+                    ></span>
+                  </a>
+                  <ul id="subcategory_list">
+                    <li class="">
+                      <a class="subcategory" href="Womens-Underwear"
+                        >Women's Underwear</a
+                      >
+                      <ul id="childcategory_list">
+                        <li class="">
+                          <a
+                            class="childcategory"
+                            href="childcategory=Pajama-Sets"
+                            >Pajama Sets</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="childcategory"
+                            href="childcategory=Women-Socks--Hosiery"
+                            >Women Socks &amp; Hosiery</a
+                          >
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="childcategory=Shapewer"
+                            >Shapewer</a
+                          >
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="childcategory=Bras"
+                            >Bras</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="Weddings--Events"
+                        >Weddings &amp; Events</a
+                      >
+                      <ul id="childcategory_list">
+                        <li class="">
+                          <a
+                            class="childcategory"
+                            href="childcategory=Wedding-Dresses"
+                            >Wedding Dresses</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="childcategory"
+                            href="childcategory=Prom-Dresses"
+                            >Prom Dresses</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="childcategory"
+                            href="childcategory=Evening-Dresses"
+                            >Evening Dresses</a
+                          >
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="childcategory=Costumes"
+                            >Costumes</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="Bottoms">Bottoms</a>
+                      <ul id="childcategory_list">
+                        <li class="">
+                          <a class="childcategory" href="childcategory=Leggings"
+                            >Leggings</a
+                          >
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="childcategory=Skirt"
+                            >Skirt</a
+                          >
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="childcategory=Jeans"
+                            >Jeans</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="childcategory"
+                            href="childcategory=Pants--Capris"
+                            >Pants &amp; Capris</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="Womens-Fashion"
+                        >Women's Fashion</a
+                      >
+                      <ul id="childcategory_list"></ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="Accessories">Accessories</a>
+                      <ul id="childcategory_list"></ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a class="category_search" href="#"
+                    >Men Clothing
+                    <span><i class="fas fa-chevron-down"></i></span>
+                  </a>
+                  <ul id="subcategory_list">
+                    <li class="">
+                      <a class="subcategory" href="#"
+                        >Outerwear &amp; Jackets</a
+                      >
+                      <ul id="childcategory_list">
+                        <li class="">
+                          <a class="childcategory" href="#">Jackets</a>
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="#">Sweaters</a>
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="#">Parkas</a>
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="#">Down Jackets</a>
+                        </li>
+
+                        <li class="">
+                          <a class="childcategory" href="#">Shirt</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="#">Bottoms</a>
+                      <ul id="childcategory_list"></ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="#">Underwear</a>
+                      <ul id="childcategory_list">
+                        <li class="">
+                          <a class="childcategory" href="#">Boxers</a>
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="#">Briefs</a>
+                        </li>
+
+                        <li class="">
+                          <a class="childcategory" href="c#">Pajama Sets</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="#">Accessories</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a class="category_search" href="#"
+                    >Men Clothing
+                    <span><i class="fas fa-chevron-down"></i></span>
+                  </a>
+                  <ul id="subcategory_list">
+                    <li class="">
+                      <a class="subcategory" href="#"
+                        >Outerwear &amp; Jackets</a
+                      >
+                      <ul id="childcategory_list">
+                        <li class="">
+                          <a class="childcategory" href="#">Jackets</a>
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="#">Sweaters</a>
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="#">Parkas</a>
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="#">Down Jackets</a>
+                        </li>
+
+                        <li class="">
+                          <a class="childcategory" href="#">Shirt</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="#">Bottoms</a>
+                      <ul id="childcategory_list"></ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="#">Underwear</a>
+                      <ul id="childcategory_list">
+                        <li class="">
+                          <a class="childcategory" href="#">Boxers</a>
+                        </li>
+                        <li class="">
+                          <a class="childcategory" href="#">Briefs</a>
+                        </li>
+
+                        <li class="">
+                          <a class="childcategory" href="c#">Pajama Sets</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a class="subcategory" href="#">Accessories</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- moile menu -->
+
+    <!-- categories -->
+    <div class="position-relative">
+      <ul
+        class="category-navigation shadow-sm ps-0 mb-0 text-danger"
+        id="navItems"
+      >
+        <li id="closeNav" class="text-end close-btn px-6 py-4">
+          <i class="fas fa-times fs-20 text-dark"></i>
+        </li>
+        <li
+          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
+        >
+          <a href="" class="main-item text-dark fw-semibold fs-14">
+            CAKE BOXES
+          </a>
+          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+          <!-- sub category -->
+          <ul class="sub-category shadow-sm position-absolute mb-0 ps-0">
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+            </li>
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+              <!-- sub sub category -->
+              <ul
+                class="sub-sub-category shadow-sm position-absolute mb-0 ps-0"
+              >
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+              </ul>
+              <!-- sub sub category -->
+            </li>
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+            </li>
+          </ul>
+          <!-- sub category -->
+        </li>
+        <li
+          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
+        >
+          <a href="" class="main-item text-dark fw-semibold fs-14">
+            CAKE BOXES
+          </a>
+          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+        </li>
+        <li
+          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
+        >
+          <a href="" class="main-item text-dark fw-semibold fs-14">
+            CAKE BOXES
+          </a>
+          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+        </li>
+        <li
+          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
+        >
+          <a href="" class="main-item text-dark fw-semibold fs-14">
+            CAKE BOXES
+          </a>
+          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+          <!-- sub category -->
+          <ul class="sub-category shadow-sm position-absolute mb-0 ps-0">
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+            </li>
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+              <!-- sub sub category -->
+              <ul
+                class="sub-sub-category shadow-sm position-absolute mb-0 ps-0"
+              >
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+              </ul>
+              <!-- sub sub category -->
+            </li>
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+            </li>
+          </ul>
+          <!-- sub category -->
+        </li>
+        <li
+          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
+        >
+          <a href="" class="main-item text-dark fw-semibold fs-14">
+            CAKE BOXES
+          </a>
+          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+        </li>
+        <li
+          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
+        >
+          <a href="" class="main-item text-dark fw-semibold fs-14">
+            CAKE BOXES
+          </a>
+          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+        </li>
+        <li
+          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
+        >
+          <a href="" class="main-item text-dark fw-semibold fs-14">
+            CAKE BOXES
+          </a>
+          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+        </li>
+        <li
+          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
+        >
+          <a href="" class="main-item text-dark fw-semibold fs-14">
+            CAKE BOXES
+          </a>
+          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+          <!-- sub category -->
+          <ul class="sub-category shadow-sm position-absolute mb-0 ps-0">
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+            </li>
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+              <!-- sub sub category -->
+              <ul
+                class="sub-sub-category shadow-sm position-absolute mb-0 ps-0"
+              >
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+                <li
+                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+                >
+                  <a href="" class="main-item text-dark fw-semibold fs-14">
+                    CAKE BOXES
+                  </a>
+                  <i
+                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
+                  ></i>
+                </li>
+              </ul>
+              <!-- sub sub category -->
+            </li>
+            <li
+              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
+            >
+              <a href="" class="main-item text-dark fw-semibold fs-14">
+                CAKE BOXES
+              </a>
+              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
+            </li>
+          </ul>
+          <!-- sub category -->
+        </li>
+      </ul>
+    </div>
+    <!-- categories -->
+
+    <!-- top nav -->
+    <div
+      class="container-fluid position-relative top-nav px-4 px-md-10 px-lg-80 pb-6 pt-60 pt-md-100 pt-lg-120 pt-xxl-140 pb-lg-10"
+    >
+      <div class="d-flex align-items-end justify-content-between">
+        <div
+          id="navbarIcon"
+          class="d-flex justify-content-center category-menu"
+        >
+          <i class="fas fa-bars fs-24 text-muted"></i>
+        </div>
+        <div class="d-flex justify-content-center logo-wrap-main">
+          <img
+            src="/assets/images/logo-main.png"
+            alt="Logo"
+            class="img-fluid logo"
+          />
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="d-none d-lg-block">
+            <form class="d-inline-flex">
+              <input
+                type="text"
+                class="form-control text-muted fs-14 border-0 bg-transparent"
+                placeholder="Start Searching . . . ."
+                aria-label="search-bar"
+                aria-describedby="serach-bar"
+              />
+              <button
+                type="submit"
+                class="bg-transparent search-btn border-0"
+                id="serach-bar"
+              >
+                <i class="fas fa-search fs-26 text-gray-600"></i>
+              </button>
+            </form>
+          </div>
+          <div class="d-block d-lg-none">
+            <div class="bg-transparent search-btn border-0" id="showMobSearch">
+              <i class="fas fa-search fs-26 text-gray-600"></i>
+            </div>
+          </div>
+          <div class="position-relative cart-icons">
+            <i class="fa-regular fa-heart ms-3 ms-lg-6 fs-28 text-gray-600"></i>
+            <span> 1 </span>
+          </div>
+          <div class="position-relative cart-icons">
+            <svg
+              class="ms-4 ms-lg-6"
+              width="23"
+              height="28"
+              viewBox="0 0 23 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.8 28C2.03 28 1.3706 27.7256 0.821802 27.1768C0.273002 26.628 -0.000930956 25.9691 2.37691e-06 25.2V8.4C2.37691e-06 7.63 0.274402 6.9706 0.823202 6.4218C1.372 5.873 2.03094 5.59907 2.8 5.6H5.6C5.6 4.06 6.14833 2.74167 7.245 1.645C8.34167 0.548333 9.66 0 11.2 0C12.74 0 14.0583 0.548333 15.155 1.645C16.2517 2.74167 16.8 4.06 16.8 5.6H19.6C20.37 5.6 21.0294 5.8744 21.5782 6.4232C22.127 6.972 22.4009 7.63093 22.4 8.4V25.2C22.4 25.97 22.1256 26.6294 21.5768 27.1782C21.028 27.727 20.3691 28.0009 19.6 28H2.8ZM2.8 25.2H19.6V8.4H16.8V11.2C16.8 11.5967 16.6656 11.9294 16.3968 12.1982C16.128 12.467 15.7957 12.6009 15.4 12.6C15.0033 12.6 14.6706 12.4656 14.4018 12.1968C14.133 11.928 13.9991 11.5957 14 11.2V8.4H8.4V11.2C8.4 11.5967 8.2656 11.9294 7.9968 12.1982C7.728 12.467 7.39573 12.6009 7 12.6C6.60333 12.6 6.2706 12.4656 6.0018 12.1968C5.733 11.928 5.59907 11.5957 5.6 11.2V8.4H2.8V25.2ZM8.4 5.6H14C14 4.83 13.7256 4.1706 13.1768 3.6218C12.628 3.073 11.9691 2.79907 11.2 2.8C10.43 2.8 9.7706 3.0744 9.2218 3.6232C8.673 4.172 8.39907 4.83093 8.4 5.6Z"
+                fill="#707070"
+              />
+            </svg>
+            <span> 3 </span>
+          </div>
+          <p
+            class="ms-4 mb-0 fs-14 fw-semibold d-none d-lg-block text-gray-600"
+          >
+            Cart: <span class="text-danger">₹245</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- top nav -->
+
+    <!-- center navigation -->
+    <div class="w-lg-90 d-none d-lg-block mx-auto py-8 py-lg-10">
+      <ul
+        class="d-flex cat-list center-nav ps-0 mb-0 align-items-center justify-content-center"
+      >
+        <li class="cat-list-item position-relative">
+          <a href="" class="text-dark main-link fs-14 fw-bold"> CAKE BOXES </a>
+        </li>
+        <li class="ms-6 cat-list-item position-relative">
+          <a href="" class="text-dark main-link fs-14 fw-bold"> SWEET BOXES </a>
+          <ul
+            class="sub-cat-list bg-white ps-0 mb-0 shadow-sm border-top border-2 border-danger"
+          >
+            <li class="sub-cat-list-item px-4 py-2">
+              <a href="" class="fs-14 fw-semibold text-dark">
+                <i class="fas text-dark fa-chevron-right me-1"></i> SWEET BOXES
+                Large
+              </a>
+            </li>
+            <li class="sub-cat-list-item px-4 py-2">
+              <a href="" class="fs-14 fw-semibold text-dark">
+                <i class="fas text-dark fa-chevron-right me-1"></i> SWEET BOXES
+                Large
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="ms-6 cat-list-item position-relative">
+          <a href="" class="text-dark main-link fs-14 fw-bold">
+            CHOCOLATE BOXES
+          </a>
+        </li>
+        <li class="ms-6 cat-list-item position-relative">
+          <a href="" class="text-dark main-link fs-14 fw-bold"> FOOD BOXES </a>
+        </li>
+        <li class="ms-6 cat-list-item position-relative">
+          <a href="" class="text-dark main-link fs-14 fw-bold"> STICKERS </a>
+          <ul
+            class="sub-cat-list bg-white ps-0 mb-0 shadow-sm border-top border-2 border-danger"
+          >
+            <li class="sub-cat-list-item px-4 py-2">
+              <a href="" class="fs-14 fw-semibold text-dark">
+                <i class="fas text-dark fa-chevron-right me-1"></i> STICKERS
+                BOXES Large
+              </a>
+            </li>
+            <li class="sub-cat-list-item px-4 py-2">
+              <a href="" class="fs-14 fw-semibold text-dark">
+                <i class="fas text-dark fa-chevron-right me-1"></i> STICKERS
+                BOXES Large
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="ms-6 cat-list-item position-relative">
+          <a href="" class="text-dark main-link fs-14 fw-bold">
+            PACKAGING SLEEVES
+          </a>
+        </li>
+        <li class="ms-6 cat-list-item position-relative">
+          <a href="" class="text-dark main-link fs-14 fw-bold">
+            LUXURY rIGID BOXES
+          </a>
+        </li>
+        <li class="ms-6 cat-list-item position-relative">
+          <a href="" class="text-dark main-link fs-14 fw-bold">
+            PINE WOOD boxes
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- center navigation -->
+
+    <!-- main-content -->
+    <main class="main-content">
+      <!-- Product header -->
+      <div class="container pt-8 pt-lg-12 pt-xxl-60 pb-60 pb-lg-80 pb-xxl-100">
+        <h2 class="mb-0 text-center fw-bold text-dark heading-h2">
+          Shop - 4X4X3 Cake Boxes
+        </h2>
+        <div class="d-flex align-items-center justify-content-center mt-4">
+          <div>
+            <a class="fs-16 fw text-dark"> Home </a>
+          </div>
+          <div class="text-gray-700 ms-2">-</div>
+          <p class="text-gray-700 ms-2 mb-0">4X4X3 Cake Boxes</p>
+        </div>
+      </div>
+      <!-- Product header -->
+
+      <!-- filter  section starts here -->
+      <section class="filter-section bg-gray-100 py-4">
+        <div class="container">
+          <div class="row">
+            <div
+              class="filter col-12 col-lg-3 py-2 d-inline-flex align-items-center justify-content-center justify-content-lg-start"
+            >
+              <span class="text-dark"> Filter </span>
+              <span class="ms-6 text-dark">
+                <i class="fas fa-chevron-down fs-12"></i>
+              </span>
+              <nav class="filter-nav">
+                <ul
+                  class="filter-nav-list bg-white ps-0 mb-0 shadow-sm border-top border-2 border-danger"
+                >
+                  <li class="filter-nav-item px-4 py-1">
+                    <a href="" class="fs-14 fw-semibold text-dark">
+                      <i class="fas text-dark fa-chevron-right me-1"></i>All
+                      products
+                    </a>
+                  </li>
+                  <li class="filter-nav-item px-4 py-1">
+                    <a href="" class="fs-14 fw-semibold text-dark">
+                      <i class="fas text-dark fa-chevron-right me-1"></i
+                      >Featured products
+                    </a>
+                  </li>
+                  <li class="filter-nav-item px-4 py-1">
+                    <a href="" class="fs-14 fw-semibold text-dark">
+                      <i class="fas text-dark fa-chevron-right me-1"></i>Best
+                      sellers
+                    </a>
+                  </li>
+                  <li class="filter-nav-item px-4 py-1">
+                    <a href="" class="fs-14 fw-semibold text-dark">
+                      <i class="fas text-dark fa-chevron-right me-1"></i>Top
+                      rated
+                    </a>
+                  </li>
+                  <li class="filter-nav-item px-4 py-1">
+                    <a href="" class="fs-14 fw-semibold text-dark">
+                      <i class="fas text-dark fa-chevron-right me-1"></i>New
+                      Arrival
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              class="paginate col-12 col-lg-6 d-flex flex-column flex-lg-row align-items-center justify-content-center mt-4 mt-lg-0"
+            >
+              <p class="mb-0 dark fs-16">Showing 1–12 of 45 results</p>
+              <div class="ms-0 ms-lg-12 mt-4 mt-lg-0 d-flex align-items-center">
+                <p class="text-dark mb-0 fs-16">View:</p>
+                <p class="mb-0 dispaly-product active fs-16 ms-4">12</p>
+                <p class="mb-0 dispaly-product fs-16 ms-4">24</p>
+                <p class="mb-0 dispaly-product fs-16 ms-4">All</p>
+              </div>
+            </div>
+            <div
+              class="sort col-12 col-lg-3 d-flex flex-column flex-md-row align-items-center mt-4 mt-lg-0 justify-content-center justify-content-lg-start"
+            >
+              <select
+                class="form-select w-fit w-lg-min px-3 py-2 text-dark border-0 bg-transparent shadow-none"
+                aria-label="Default select example"
+              >
+                <option class="text-dark" selected="">All Products</option>
+                <option value="low" class="text-dark">Low - high price</option>
+                <option value="high" class="text-dark">High - low price</option>
+              </select>
+              <div class="d-flex ms-2 mt-2 mt-lg-0">
+                <div id="product-grid" class="product-toggle active">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      class=""
+                      width="10.6667"
+                      height="10.6667"
+                      rx="1.33333"
+                      fill="#FF6363"
+                    />
+                    <rect
+                      class="g"
+                      x="12.667"
+                      width="10.6667"
+                      height="10.6667"
+                      rx="1.33333"
+                      fill="#FF6363"
+                    />
+                    <rect
+                      class="g"
+                      y="12.6667"
+                      width="10.6667"
+                      height="10.6667"
+                      rx="1.33333"
+                      fill="#FF6363"
+                    />
+                    <rect
+                      class="g"
+                      x="12.667"
+                      y="12.6667"
+                      width="10.6667"
+                      height="10.6667"
+                      rx="1.33333"
+                      fill="#FF6363"
+                    />
+                  </svg>
+                </div>
+                <div id="product-list" class="ms-4 product-toggle">
+                  <i class="fa-solid fa-list fs-24"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  filter  section ends here -->
+
+      <!-- Products section starts here -->
+      <section class="products-section my-8 my-lg-12">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-3">
+              <aside class="sidebar sidebar-offcanvas position-left">
+                <span class="sidebar-close"><i class="icon-x"></i></span>
+                <!-- Widget Categories-->
+                <section class="widget widget-categories card rounded p-4">
+                  <h3 class="widget-title">Shop Categories</h3>
+                  <ul id="category_list" class="category-scroll">
+                    <li class="has-children">
+                      <i class="fas fa-chevron-right fs-12 me-1"></i>
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="Women-Clothing"
+                      >
+                        Women Clothing
+                      </a>
+
+                      <ul id="subcategory_list">
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Womens-Underwear"
+                            >Women's Underwear</a
+                          >
+
+                          <ul id="childcategory_list">
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Pajama-Sets"
+                                >Pajama Sets</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Women-Socks--Hosiery"
+                                >Women Socks &amp; Hosiery</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Shapewer"
+                                >Shapewer</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Bras"
+                                >Bras</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Weddings--Events"
+                            >Weddings &amp; Events</a
+                          >
+
+                          <ul id="childcategory_list">
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Wedding-Dresses"
+                                >Wedding Dresses</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Prom-Dresses"
+                                >Prom Dresses</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Evening-Dresses"
+                                >Evening Dresses</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Costumes"
+                                >Costumes</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Bottoms"
+                            >Bottoms</a
+                          >
+
+                          <ul id="childcategory_list">
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Leggings"
+                                >Leggings</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Skirt"
+                                >Skirt</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Jeans"
+                                >Jeans</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Pants--Capris"
+                                >Pants &amp; Capris</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Womens-Fashion"
+                            >Women's Fashion</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Accessories"
+                            >Accessories</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <i class="fas fa-chevron-right fs-12 me-1"></i>
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="men-clothing"
+                        >Men Clothing</a
+                      >
+
+                      <ul id="subcategory_list">
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Outerwear--Jackets"
+                            >Outerwear &amp; Jackets</a
+                          >
+
+                          <ul id="childcategory_list">
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Jackets"
+                                >Jackets</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Sweaters"
+                                >Sweaters</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Parkas"
+                                >Parkas</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Down-Jackets"
+                                >Down Jackets</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Suits--Blazers"
+                                >Suits &amp; Blazers</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Shirt"
+                                >Shirt</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Bottoms"
+                            >Bottoms</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Underwear"
+                            >Underwear</a
+                          >
+
+                          <ul id="childcategory_list">
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Boxers"
+                                >Boxers</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Briefs"
+                                >Briefs</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Long-Johns"
+                                >Long Johns</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Sleep--Lounge"
+                                >Sleep &amp; Lounge</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Pajama-Sets"
+                                >Pajama Sets</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Accessories"
+                            >Accessories</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <i class="fas fa-chevron-right fs-12 me-1"></i>
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="Electronics"
+                        >Electronics</a
+                      >
+
+                      <ul id="subcategory_list">
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Mobile-Phones"
+                            >Mobile Phones</a
+                          >
+
+                          <ul id="childcategory_list">
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Cellphones"
+                                >Cellphones</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="iPhones"
+                                >iPhones</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Android-Phone"
+                                >Android Phone</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Mobile-Phone-Accessories"
+                            >Mobile Phone Accessories</a
+                          >
+
+                          <ul id="childcategory_list">
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Phone-Bags--Cases"
+                                >Phone Bags &amp; Cases</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Mobile-Phone-Cables"
+                                >Mobile Phone Cables</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Power-Bank"
+                                >Power Bank</a
+                              >
+                            </li>
+                            <li class="">
+                              <a
+                                class="childcategory"
+                                href="javascript:;"
+                                data-href="Screen-Protectors"
+                                >Screen Protectors</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Laptop"
+                            >Laptop</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Computer"
+                            >Computer</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Featured-Accessories"
+                            >Featured Accessories</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="DSLR"
+                            >DSLR</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="Vehicles--Accessories"
+                        >Vehicles &amp; Accessories</a
+                      >
+
+                      <ul id="subcategory_list">
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Bike"
+                            >Bike</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Car"
+                            >Car</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="Beauty--Personal-Care"
+                        >Beauty &amp; Personal Care</a
+                      >
+
+                      <ul id="subcategory_list">
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Hair-Weaves"
+                            >Hair Weaves</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Makeup"
+                            >Makeup</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Nail-Art--Tools"
+                            >Nail Art &amp; Tools</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Skin-Care"
+                            >Skin Care</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Personal-Care"
+                            >Personal Care</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="Web-Themes--Templates"
+                        >Web Themes &amp; Templates</a
+                      >
+
+                      <ul id="subcategory_list">
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="WordPress-Themes"
+                            >WordPress Themes</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="Laravel-CMS"
+                            >Laravel CMS</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                        <li class="">
+                          <a
+                            class="subcategory"
+                            href="javascript:;"
+                            data-href="HTML-Templates"
+                            >HTML Templates</a
+                          >
+
+                          <ul id="childcategory_list"></ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="Sports--Entertainment"
+                        >Sports &amp; Entertainment</a
+                      >
+
+                      <ul id="subcategory_list"></ul>
+                    </li>
+                    <li class="has-children">
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="Home--Garden"
+                      >
+                        Home &amp; Garden</a
+                      >
+
+                      <ul id="subcategory_list"></ul>
+                    </li>
+                    <li class="has-children">
+                      <a
+                        class="category_search"
+                        href="javascript:;"
+                        data-href="Medicine-Health-Care"
+                        >Medicine &amp; Health Care</a
+                      >
+
+                      <ul id="subcategory_list"></ul>
+                    </li>
+                  </ul>
+                </section>
+
+                <!-- Widget Price Range-->
+                <section class="widget widget-categories card rounded p-4">
+                  <h3 class="widget-title">Filter by Price</h3>
+                  <form
+                    class="price-range-slider"
+                    method="post"
+                    data-start-min="0"
+                    data-start-max="10000"
+                    data-min="0"
+                    data-max="10000"
+                    data-step="5"
+                  >
+                    <div
+                      class="ui-range-slider noUi-target noUi-ltr noUi-horizontal noUi-background"
+                    >
+                      <div class="noUi-base">
+                        <div class="noUi-origin noUi-connect" style="left: 0%">
+                          <div class="noUi-handle noUi-handle-lower"></div>
+                        </div>
+                        <div
+                          class="noUi-origin noUi-background"
+                          style="left: 66.65%"
+                        >
+                          <div class="noUi-handle noUi-handle-upper"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="ui-range-slider-footer">
+                      <div class="column">
+                        <button
+                          class="btn btn-primary btn-sm"
+                          id="price_filter"
+                          type="button"
+                        >
+                          <span>Filter</span>
+                        </button>
+                      </div>
+                      <div class="column">
+                        <div class="ui-range-values">
+                          <div class="ui-range-value-min">
+                            $<span class="min_price">0</span>
+                            <input type="hidden" value="0" />
+                          </div>
+                          -
+                          <div class="ui-range-value-max">
+                            $<span class="max_price">6665</span>
+                            <input type="hidden" value="6665" />
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </form>
+                </section>
+
+                <section class="widget widget-categories card rounded p-4">
+                  <h3 class="widget-title">Filter by Color</h3>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input option"
+                      type="checkbox"
+                      value="Red"
+                      id="3Red"
+                    />
+                    <label class="custom-control-label" for="3Red"
+                      >Red<span class="text-muted"></span
+                    ></label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input option"
+                      type="checkbox"
+                      value="Blue"
+                      id="3Blue"
+                    />
+                    <label class="custom-control-label" for="3Blue"
+                      >Blue<span class="text-muted"></span
+                    ></label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input option"
+                      type="checkbox"
+                      value="Black"
+                      id="3Black"
+                    />
+                    <label class="custom-control-label" for="3Black"
+                      >Black<span class="text-muted"></span
+                    ></label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input option"
+                      type="checkbox"
+                      value="Pink"
+                      id="3Pink"
+                    />
+                    <label class="custom-control-label" for="3Pink"
+                      >Pink<span class="text-muted"></span
+                    ></label>
+                  </div>
+                </section>
+                <section class="widget widget-categories card rounded p-4">
+                  <h3 class="widget-title">Filter by Size</h3>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input option"
+                      type="checkbox"
+                      value="M"
+                      id="57M"
+                    />
+                    <label class="custom-control-label" for="57M"
+                      >M<span class="text-muted"></span
+                    ></label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input option"
+                      type="checkbox"
+                      value="L"
+                      id="57L"
+                    />
+                    <label class="custom-control-label" for="57L"
+                      >L<span class="text-muted"></span
+                    ></label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input option"
+                      type="checkbox"
+                      value="XL"
+                      id="57XL"
+                    />
+                    <label class="custom-control-label" for="57XL"
+                      >XL<span class="text-muted"></span
+                    ></label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input option"
+                      type="checkbox"
+                      value="XXL"
+                      id="57XXL"
+                    />
+                    <label class="custom-control-label" for="57XXL"
+                      >XXL<span class="text-muted"></span
+                    ></label>
+                  </div>
+                </section>
+
+                <!-- Widget Brand Filter-->
+                <section class="widget widget-categories card rounded p-4">
+                  <h3 class="widget-title">Filter by Brand</h3>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value=""
+                      id="all-brand"
+                    />
+                    <label class="custom-control-label" for="all-brand"
+                      >All Brands</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="Adidas"
+                      id="Adidas"
+                    />
+                    <label class="custom-control-label" for="Adidas"
+                      >Adidas</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="Lavie"
+                      id="Lavie"
+                    />
+                    <label class="custom-control-label" for="Lavie"
+                      >Lavie</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="Skyart"
+                      id="Skyart"
+                    />
+                    <label class="custom-control-label" for="Skyart"
+                      >Skyart</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="Nike"
+                      id="Nike"
+                    />
+                    <label class="custom-control-label" for="Nike">Nike</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="Samsung"
+                      id="Samsung"
+                    />
+                    <label class="custom-control-label" for="Samsung"
+                      >Samsung</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="Yamaha"
+                      id="Yamaha"
+                    />
+                    <label class="custom-control-label" for="Yamaha"
+                      >Yamaha</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="HM"
+                      id="HM"
+                    />
+                    <label class="custom-control-label" for="HM">H.M</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="Loreal"
+                      id="Loreal"
+                    />
+                    <label class="custom-control-label" for="Loreal"
+                      >Loreal</label
+                    >
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input brand-select"
+                      type="checkbox"
+                      value="Ascis"
+                      id="Ascis"
+                    />
+                    <label class="custom-control-label" for="Ascis"
+                      >Ascis</label
+                    >
+                  </div>
+                </section>
+              </aside>
+            </div>
+            <div class="col-lg-9">
+              <!-- Products -->
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4 prod-column">
+                  <div
+                    class="d-flex product-content-wrap flex-column align-items-center position-relative overflow-hidden"
+                  >
+                    <img
+                      src="assets/images/cat-prod-1.png"
+                      alt="Image 1"
+                      class="img-fluid cat-prod-img"
+                    />
+                    <div class="prod-info-content">
+                      <p class="list-prod-content fs-12 text-gray-700 mb-0">
+                        Boxes
+                      </p>
+                      <p class="text-muted fw-semibold mt-3 mb-0">
+                        Chocolate Boxes
+                      </p>
+                      <div class="rating list-prod-content mt-3">
+                        <div class="d-flex">
+                          <i class="fas fa-star filled-star text-warning"></i>
+                          <i
+                            class="fas fa-star filled-star ms-2 text-warning"
+                          ></i>
+                          <i
+                            class="fas fa-star filled-star ms-2 text-warning"
+                          ></i>
+                          <i class="far fa-star ms-2 text-warning"></i>
+                          <i class="far fa-star ms-2 text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="d-flex price justify-content-center mt-2">
+                        <p class="text-dark fs-18 fw-bold mt-3 mb-0">₹28.00</p>
+                      </div>
+                      <p
+                        class="mt-3 product-description list-prod-content text-gray-700 fs-16 mb-0"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad ipsum suscipit perspiciatis.
+                      </p>
+                    </div>
+                    <!-- floating content -->
+                    <p
+                      class="position-absolute off-price bg-danger text-white fw-bold fs-14 mb-0"
+                    >
+                      - 20%
+                    </p>
+                    <!-- floating content -->
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 prod-column">
+                  <div
+                    class="d-flex product-content-wrap flex-column align-items-center position-relative overflow-hidden"
+                  >
+                    <img
+                      src="assets/images/cat-prod-2.png"
+                      alt="Image 1"
+                      class="cat-prod-img"
+                    />
+                    <div class="prod-info-content">
+                      <p class="list-prod-content fs-12 text-gray-700 mb-0">
+                        Boxes
+                      </p>
+                      <p class="text-muted fw-semibold mt-3 mb-0">
+                        Chocolate Boxes
+                      </p>
+                      <div class="rating list-prod-content mt-3">
+                        <div class="d-flex">
+                          <i class="fas fa-star filled-star text-warning"></i>
+                          <i
+                            class="fas fa-star filled-star ms-2 text-warning"
+                          ></i>
+                          <i
+                            class="fas fa-star filled-star ms-2 text-warning"
+                          ></i>
+                          <i class="far fa-star ms-2 text-warning"></i>
+                          <i class="far fa-star ms-2 text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="d-flex price justify-content-center mt-2">
+                        <p class="text-dark fs-18 fw-bold mt-3 mb-0">₹28.00</p>
+                      </div>
+                      <p
+                        class="mt-3 product-description list-prod-content text-gray-700 fs-16 mb-0"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad ipsum suscipit perspiciatis.
+                      </p>
+                    </div>
+                    <!-- floating content -->
+                    <div
+                      class="position-absolute d-flex align-items-center justify-content-center cart-actions text-white fw-bold fs-14 mb-0"
+                    >
+                      <div class="action-btn bg-white shadow-lg">
+                        <i class="fas fa-search fs-20 text-gray-600"></i>
+                      </div>
+                      <div
+                        class="ms-4 action-btn bg-danger text-white shadow-lg"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 23 28"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.8 28C2.03 28 1.3706 27.7256 0.821802 27.1768C0.273002 26.628 -0.000930956 25.9691 2.37691e-06 25.2V8.4C2.37691e-06 7.63 0.274402 6.9706 0.823202 6.4218C1.372 5.873 2.03094 5.59907 2.8 5.6H5.6C5.6 4.06 6.14833 2.74167 7.245 1.645C8.34167 0.548333 9.66 0 11.2 0C12.74 0 14.0583 0.548333 15.155 1.645C16.2517 2.74167 16.8 4.06 16.8 5.6H19.6C20.37 5.6 21.0294 5.8744 21.5782 6.4232C22.127 6.972 22.4009 7.63093 22.4 8.4V25.2C22.4 25.97 22.1256 26.6294 21.5768 27.1782C21.028 27.727 20.3691 28.0009 19.6 28H2.8ZM2.8 25.2H19.6V8.4H16.8V11.2C16.8 11.5967 16.6656 11.9294 16.3968 12.1982C16.128 12.467 15.7957 12.6009 15.4 12.6C15.0033 12.6 14.6706 12.4656 14.4018 12.1968C14.133 11.928 13.9991 11.5957 14 11.2V8.4H8.4V11.2C8.4 11.5967 8.2656 11.9294 7.9968 12.1982C7.728 12.467 7.39573 12.6009 7 12.6C6.60333 12.6 6.2706 12.4656 6.0018 12.1968C5.733 11.928 5.59907 11.5957 5.6 11.2V8.4H2.8V25.2ZM8.4 5.6H14C14 4.83 13.7256 4.1706 13.1768 3.6218C12.628 3.073 11.9691 2.79907 11.2 2.8C10.43 2.8 9.7706 3.0744 9.2218 3.6232C8.673 4.172 8.39907 4.83093 8.4 5.6Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                      <div class="ms-4 action-btn bg-white shadow-lg">
+                        <i
+                          class="fa-solid fa-arrow-right-arrow-left fs-18 text-gray-600"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="position-absolute heart-action bg-white text-dark shadow-lg"
+                    >
+                      <i class="fa-regular fa-heart fs-20 text-gray-600"></i>
+                    </div>
+                    <!-- floating content -->
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 prod-column">
+                  <div
+                    class="d-flex product-content-wrap flex-column align-items-center position-relative overflow-hidden"
+                  >
+                    <img
+                      src="assets/images/cat-prod-3.png"
+                      alt="Image 1"
+                      class="cat-prod-img"
+                    />
+                    <div class="prod-info-content">
+                      <p class="list-prod-content fs-12 text-gray-700 mb-0">
+                        Boxes
+                      </p>
+                      <p class="text-muted fw-semibold mt-3 mb-0">
+                        Chocolate Boxes
+                      </p>
+                      <div class="rating list-prod-content mt-3">
+                        <div class="d-flex">
+                          <i class="fas fa-star filled-star text-warning"></i>
+                          <i
+                            class="fas fa-star filled-star ms-2 text-warning"
+                          ></i>
+                          <i
+                            class="fas fa-star filled-star ms-2 text-warning"
+                          ></i>
+                          <i class="far fa-star ms-2 text-warning"></i>
+                          <i class="far fa-star ms-2 text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="d-flex price justify-content-center mt-2">
+                        <p class="text-dark fs-18 fw-bold mt-3 mb-0">₹28.00</p>
+                      </div>
+                      <p
+                        class="mt-3 product-description list-prod-content text-gray-700 fs-16 mb-0"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad ipsum suscipit perspiciatis.
+                      </p>
+                    </div>
+                    <!-- floating content -->
+                    <p
+                      class="position-absolute off-price bg-success text-white fw-bold fs-14 mb-0"
+                    >
+                      New
+                    </p>
+                    <!-- floating content -->
+                  </div>
+                </div>
+
+                <!-- pagination -->
+                <div class="col-12 mt-8 mt-lg-12">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item ms-3">
+                        <a
+                          class="page-link rounded-0"
+                          href="#"
+                          aria-label="Previous"
+                        >
+                          <i class="fas fa-chevron-left"></i>
+                        </a>
+                      </li>
+                      <li class="page-item active ms-3">
+                        <a class="page-link rounded-0" href="#">1</a>
+                      </li>
+                      <li class="page-item ms-3">
+                        <a class="page-link rounded-0" href="#">2</a>
+                      </li>
+                      <li class="page-item ms-3">
+                        <a class="page-link rounded-0" href="#">3</a>
+                      </li>
+                      <li class="page-item ms-3">
+                        <a
+                          class="page-link rounded-0"
+                          href="#"
+                          aria-label="Next"
+                        >
+                          <i class="fas fa-chevron-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <!-- pagination -->
+              </div>
+              <!-- Products -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Products section ends here -->
+
+      <!-- delivery process section starts here -->
+      <section class="delivery-section bg-gray-100 py-10 py-lg-13">
+        <div class="container">
+          <div class="w-100 w-lg-90 mx-auto">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="assets/images/hand.png"
+                      alt="hand icons"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <h5 class="text-dark heading-h6 fw-bold mb-1">
+                      Free Delivery
+                    </h5>
+                    <p class="text-gray-700 text-base fs-16 mb-0">
+                      For all order over ₹ 2000.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="assets/images/return.png"
+                      alt="hand icons"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <h5 class="text-dark heading-h6 fw-bold mb-1">
+                      30 Days Return
+                    </h5>
+                    <p class="text-gray-700 text-base fs-16 mb-0">
+                      If goods have Problems
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="assets/images/payment.png"
+                      alt="hand icons"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <h5 class="text-dark heading-h6 fw-bold mb-1">
+                      Secure Payment
+                    </h5>
+                    <p class="text-gray-700 text-base fs-16 mb-0">
+                      100% secure payment
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="assets/images/support.png"
+                      alt="hand icons"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <h5 class="text-dark heading-h6 fw-bold mb-1">
+                      24/7 Support
+                    </h5>
+                    <p class="text-gray-700 text-base fs-16 mb-0">
+                      Dedicated support
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  delivery process section ends here -->
+
+      <!-- footer start -->
+      <footer class="footer-bg pt-60 pt-md-80 pt-xl-100">
+        <div class="container">
+          <div class="w-100 w-3xl-90 mx-auto">
+            <div class="row gx-5 align-items-start justify-content-start">
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex">
+                  <h6 class="fs-20 font-smeibold text-white mb-0">
+                    Follow Us :
+                  </h6>
+                  <div class="footer-icon-social">
+                    <a
+                      href="#"
+                      class="fab fa-facebook text-dark ms-4 bg-white"
+                    ></a>
+                    <!-- Facebook -->
+                    <a
+                      href="#"
+                      class="fab fa-instagram ms-2 text-dark bg-white"
+                    ></a>
+                    <!-- Instagram -->
+                    <a
+                      href="#"
+                      class="fab fa-youtube ms-2 text-dark bg-white"
+                    ></a>
+                    <!-- YouTube -->
+                    <a
+                      href="#"
+                      class="fab fa-pinterest ms-2 text-dark bg-white"
+                    ></a>
+                    <!-- Pinterest -->
+                  </div>
+                </div>
+                <p class="mt-8 text-gray-700 fs-14 fw-semibold mb-4">
+                  D. No. 48-7-55/1, Srinagar, VIZAG - 530 016.
+                </p>
+                <p class="text-gray-700 fs-14 fw-semibold mb-4">
+                  Phone : 0891 - 2507678
+                </p>
+                <p class="text-gray-700 fs-14 fw-semibold mb-4">
+                  Email: info@intoobox.com
+                </p>
+                <p class="text-gray-700 fs-14 fw-semibold mb-4">
+                  Web: www.intoobox.com
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-2 ps-lg-6 mt-8 mt-md-0">
+                <h6 class="fs-20 font-smeibold text-white mb-0">Company</h6>
+                <div class="mt-8">
+                  <div class="mb-4">
+                    <a
+                      href="#"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      About us
+                    </a>
+                  </div>
+                  <div class="mb-4">
+                    <a
+                      href="#about"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Coupons
+                    </a>
+                  </div>
+                  <div class="mb-4">
+                    <a
+                      href="#services"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Catalogue
+                    </a>
+                  </div>
+                  <li class="mb-4">
+                    <a
+                      href="#blog"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Track Orders
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="#blog"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 ps-lg-8 mt-8 mt-md-0">
+                <h6 class="fs-20 font-smeibold text-white mb-0">
+                  More Information
+                </h6>
+                <div class="mt-8">
+                  <div class="mb-4">
+                    <a
+                      href="#"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Refund
+                    </a>
+                  </div>
+                  <div class="mb-4">
+                    <a
+                      href="#about"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      FAQs
+                    </a>
+                  </div>
+                  <div class="mb-4">
+                    <a
+                      href="#services"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Return and Refund Policy
+                    </a>
+                  </div>
+                  <li class="mb-4">
+                    <a
+                      href="#blog"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="#blog"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Terms & Conditions
+                    </a>
+                  </li>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 ps-lg-3 mt-8 mt-lg-0">
+                <h6 class="fs-20 font-smeibold text-white mb-0">Newsletter</h6>
+                <p class="mt-8 text-gray-700 fs-14 fw-semibold mb-4">
+                  Stay Updated on all that's new add noteworthy
+                </p>
+                <form class="mt-8">
+                  <div
+                    class="input-group rounded-pill submit-form overflow-hidden"
+                  >
+                    <input
+                      type="text"
+                      class="form-control text-white border-0 bg-transparent p-4"
+                      placeholder="Email"
+                      aria-label="Recipient's username"
+                      aria-describedby="basic-addon2"
+                    />
+                    <button
+                      type="submit"
+                      class="input-group-text btn btn-danger subscrie-btn rounded-pill"
+                      id="basic-addon2"
+                    >
+                      <i class="fa-regular fa-paper-plane text-white"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="header-bg d-flex flex-column flex-lg-row justify-content-lg-between credits py-6 mt-8"
+            >
+              <p class="text-white fs-14 mb-0">
+                Copyright © 2023
+                <a href="" class="text-uppercase text-white fs-16 fw-semibold"
+                  >IN TOO BOX</a
+                >
+                . All rights reserved
+              </p>
+              <div class="d-flex mt-5 mt-lg-0">
+                <img src="assets/images/master.png" alt="" class="img-fluid" />
+                <img
+                  src="assets/images/visa.png"
+                  alt=""
+                  class="ms-2 img-fluid"
+                />
+                <img
+                  src="assets/images/blue.png"
+                  alt=""
+                  class="ms-2 img-fluid"
+                />
+                <img
+                  src="assets/images/discover.png"
+                  alt=""
+                  class="ms-2 img-fluid"
+                />
+                <img
+                  src="assets/images/bank.png"
+                  alt=""
+                  class="ms-2 img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="scrollToTopBtn showBtn">
+          <svg
+            width="9"
+            height="17"
+            viewBox="0 0 9 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.85355 0.646447C4.65829 0.451184 4.34171 0.451184 4.14645 0.646447L0.964466 3.82843C0.769203 4.02369 0.769203 4.34027 0.964466 4.53553C1.15973 4.7308 1.47631 4.7308 1.67157 4.53553L4.5 1.70711L7.32843 4.53553C7.52369 4.7308 7.84027 4.7308 8.03553 4.53553C8.2308 4.34027 8.2308 4.02369 8.03553 3.82843L4.85355 0.646447ZM5 17L5 1L4 1L4 17L5 17Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </footer>
+      <!-- footer ends here -->
+    </main>
+    <!-- main-content -->
+
+    <!-- js files -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/jquery.plugin.min.js"></script>
+    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

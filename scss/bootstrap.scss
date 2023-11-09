@@ -1,6 +1,7 @@
 $primary: #1a4b80;
 $success: #6ab963;
 $danger: #ff6363;
+$warning: #ffd536;
 $secondary: #bdbdbd;
 $dark: #333333;
 $muted: #666666;
@@ -9,6 +10,12 @@ $body-color: #505050;
 // enale shadows
 $enable-shadows: true;
 $input-box-shadow: 0;
+$pagination-bg: #f8f2f2;
+$pagination-hover-bg: $danger;
+$pagination-color: #333333;
+$pagination-focus-box-shadow: 0;
+$pagination-active-color: #fff;
+$pagination-active-bg: $danger;
 // box-shadow
 $box-shadow-sm: 4px 4px 24px rgba(0, 0, 0, 0.08);
 $box-shadow-lg: 5px 5px 20px rgba(rgb(8, 8, 8), 0.3);
@@ -130,6 +137,7 @@ $utilities: map-merge(
                 90: 90%,
                 95: 95%,
                 fit: fit-content,
+                min: min-content,
               )
             ),
         )

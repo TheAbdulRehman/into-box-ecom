@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "Einstellung";
-  src: url("../assets/fonts/Neue Einstellung Regular.otf");
+  font-family: "Neue-Einstellung-Regular";
+  src: url("../assets/fonts/Neue-Einstellung-Regular.otf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 .text-gray-300 {
   color: #b3b3b3;
@@ -18,6 +19,10 @@
 
 .bg-gray-100 {
   background-color: #f8f2f2;
+}
+
+.text-gray-100 {
+  color: #f8f2f2;
 }
 
 .bg-red-400 {
@@ -43,7 +48,7 @@
 body {
   overflow-x: hidden;
   background-color: #fff;
-  font-family: "Einstellung", sans-serif;
+  font-family: "Neue-Einstellung-Regular", sans-serif;
   color: #333333;
   font-size: 16px;
   font-weight: 400;
@@ -1329,6 +1334,72 @@ span.pricing-feature-tick {
 }
 .lang-nav-item:hover .flag-items {
   display: block;
+}
+
+.dispaly-product {
+  color: #333333;
+  cursor: pointer;
+}
+
+.dispaly-product.active {
+  color: #ff6363;
+}
+
+.filter {
+  position: relative;
+  cursor: pointer;
+}
+.filter .filter-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+@media (max-width: 767px) {
+  .filter .filter-nav {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.filter .filter-nav .filter-nav-list .filter-nav-item {
+  width: 220px;
+}
+.filter .filter-nav .filter-nav-list .filter-nav-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+.filter .filter-nav .filter-nav-list .filter-nav-item:hover {
+  background-color: #f8f2f2;
+}
+.filter:hover .filter-nav {
+  display: block;
+}
+
+.product-toggle {
+  cursor: pointer;
+}
+.product-toggle i {
+  color: #999999;
+}
+.product-toggle svg rect {
+  fill: #999999;
+}
+
+.product-toggle.active {
+  cursor: pointer;
+}
+.product-toggle.active svg rect {
+  fill: #ff6363;
+}
+.product-toggle.active i {
+  color: #ff6363;
+}
+
+.list-prod-content {
+  display: none;
+}
+
+.product-description {
+  -webkit-line-clamp: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

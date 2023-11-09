@@ -185,3 +185,71 @@ var mySwiper = new Swiper(".logo-swiper", {
 AOS.init({
   duration: 1200,
 });
+
+// display product toggle
+
+$(".dispaly-product").click(function () {
+  $(".dispaly-product").removeClass("active");
+  $(this).addClass("active");
+});
+$(".product-toggle").click(function () {
+  $(".product-toggle").removeClass("active");
+  $(this).addClass("active");
+});
+$("#product-grid").click(function () {
+  $(".prod-column").removeClass("col-12");
+  $(".prod-column").addClass("col-md-6 col-lg-4");
+  $(".product-content-wrap").addClass("flex-column");
+  $(".product-content-wrap").removeClass("flex-row");
+  $(".prod-info-content").removeClass("ms-6 ms-lg-8");
+  $(".cat-prod-img").css({
+    width: "100%",
+  });
+  $(".list-prod-content").css({
+    display: "none",
+  });
+});
+$("#product-list").click(function () {
+  $(".prod-column").removeClass("col-md-6 col-lg-4");
+  $(".prod-column").addClass("col-12");
+  $(".product-content-wrap").removeClass("flex-column");
+  $(".product-content-wrap").addClass("flex-row");
+  $(".prod-info-content").addClass("ms-6 ms-lg-8");
+  $(".price").removeClass("justify-content-center");
+  $(".cat-prod-img").css({
+    width: "45%",
+  });
+  $(".list-prod-content").css({
+    display: "block",
+  });
+});
+
+// filter
+
+var i = document.querySelector(".ui-range-slider");
+if (void 0 !== i && null !== i) {
+  var j = parseInt(i.parentNode.getAttribute("data-start-min"), 10),
+    k = parseInt(i.parentNode.getAttribute("data-start-max"), 10),
+    l = parseInt(i.parentNode.getAttribute("data-min"), 10),
+    m = parseInt(i.parentNode.getAttribute("data-max"), 10),
+    n = parseInt(i.parentNode.getAttribute("data-step"), 10),
+    o = document.querySelector(".ui-range-value-min span"),
+    p = document.querySelector(".ui-range-value-max span"),
+    q = document.querySelector(".ui-range-value-min input"),
+    r = document.querySelector(".ui-range-value-max input");
+  noUiSlider.create(i, {
+    start: [j, k],
+    connect: !0,
+    step: n,
+    range: {
+      min: l,
+      max: m,
+    },
+  }),
+    i.noUiSlider.on("update", function (a, b) {
+      var c = a[b];
+      b
+        ? ((p.innerHTML = Math.round(c)), (r.value = Math.round(c)))
+        : ((o.innerHTML = Math.round(c)), (q.value = Math.round(c)));
+    });
+}

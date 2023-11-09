@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "Einstellung";
-  src: url("../assets/fonts/Neue\ Einstellung\ Regular.otf");
+  font-family: "Neue-Einstellung-Regular";
+  src: url("../assets/fonts/Neue-Einstellung-Regular.otf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @import "./_varaibles";
 // Create Reusable Font Size Mixins
@@ -88,6 +89,9 @@
 .bg-gray-100 {
   background-color: $gray-100;
 }
+.text-gray-100 {
+  color: $gray-100;
+}
 .bg-red-400 {
   background-color: $red-400;
 }
@@ -135,7 +139,8 @@ $bannerPath: "/assets/images/backgrounds";
 body {
   overflow-x: hidden;
   background-color: $white;
-  font-family: "Einstellung", sans-serif;
+  font-family: "Neue-Einstellung-Regular", sans-serif;
+
   color: $gray-900;
   font-size: 16px;
   font-weight: 400;
@@ -1316,4 +1321,82 @@ span.pricing-feature-tick {
       display: block;
     }
   }
+}
+
+// css 11/8/2023 for shop product
+.dispaly-product {
+  color: $gray-900;
+  cursor: pointer;
+}
+.dispaly-product.active {
+  color: $red;
+}
+.filter {
+  position: relative;
+  cursor: pointer;
+  .filter-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    @media (max-width: 767px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .filter-nav-list {
+      .filter-nav-item {
+        width: 220px;
+        &:not(:last-child) {
+          border-bottom: 1px solid #e6e6e6;
+        }
+        &:hover {
+          background-color: $gray-100;
+        }
+      }
+    }
+  }
+  &:hover {
+    .filter-nav {
+      display: block;
+    }
+  }
+}
+.product-toggle {
+  cursor: pointer;
+  // &:hover {
+  //   svg {
+  //     rect {
+  //       fill: #ff6363;
+  //     }
+  //   }
+  //   i {
+  //     color: #ff6363;
+  //   }
+  // }
+  i {
+    color: $gray-700;
+  }
+  svg {
+    rect {
+      fill: $gray-700; // Default fill color
+    }
+  }
+}
+
+.product-toggle.active {
+  cursor: pointer;
+  svg {
+    rect {
+      fill: #ff6363;
+    }
+  }
+  i {
+    color: #ff6363;
+  }
+}
+.list-prod-content {
+  display: none;
+}
+.product-description {
+  -webkit-line-clamp: 2;
 }
