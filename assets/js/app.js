@@ -253,3 +253,32 @@ if (void 0 !== i && null !== i) {
         : ((o.innerHTML = Math.round(c)), (q.value = Math.round(c)));
     });
 }
+
+// counter
+$(document).ready(function () {
+  $(".counter").each(function () {
+    let count = 0;
+    const counterId = $(this).data("counter-id");
+
+    $(this)
+      .find(".decrement")
+      .click(function () {
+        count = Math.max(0, count - 1);
+        updateCounter();
+      });
+
+    $(this)
+      .find(".increment")
+      .click(function () {
+        count += 1;
+        updateCounter();
+      });
+
+    function updateCounter() {
+      $(this).find(".counter-value").text(count).attr("value", count);
+    }
+
+    // Initial update
+    updateCounter();
+  });
+});

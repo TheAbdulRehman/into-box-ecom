@@ -140,7 +140,6 @@ body {
   overflow-x: hidden;
   background-color: $white;
   font-family: "Neue-Einstellung-Regular", sans-serif;
-
   color: $gray-900;
   font-size: 16px;
   font-weight: 400;
@@ -1399,4 +1398,28 @@ span.pricing-feature-tick {
 }
 .product-description {
   -webkit-line-clamp: 2;
+}
+
+// 11/10/2023 css
+.cart-img-wrap {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+table {
+  @media (max-width: 991px) {
+    // min-width: 900px;
+    // overflow-x: auto;
+  }
+  tr {
+    td {
+      vertical-align: middle;
+      text-align: start;
+    }
+  }
 }
