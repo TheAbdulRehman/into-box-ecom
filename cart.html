@@ -28,21 +28,20 @@
     <a
       class="btn btn-danger"
       data-bs-toggle="offcanvas"
-      href="#offcanvasExample"
+      href="#cartOffcanvas"
       role="button"
-      aria-controls="offcanvasExample"
+      aria-controls="cartOffcanvas"
     >
       Link with href
     </a>
 
     <div
-      class="offcanvas offcanvas-start"
+      class="offcanvas offcanvas-end"
       tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
+      id="cartOffcanvas"
+      aria-labelledby="cartOffcanvas"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
         <button
           type="button"
           class="btn-close"
@@ -50,26 +49,7 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </div>
-        <div class="dropdown mt-3">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-          >
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-      </div>
+      <div class="offcanvas-body">iji</div>
     </div>
     <!-- off canvas cart  -->
     <!-- searchbar for mobile and tab -->
@@ -815,6 +795,7 @@
             <span> 1 </span>
           </div>
           <div class="position-relative cart-icons">
+            <a href=""></a>
             <svg
               class="ms-4 ms-lg-6"
               width="23"
@@ -1070,15 +1051,15 @@
             class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between mt-6"
           >
             <div>
-              <button
-                class="text-uppercase w-100 w-lg-auto px-6 py-3 bg-gray-700 border-0 text-muted"
+              <a
+                class="text-uppercase w-100 w-lg-auto px-6 py-3 bg-gray-100 border-0 text-muted"
               >
                 Continue ShopPing
-              </button>
+              </a>
             </div>
             <div class="mt-4 mt-lg-0">
-              <button
-                class="text-uppercase w-100 w-lg-auto px-6 py-3 bg-gray-700 border-0 text-muted"
+              <a
+                class="text-uppercase w-100 w-lg-auto px-6 py-3 bg-gray-100 border-0 text-muted"
               >
                 <div
                   class="spinner-border spinner-border-sm me-1"
@@ -1087,7 +1068,7 @@
                   <span class="visually-hidden">Loading...</span>
                 </div>
                 Update Cart
-              </button>
+              </a>
             </div>
           </div>
           <!-- cart action buttons -->
