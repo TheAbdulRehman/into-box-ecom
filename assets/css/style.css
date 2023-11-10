@@ -1432,4 +1432,10 @@ input[type=number]:hover {
   outline: 0;
 }
 
+.checkout-offcanvas-cart-btn {
+  position: fixed;
+  bottom: 24px;
+  z-index: 23;
+}
+
 /*# sourceMappingURL=style.css.map */
