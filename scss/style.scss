@@ -1435,8 +1435,7 @@ input[type="number"] {
     outline: 0;
   }
 }
-.checkout-offcanvas-cart-btn {
-  position: fixed;
-  bottom: 24px;
-  z-index: 23;
+.cart-items {
+  height: 240px;
+  overflow-y: auto;
 }
