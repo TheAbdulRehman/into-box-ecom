@@ -24,6 +24,54 @@
     <meta name="description" content="" />
   </head>
   <body>
+    <!-- off canvas cart  -->
+    <a
+      class="btn btn-danger"
+      data-bs-toggle="offcanvas"
+      href="#offcanvasExample"
+      role="button"
+      aria-controls="offcanvasExample"
+    >
+      Link with href
+    </a>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- off canvas cart  -->
     <!-- searchbar for mobile and tab -->
     <div
       class="mob-search align-items-center px-4 bg-white py-4 py-md-8 shadow-sm w-100"
@@ -911,18 +959,23 @@
                   <td class="text-danger fs-18">₹28.00</td>
                   <td>
                     <div
-                      class="counter-container d-flex align-items-center bg-gray-100 px-5 py-3 w-fit"
+                      class="counter-container d-flex align-items-center justify-content-between bg-gray-100 px-5 py-3 w-fit"
                     >
                       <button
                         class="counter-button border-0 bg-transparent decrement"
                       >
                         <i class="fas fa-minus fs-18 text-gray-700"></i>
                       </button>
-                      <div class="counter-value fs-18 ms-4 text-dark" value="1">
-                        1
-                      </div>
+                      <input
+                        type="number"
+                        class="border-0 ms-4 bg-transparent"
+                        name="cart-qty"
+                        id="cart-qty"
+                        value="1"
+                        disabled
+                      />
                       <button
-                        class="counter-button border-0 bg-transparent increment ms-4"
+                        class="counter-button border-0 bg-transparent increment ms-1"
                       >
                         <i class="fas fa-plus fs-18 text-gray-700"></i>
                       </button>
@@ -930,7 +983,9 @@
                   </td>
                   <td class="text-danger fs-18">₹28.00</td>
                   <td class="text-danger fs-18">
-                    <i class="fas fa-times text-danger fs-18"></i>
+                    <a href="#">
+                      <i class="fas fa-times text-danger fs-18"></i>
+                    </a>
                   </td>
                 </tr>
                 <tr>

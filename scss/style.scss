@@ -1423,3 +1423,12 @@ table {
     }
   }
 }
+input[type="number"] {
+  width: 40px;
+  text-align: center;
+  &:hover {
+    box-shadow: 0;
+    border: 0;
+    outline: 0;
+  }
+}

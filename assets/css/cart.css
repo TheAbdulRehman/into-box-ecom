@@ -1,0 +1,17 @@
+.cart-img-wrap {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.cart-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+table tr td {
+  vertical-align: middle;
+  text-align: start;
+}
+
+/*# sourceMappingURL=cart.css.map */
