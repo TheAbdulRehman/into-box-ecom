@@ -212,7 +212,18 @@ li {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  height: 800px;
+}
+@media (max-width: 2700px) {
+  .hero-section {
+    height: 1200px !important;
+  }
+}
+@media (max-width: 1920px) {
+  .hero-section {
+    height: 800px !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 @media (max-width: 1440px) {
   .hero-section {
@@ -229,6 +240,7 @@ li {
     height: auto;
   }
 }
+
 .cat-prod-img {
   width: 100%;
   height: 340px;
@@ -484,6 +496,11 @@ li {
 .foodox-item-5 {
   min-height: 858px;
 }
+@media screen and (min-width: 1921px) and (max-width: 2700px) {
+  .foodox-item-5 {
+    height: 1186px;
+  }
+}
 @media (max-width: 1440px) {
   .foodox-item-5 {
     min-height: 584px;
@@ -499,6 +516,11 @@ li {
 .foodox-item-2 {
   height: 458px;
 }
+@media screen and (min-width: 1921px) and (max-width: 2700px) {
+  .foodox-item-2 {
+    height: 641px;
+  }
+}
 @media (max-width: 1440px) {
   .foodox-item-2 {
     height: 284px;
@@ -512,6 +534,11 @@ li {
 
 .foodox-item-3 {
   height: 382px;
+}
+@media screen and (min-width: 1921px) and (max-width: 2700px) {
+  .foodox-item-3 {
+    height: 528px;
+  }
 }
 @media (max-width: 1440px) {
   .foodox-item-3 {
