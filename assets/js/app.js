@@ -1,12 +1,18 @@
 // adding background to navigation
-// $(window).on("scroll", function () {
-//   var scroll = $(window).scrollTop();
-//   if (scroll > 200) {
-//     $(".navbar").addClass("nav-fixed");
-//   } else {
-//     $(".navbar").removeClass("nav-fixed");
-//   }
-// });
+$(window).on("scroll", function () {
+  var scroll = $(window).scrollTop();
+  if (scroll > 300) {
+    $(".cetner-category-nav").addClass("fixed-top");
+    $(".cetner-category-nav").removeClass("w-lg-90");
+    $(".cetner-category-nav").removeClass("py-6 py-lg-10");
+    $(".cetner-category-nav").addClass("py-4 py-lg-6");
+  } else {
+    $(".cetner-category-nav").removeClass("fixed-top");
+    $(".cetner-category-nav").addClassClass("w-lg-90");
+    $(".cetner-category-nav").removeClass("py-4 py-lg-6");
+    $(".cetner-category-nav").addClass("py-6 py-lg-10");
+  }
+});
 // navbar
 $(document).ready(function () {
   $("#navbarIcon").click(function () {
@@ -280,5 +286,39 @@ $(document).ready(function () {
 
     // Initial update
     updateCounter();
+  });
+});
+
+// 11/13/2023 change product image on hover
+$(".cat-prod-img").hover(
+  function () {
+    // On mouse enter
+    var secondImage = $(this).attr("data-src-2");
+    $(this).attr("src", secondImage);
+  },
+  function () {
+    // On mouse leave
+    var firstImage = $(this).attr("data-src-1");
+    $(this).attr("src", firstImage);
+  }
+);
+
+//  11/13/2023 addding container to fluid classes on large screen
+$(document).ready(function () {
+  function checkWidth() {
+    var screenWidth = $(window).width();
+    if (screenWidth >= 1800) {
+      $(".container").addClass("extra-wide");
+    } else {
+      $(".container").removeClass("extra-wide");
+    }
+  }
+
+  // Check on page load
+  checkWidth();
+
+  // Check on window resize
+  $(window).resize(function () {
+    checkWidth();
   });
 });

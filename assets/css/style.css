@@ -353,12 +353,54 @@ li {
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  background-color: #fff;
 }
 @media (max-width: 1440px) {
   .cart-actions .action-btn {
     width: 40px;
     height: 40px;
   }
+}
+.cart-actions .action-btn:hover {
+  background-color: #ff6363;
+}
+.cart-actions .action-btn:hover i {
+  color: #fff;
+}
+.cart-actions .action-btn:hover path {
+  fill: #fff;
+}
+.cart-actions .action-btn i {
+  color: #707070;
+}
+.cart-actions .action-btn path {
+  fill: #707070;
+}
+
+.heart-action {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+@media (max-width: 1440px) {
+  .heart-action {
+    width: 40px;
+    height: 40px;
+  }
+}
+.heart-action:hover {
+  background-color: #ff6363;
+}
+.heart-action:hover i {
+  color: #fff;
+}
+.heart-action i {
+  color: #707070;
 }
 
 .prod-column {
@@ -413,12 +455,6 @@ li {
 @media (max-width: 991px) {
   .logo-wrap-main {
     left: 50%;
-    transform: translateX(-50%);
-  }
-}
-@media (max-width: 767px) {
-  .logo-wrap-main {
-    left: 44%;
     transform: translateX(-50%);
   }
 }
@@ -488,66 +524,7 @@ li {
   .foodox-item-1 .img-wrapp,
 .foodox-item-4 .img-wrapp {
     max-width: 100%;
-    height: 220px;
     object-fit: contain;
-  }
-}
-
-.foodox-item-5 {
-  min-height: 858px;
-}
-@media screen and (min-width: 1921px) and (max-width: 2700px) {
-  .foodox-item-5 {
-    height: 1186px;
-  }
-}
-@media (max-width: 1440px) {
-  .foodox-item-5 {
-    min-height: 584px;
-  }
-}
-@media (max-width: 991px) {
-  .foodox-item-5 {
-    height: auto;
-    min-height: auto;
-  }
-}
-
-.foodox-item-2 {
-  height: 458px;
-}
-@media screen and (min-width: 1921px) and (max-width: 2700px) {
-  .foodox-item-2 {
-    height: 641px;
-  }
-}
-@media (max-width: 1440px) {
-  .foodox-item-2 {
-    height: 284px;
-  }
-}
-@media (max-width: 991px) {
-  .foodox-item-2 {
-    height: auto;
-  }
-}
-
-.foodox-item-3 {
-  height: 382px;
-}
-@media screen and (min-width: 1921px) and (max-width: 2700px) {
-  .foodox-item-3 {
-    height: 528px;
-  }
-}
-@media (max-width: 1440px) {
-  .foodox-item-3 {
-    height: 284px;
-  }
-}
-@media (max-width: 991px) {
-  .foodox-item-3 {
-    height: auto;
   }
 }
 
@@ -1462,6 +1439,15 @@ input[type=number]:hover {
 .cart-items {
   height: 240px;
   overflow-y: auto;
+}
+
+.cetner-category-nav.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 45;
 }
 
 /*# sourceMappingURL=style.css.map */

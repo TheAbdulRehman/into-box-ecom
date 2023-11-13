@@ -51,7 +51,8 @@ $spacers: (
   120: $spacer * 7.5,
   130: $spacer * 8.125,
   140: $spacer * 8.75,
-  160: $spacer * 10
+  160: $spacer * 10,
+  176: $spacer * 11
 );
 // breakpoints values for different screens
 $grid-breakpoints: (
@@ -63,6 +64,7 @@ $grid-breakpoints: (
   xxl: 1400px,
   3xl: 1600px,
   4xl: 1800px,
+  5xl: 1920px,
 );
 // maximum widths for relative breakpoints mentioned above
 $container-max-widths: (
@@ -73,6 +75,7 @@ $container-max-widths: (
   xxl: 1320px,
   3xl: 1400px,
   4xl: 1600px,
+  5xl: 1600px,
 );
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";

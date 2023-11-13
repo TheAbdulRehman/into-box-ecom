@@ -358,6 +358,7 @@ li {
   transform: translateX(100%);
   transition: all 0.4s;
 }
+// css changes on 11/13/2023
 .cart-actions {
   bottom: 15%;
   left: 50%;
@@ -374,8 +375,47 @@ li {
     @include media-lg {
       @include dimension(40px, 40px);
     }
+    background-color: #fff;
+    &:hover {
+      background-color: $red;
+      i {
+        color: #fff;
+      }
+      path {
+        fill: #fff;
+      }
+    }
+    i {
+      color: #707070;
+    }
+    path {
+      fill: #707070;
+    }
   }
 }
+// css changes on 11/13/2023
+.heart-action {
+  @include dimension(48px, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  @include media-lg {
+    @include dimension(40px, 40px);
+  }
+  background-color: #fff;
+  &:hover {
+    background-color: $red;
+    i {
+      color: #fff;
+    }
+  }
+  i {
+    color: #707070;
+  }
+}
+
 .prod-column {
   transition: all 0.4s;
   &:hover {
@@ -420,10 +460,11 @@ li {
     left: 50%;
     transform: translateX(-50%);
   }
-  @media (max-width: 767px) {
-    left: 44%;
-    transform: translateX(-50%);
-  }
+  // 11/13/2023 this media query removed
+  // @media (max-width: 767px) {
+  //   left: 44%;
+  //   transform: translateX(-50%);
+  // }
 }
 .cat-list {
   li {
@@ -518,58 +559,51 @@ li {
     object-fit: contain;
     @media (max-width: 1440px) {
       max-width: 100%;
-      height: 220px;
+      // 11/13/2023 remove this line of css
+      // height: 220px;
       object-fit: contain;
     }
   }
 }
-.foodox-item-5 {
-  min-height: 858px;
-  @media screen and (min-width: 1921px) and (max-width: 2700px) {
-    height: 1186px;
-  }
-  @media (max-width: 1440px) {
-    min-height: 584px;
-  }
-  @media (max-width: 991px) {
-    height: auto;
-    min-height: auto;
-  }
-  // .img-wrapp {
-  //   max-width: 100%;
-  //   height: 280px;
-  //   object-fit: contain;
-  //   @media (max-width: 1440px) {
-  //     max-width: 100%;
-  //     height: 220px;
-  //     object-fit: contain;
-  //   }
-  // }
-}
-.foodox-item-2 {
-  height: 458px;
-  @media screen and (min-width: 1921px) and (max-width: 2700px) {
-    height: 641px;
-  }
-  @media (max-width: 1440px) {
-    height: 284px;
-  }
-  @media (max-width: 991px) {
-    height: auto;
-  }
-}
-.foodox-item-3 {
-  height: 382px;
-  @media screen and (min-width: 1921px) and (max-width: 2700px) {
-    height: 528px;
-  }
-  @media (max-width: 1440px) {
-    height: 284px;
-  }
-  @media (max-width: 991px) {
-    height: auto;
-  }
-}
+// 11/13/2023 remove these lines of css for foodox-item-5, 2, and 3
+// .foodox-item-5 {
+//   min-height: 858px;
+//   @media screen and (min-width: 1921px) and (max-width: 2700px) {
+//     height: 1186px;
+//   }
+//   @media (max-width: 1440px) {
+//     min-height: 584px;
+//   }
+//   @media (max-width: 991px) {
+//     height: auto;
+//     min-height: auto;
+//   }
+
+// }
+// .foodox-item-2 {
+//   height: 458px;
+//   @media screen and (min-width: 1921px) and (max-width: 2700px) {
+//     height: 641px;
+//   }
+//   @media (max-width: 1440px) {
+//     height: 284px;
+//   }
+//   @media (max-width: 991px) {
+//     height: auto;
+//   }
+// }
+// .foodox-item-3 {
+//   height: 382px;
+//   @media screen and (min-width: 1921px) and (max-width: 2700px) {
+//     height: 528px;
+//   }
+//   @media (max-width: 1440px) {
+//     height: 284px;
+//   }
+//   @media (max-width: 991px) {
+//     height: auto;
+//   }
+// }
 .content-box {
   position: absolute;
   right: 32px;
@@ -1452,4 +1486,14 @@ input[type="number"] {
 .cart-items {
   height: 240px;
   overflow-y: auto;
+}
+
+// 11/13/2023
+.cetner-category-nav.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 45;
 }
