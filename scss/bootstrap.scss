@@ -7,7 +7,7 @@ $dark: #333333;
 $muted: #666666;
 $body-color: #505050;
 
-// enale shadows
+// components overwrite
 $enable-shadows: true;
 $input-box-shadow: 0;
 $pagination-bg: #f8f2f2;
@@ -22,6 +22,15 @@ $form-check-input-checked-bg-color: $danger;
 $form-check-input-checked-border-color: $danger;
 $form-check-input-focus-border: $danger;
 $form-check-input-focus-box-shadow: 0;
+$accordion-button-focus-box-shadow: 0;
+$accordion-button-active-bg: transparent;
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 0rem;
+$accordion-button-color: #666666;
+$accordion-button-active-color: $dark;
+$accordion-button-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 11.75H18' stroke='%23666666' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M11.75 18V6' stroke='%23666666' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='12' cy='12' r='11' stroke='%23666666' stroke-width='2'/%3E%3C/svg%3E");
+$accordion-button-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 11.6667H18' stroke='%23666666' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='12' cy='12' r='11' stroke='%23666666' stroke-width='2'/%3E%3C/svg%3E");
+
 // box-shadow
 $box-shadow-sm: 4px 4px 24px rgba(0, 0, 0, 0.08);
 $box-shadow-lg: 5px 5px 20px rgba(rgb(8, 8, 8), 0.3);
