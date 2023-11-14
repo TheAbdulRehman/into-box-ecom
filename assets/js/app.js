@@ -322,3 +322,19 @@ $(document).ready(function () {
     checkWidth();
   });
 });
+
+// 11/14/2023 product detail swiper
+var thumbswiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: thumbswiper,
+  },
+});

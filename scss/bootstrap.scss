@@ -16,6 +16,12 @@ $pagination-color: #333333;
 $pagination-focus-box-shadow: 0;
 $pagination-active-color: #fff;
 $pagination-active-bg: $danger;
+$form-check-input-bg: transparent;
+$form-check-input-border: 1px solid #a6a6a6;
+$form-check-input-checked-bg-color: $danger;
+$form-check-input-checked-border-color: $danger;
+$form-check-input-focus-border: $danger;
+$form-check-input-focus-box-shadow: 0;
 // box-shadow
 $box-shadow-sm: 4px 4px 24px rgba(0, 0, 0, 0.08);
 $box-shadow-lg: 5px 5px 20px rgba(rgb(8, 8, 8), 0.3);
@@ -74,7 +80,7 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px,
   3xl: 1400px,
-  4xl: 1600px,
+  4xl: 1500px,
   5xl: 1600px,
 );
 @import "../node_modules/bootstrap/scss/functions";
