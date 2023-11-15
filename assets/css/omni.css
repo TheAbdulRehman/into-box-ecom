@@ -1284,19 +1284,19 @@ kbd {
   background-color: #333333;
 }
 
+/* 11/15/2023 */
 .form-control {
   padding: 0 18px;
   transition: color 0.25s, background-color 0.25s, border-color 0.25s;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
-  background-color: #fff;
   color: #333333;
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
+/* 11/15/2023 */
 
 .form-control:not(textarea) {
   height: 46px;

@@ -8,7 +8,7 @@ $(window).on("scroll", function () {
     $(".cetner-category-nav").addClass("py-4 py-lg-6");
   } else {
     $(".cetner-category-nav").removeClass("fixed-top");
-    $(".cetner-category-nav").addClassClass("w-lg-90");
+    $(".cetner-category-nav").addClass("w-lg-90");
     $(".cetner-category-nav").removeClass("py-4 py-lg-6");
     $(".cetner-category-nav").addClass("py-6 py-lg-10");
   }

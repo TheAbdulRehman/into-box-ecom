@@ -1437,6 +1437,9 @@ table tr td {
   height: 240px;
   overflow-y: auto;
 }
+.cart-items::-webkit-scrollbar {
+  width: 0;
+}
 
 .cetner-category-nav.fixed-top {
   position: fixed;
@@ -1735,6 +1738,15 @@ button.accordion-button[aria-expanded=true] .faq-question::after {
   z-index: 12;
   top: 110%;
   left: 0;
+}
+
+@media (max-width: 767px) {
+  .table-responsive .table {
+    width: 800px;
+  }
+}
+.table-responsive::-webkit-scrollbar {
+  width: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
