@@ -1749,4 +1749,46 @@ button.accordion-button[aria-expanded=true] .faq-question::after {
   width: 0;
 }
 
+.forgot-password-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 12;
+}
+
+.modal-img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.modal-input {
+  display: block;
+  border-radius: 24px 0px 0px 24px;
+}
+.modal-input:focus {
+  outline: 0;
+  box-shadow: 0;
+}
+
+.submit-btn-modal {
+  border-radius: 0px 24px 24px 0px;
+  box-shadow: 0;
+  background-color: #ff6363;
+  color: #fff;
+  text-transform: uppercase;
+}
+.submit-btn-modal:hover {
+  background-color: #f75050 !important;
+  color: #fff !important;
+}
+
 /*# sourceMappingURL=style.css.map */

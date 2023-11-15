@@ -24,6 +24,85 @@
     <meta name="description" content="" />
   </head>
   <body>
+    <!-- subscription modal -->
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-success modal-close"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade rounded-0"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-lg position-relative rounded-0"
+        role="document"
+      >
+        <div class="modal-content rounde-0 bg-white">
+          <button
+            type="button"
+            class="btn-close text-dark"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <div class="modal-body p-6 p-lg-0">
+            <div class="row align-items-lg-center">
+              <!-- Left Column -->
+              <div class="col-md-6">
+                <img
+                  src="assets/images/modal-img.png"
+                  alt="Image"
+                  class="modal-img"
+                />
+              </div>
+
+              <!-- Right Column -->
+              <div class="col-md-6 mt-8 mt-lg-0 px-lg-6">
+                <p
+                  class="bg-danger px-6 py-3 fs-16 text-white w-fit text-uppercase"
+                >
+                  Get 10% Sale off
+                </p>
+                <h3 class="heading-h3 text-dark fw-bold">
+                  Subscribe & Get 15% Special Discount On Email
+                </h3>
+                <p class="text-muted fs-16">
+                  Join our newsletter to receive the latest updates and
+                  promotion
+                </p>
+
+                <!-- Form -->
+                <form>
+                  <div class="d-inline-flex">
+                    <input
+                      type="text"
+                      class="border border-e-0 modal-input px-6 py-3"
+                      id="exampleInput"
+                      placeholder="Your email address..."
+                    />
+                    <button type="button" class="btn submit-btn-modal">
+                      SUBSCRIBE
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- subscription modal -->
     <!-- searchbar for mobile and tab -->
     <div
       class="mob-search align-items-center px-4 bg-white py-4 py-md-8 shadow-sm w-100"

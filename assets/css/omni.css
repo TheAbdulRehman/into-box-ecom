@@ -3949,7 +3949,7 @@ a.alert {
 .modal {
   z-index: 9200;
 }
-
+/*
 .modal-content {
   border-radius: 6px;
   border-color: #e5e5e5;
@@ -3974,7 +3974,7 @@ a.alert {
 .modal-footer .btn {
   margin-right: 0;
   margin-left: 12px;
-}
+} */
 
 .modal-open.hasScrollbar .navbar-stuck {
   width: calc(100% - 15px);

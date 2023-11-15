@@ -338,3 +338,11 @@ var swiper2 = new Swiper(".mySwiper2", {
     swiper: thumbswiper,
   },
 });
+
+// 11/15/2023
+document.addEventListener("DOMContentLoaded", function () {
+  var myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {
+    keyboard: false,
+  });
+  myModal.show();
+});
