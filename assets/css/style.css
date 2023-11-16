@@ -1911,4 +1911,8 @@ button.accordion-button[aria-expanded=true] .faq-question::after {
   transition: all 0.5s;
 }
 
+.contact-message-area {
+  height: 150px;
+}
+
 /*# sourceMappingURL=style.css.map */

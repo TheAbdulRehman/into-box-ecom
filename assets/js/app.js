@@ -365,3 +365,33 @@ $(document).ready(function () {
     fixedContentPos: false,
   });
 });
+
+// leaflet map settings
+document.addEventListener("DOMContentLoaded", function () {
+  // making cutom icon
+  var greenIcon = L.icon({
+    iconUrl: "assets/images/contact-marker.png",
+    shadowUrl: "assets/images/maker-shadow",
+
+    iconSize: [34, 50], // size of the icon
+    shadowSize: [50, 16], // size of the shadow
+    iconAnchor: [41.83942, -6.74813], // point of the icon which will correspond to marker's location
+    shadowAnchor: [51.1, -0.1], // the same for the shadow
+    popupAnchor: [41.83942, -6.74813], // point from which the popup should open relative to the iconAnchor
+  });
+  // Initialize the map
+  var map = L.map("contactMap").setView([41.83942, -6.74813], 13);
+
+  // Add a tile layer (you can replace this with your desired tile layer)
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "© OpenStreetMap contributors",
+  }).addTo(map);
+
+  L.marker([41.83942, -6.74813], { icon: greenIcon }).addTo(map);
+
+  // Add a marker with a popup
+  var popup = L.popup([41.83942, -6.74813], {
+    content:
+      "<h5 class='heading-h5 fw-bold mb-0 text-center'>In Too Box</h5><p class='text-muted mb-0 mt-1 text-center'>Phone: 0891 - 2507678 <br/> D. No. 48-7-55/1, Srinagar, VIZAG - 530 016.</p>",
+  }).openOn(map);
+});

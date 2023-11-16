@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/fontsawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/omni.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/leaflet.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Contact US Page</title>
+    <meta
+      name="google-site-verification"
+      content="-Rq023FAdRkW669GpVVdd4DVgctH8-W_0QbMvGH7-m8"
+    />
+    <meta name="description" content="" />
+  </head>
+  <body>
+    <!-- main-content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- contact us header/breadcrumb -->
+        <div class="pt-12 pt-lg-8 pb-12 pb-lg-80">
+          <h2 class="mb-0 text-center fw-bold text-dark heading-h2">
+            Contact Us
+          </h2>
+          <div class="d-flex align-items-center justify-content-center mt-4">
+            <div>
+              <a href="#" class="fs-16 fw text-dark"> Home </a>
+            </div>
+            <div class="text-gray-700 ms-2">-</div>
+            <p class="text-gray-700 ms-2 mb-0">Contact Us</p>
+          </div>
+        </div>
+        <!-- contact us header/breadcrumb -->
+
+        <!-- contact us container -->
+        <div class="row align-items-start">
+          <div
+            class="col-md-6 col-lg-3 d-flex align-items-center justify-content-center flex-column"
+          >
+            <div>
+              <img src="assets/images/phone.png" alt="" class="img-fluid" />
+            </div>
+            <h4 class="heading-h4 fw-bold mb-0 mt-4">Phone</h4>
+            <div class="mb-0 mt-4">
+              <a href="tel:0891 2507678" class="text-muted"> 0891 - 2507678 </a>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 mt-10 mt-md-0 d-flex align-items-center justify-content-center flex-column"
+          >
+            <div>
+              <img
+                src="assets/images/marker-contact.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="heading-h4 fw-bold mb-0 mt-4">Address</h4>
+            <div class="mb-0 mt-4">
+              <p class="text-muted mb-0 text-center">
+                D. No. 48-7-55/1, Srinagar, VIZAG - 530 016.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 mt-10 mt-lg-0 d-flex align-items-center justify-content-center flex-column"
+          >
+            <div>
+              <img
+                src="assets/images/clock-contact.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="heading-h4 fw-bold mb-0 mt-4">Open time</h4>
+            <div class="mb-0 mt-4">
+              <p href="tel:0891 2507678" class="text-muted mb-0">
+                10:00 am to 09:00 pm
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 mt-10 mt-lg-0 d-flex align-items-center justify-content-center flex-column"
+          >
+            <div>
+              <img
+                src="assets/images/email-contact.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="heading-h4 fw-bold mb-0 mt-4">Email</h4>
+            <div class="mb-0 mt-4">
+              <a href="mailto:info@intoobox.com" class="text-muted">
+                info@intoobox.com
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- contact us container -->
+      </div>
+
+      <!-- adress popup section -->
+      <section class="bg-gray-100 py-12 mt-60 mt-lg-80 py-lg-60">
+        <div class="container">
+          <div id="contactMap" style="height: 400px"></div>
+        </div>
+      </section>
+      <!-- adress popup section -->
+
+      <!-- contact us from -->
+      <section class="contact-us-section my-60 my-lg-80">
+        <div class="container">
+          <h2 class="heading-h2 mb-0 text-center">Leave Message</h2>
+
+          <form action="#" class="mt-8 mt-lg-12">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6 mb-6">
+                <input
+                  class="form-control border rounded-0 border-1"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="col-md-6 mb-6">
+                <input
+                  class="form-control border rounded-0 border-1"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="col-md-12">
+                <textarea
+                  class="form-control contact-message-area"
+                  name="message"
+                  id="message"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+              <div
+                class="mt-6 mt-lg-9 col-12 col-md-4 col-lg-3 d-md-flex justify-content-lg-center"
+              >
+                <button
+                  class="btn btn-danger text-white btn-block w-100 py-4 shadow-0 outline-0 rounded-0 text-uppercase"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- our team section -->
+
+      <!-- delivery process section starts here -->
+      <section class="delivery-section bg-gray-100 py-10 py-lg-13">
+        <div class="container">
+          <div class="w-100 w-lg-90 mx-auto">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="assets/images/hand.png"
+                      alt="hand icons"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <h5 class="text-dark heading-h6 fw-bold mb-1">
+                      Free Delivery
+                    </h5>
+                    <p class="text-gray-700 text-base fs-16 mb-0">
+                      For all order over ₹ 2000.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="assets/images/return.png"
+                      alt="hand icons"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <h5 class="text-dark heading-h6 fw-bold mb-1">
+                      30 Days Return
+                    </h5>
+                    <p class="text-gray-700 text-base fs-16 mb-0">
+                      If goods have Problems
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="assets/images/payment.png"
+                      alt="hand icons"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <h5 class="text-dark heading-h6 fw-bold mb-1">
+                      Secure Payment
+                    </h5>
+                    <p class="text-gray-700 text-base fs-16 mb-0">
+                      100% secure payment
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="assets/images/support.png"
+                      alt="hand icons"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="ms-5">
+                    <h5 class="text-dark heading-h6 fw-bold mb-1">
+                      24/7 Support
+                    </h5>
+                    <p class="text-gray-700 text-base fs-16 mb-0">
+                      Dedicated support
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  delivery process section ends here -->
+
+      <!-- footer start -->
+      <footer class="footer-bg pt-60 pt-md-80 pt-xl-100">
+        <div class="container">
+          <div class="w-100 w-3xl-90 mx-auto">
+            <div class="row gx-5 align-items-start justify-content-start">
+              <div class="col-md-6 col-lg-3">
+                <div class="d-flex">
+                  <h6 class="fs-20 font-smeibold text-white mb-0">
+                    Follow Us :
+                  </h6>
+                  <div class="footer-icon-social">
+                    <a
+                      href="#"
+                      class="fab fa-facebook text-dark ms-4 bg-white"
+                    ></a>
+                    <!-- Facebook -->
+                    <a
+                      href="#"
+                      class="fab fa-instagram ms-2 text-dark bg-white"
+                    ></a>
+                    <!-- Instagram -->
+                    <a
+                      href="#"
+                      class="fab fa-youtube ms-2 text-dark bg-white"
+                    ></a>
+                    <!-- YouTube -->
+                    <a
+                      href="#"
+                      class="fab fa-pinterest ms-2 text-dark bg-white"
+                    ></a>
+                    <!-- Pinterest -->
+                  </div>
+                </div>
+                <p class="mt-8 text-gray-700 fs-14 fw-semibold mb-4">
+                  D. No. 48-7-55/1, Srinagar, VIZAG - 530 016.
+                </p>
+                <p class="text-gray-700 fs-14 fw-semibold mb-4">
+                  Phone : 0891 - 2507678
+                </p>
+                <p class="text-gray-700 fs-14 fw-semibold mb-4">
+                  Email: info@intoobox.com
+                </p>
+                <p class="text-gray-700 fs-14 fw-semibold mb-4">
+                  Web: www.intoobox.com
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-2 ps-lg-6 mt-8 mt-md-0">
+                <h6 class="fs-20 font-smeibold text-white mb-0">Company</h6>
+                <div class="mt-8">
+                  <div class="mb-4">
+                    <a
+                      href="#"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      About us
+                    </a>
+                  </div>
+                  <div class="mb-4">
+                    <a
+                      href="#about"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Coupons
+                    </a>
+                  </div>
+                  <div class="mb-4">
+                    <a
+                      href="#services"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Catalogue
+                    </a>
+                  </div>
+                  <li class="mb-4">
+                    <a
+                      href="#blog"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Track Orders
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="#blog"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 ps-lg-8 mt-8 mt-md-0">
+                <h6 class="fs-20 font-smeibold text-white mb-0">
+                  More Information
+                </h6>
+                <div class="mt-8">
+                  <div class="mb-4">
+                    <a
+                      href="#"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Refund
+                    </a>
+                  </div>
+                  <div class="mb-4">
+                    <a
+                      href="#about"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      FAQs
+                    </a>
+                  </div>
+                  <div class="mb-4">
+                    <a
+                      href="#services"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Return and Refund Policy
+                    </a>
+                  </div>
+                  <li class="mb-4">
+                    <a
+                      href="#blog"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="#blog"
+                      class="text-gray-700 fs-14 fw-semibold footer-links text-decoration-none"
+                    >
+                      Terms & Conditions
+                    </a>
+                  </li>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 ps-lg-3 mt-8 mt-lg-0">
+                <h6 class="fs-20 font-smeibold text-white mb-0">Newsletter</h6>
+                <p class="mt-8 text-gray-700 fs-14 fw-semibold mb-4">
+                  Stay Updated on all that's new add noteworthy
+                </p>
+                <form class="mt-8">
+                  <div
+                    class="input-group rounded-pill submit-form overflow-hidden"
+                  >
+                    <input
+                      type="text"
+                      class="form-control text-white border-0 bg-transparent p-4"
+                      placeholder="Email"
+                      aria-label="Recipient's username"
+                      aria-describedby="basic-addon2"
+                    />
+                    <button
+                      type="submit"
+                      class="input-group-text btn btn-danger subscrie-btn rounded-pill"
+                      id="basic-addon2"
+                    >
+                      <i class="fa-regular fa-paper-plane text-white"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="header-bg d-flex flex-column flex-lg-row justify-content-lg-between credits py-6 mt-8"
+            >
+              <p class="text-white fs-14 mb-0">
+                Copyright © 2023
+                <a href="" class="text-uppercase text-white fs-16 fw-semibold"
+                  >IN TOO BOX</a
+                >
+                . All rights reserved
+              </p>
+              <div class="d-flex mt-5 mt-lg-0">
+                <img src="assets/images/master.png" alt="" class="img-fluid" />
+                <img
+                  src="assets/images/visa.png"
+                  alt=""
+                  class="ms-2 img-fluid"
+                />
+                <img
+                  src="assets/images/blue.png"
+                  alt=""
+                  class="ms-2 img-fluid"
+                />
+                <img
+                  src="assets/images/discover.png"
+                  alt=""
+                  class="ms-2 img-fluid"
+                />
+                <img
+                  src="assets/images/bank.png"
+                  alt=""
+                  class="ms-2 img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="scrollToTopBtn showBtn">
+          <svg
+            width="9"
+            height="17"
+            viewBox="0 0 9 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.85355 0.646447C4.65829 0.451184 4.34171 0.451184 4.14645 0.646447L0.964466 3.82843C0.769203 4.02369 0.769203 4.34027 0.964466 4.53553C1.15973 4.7308 1.47631 4.7308 1.67157 4.53553L4.5 1.70711L7.32843 4.53553C7.52369 4.7308 7.84027 4.7308 8.03553 4.53553C8.2308 4.34027 8.2308 4.02369 8.03553 3.82843L4.85355 0.646447ZM5 17L5 1L4 1L4 17L5 17Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </footer>
+      <!-- footer ends here -->
+    </main>
+    <!-- main-content -->
+
+    <!-- js files -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/jquery.plugin.min.js"></script>
+    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/plugins/magnific.popup.js"></script>
+    <script src="assets/js/plugins/leaflet.js"></script>
+  </body>
+</html>
