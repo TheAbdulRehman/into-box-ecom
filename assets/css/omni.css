@@ -9589,7 +9589,7 @@ video {
   z-index: 1;
   color: #fff !important;
 }
-.btn.btn-primary::before {
+/* .btn.btn-primary::before {
   position: absolute;
   content: "";
   top: 0px;
@@ -9603,7 +9603,7 @@ video {
 }
 .btn.btn-primary:hover::before {
   width: 100%;
-}
+} */
 
 .a2a_kit a {
   display: inline-block;

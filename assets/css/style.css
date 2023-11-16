@@ -1805,14 +1805,25 @@ button.accordion-button[aria-expanded=true] .faq-question::after {
 }
 .user-options:hover .user-list {
   display: block;
-  overflow: hidden;
+  border-radius: 8px;
 }
 .user-options .user-list {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -18px;
   z-index: 5;
   display: none;
+}
+.user-options .user-list::after {
+  position: absolute;
+  content: "";
+  top: -6px;
+  right: 24px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  z-index: -1;
 }
 .user-options .user-list .user-list-item {
   width: 220px;
@@ -1823,6 +1834,15 @@ button.accordion-button[aria-expanded=true] .faq-question::after {
 .user-options .user-list .user-list-item:hover {
   background-color: #ffaaaa;
 }
+.user-options .user-list .user-list-item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+.user-options .user-list .user-list-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+.user-options .user-list .user-info-avatar:hover {
+  background-color: #f8f2f2;
+}
 
 .avatar {
   width: 60px;
@@ -1831,6 +1851,64 @@ button.accordion-button[aria-expanded=true] .faq-question::after {
   background-color: #ffaaaa;
   margin-left: auto;
   margin-right: auto;
+}
+
+.video-thumb {
+  background-color: #ebebeb;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .video-thumb {
+    height: 320px;
+  }
+}
+.video-thumb .play-video {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7px;
+}
+
+.team-container {
+  position: relative;
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .team-container {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.team-container:hover .team-info {
+  transform: translateY(0%);
+}
+.team-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-container .team-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  transform: translateY(100%);
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

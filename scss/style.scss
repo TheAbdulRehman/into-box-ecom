@@ -1819,15 +1819,26 @@ button.accordion-button[aria-expanded="true"] {
   &:hover {
     .user-list {
       display: block;
-      overflow: hidden;
+      border-radius: 8px;
     }
   }
   .user-list {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -18px;
     z-index: 5;
     display: none;
+    &::after {
+      position: absolute;
+      content: "";
+      top: -6px;
+      right: 24px;
+      width: 12px;
+      height: 12px;
+      transform: rotate(45deg);
+      background-color: #fff;
+      z-index: -1;
+    }
     .user-list-item {
       width: 220px;
       &:not(:last-child) {
@@ -1835,6 +1846,17 @@ button.accordion-button[aria-expanded="true"] {
       }
       &:hover {
         background-color: #ffaaaa;
+      }
+      &:first-child {
+        border-radius: 8px 8px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 8px 8px;
+      }
+    }
+    .user-info-avatar {
+      &:hover {
+        background-color: #f8f2f2;
       }
     }
   }
@@ -1846,4 +1868,53 @@ button.accordion-button[aria-expanded="true"] {
   background-color: #ffaaaa;
   margin-left: auto;
   margin-right: auto;
+}
+// 11/16/2023
+.video-thumb {
+  background-color: #ebebeb;
+  height: 100%;
+  @include media-md {
+    height: 320px;
+  }
+  .play-video {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7px;
+  }
+}
+.team-container {
+  position: relative;
+  @include cat-prod-img(100%, 370px, cover, center);
+  @include media-md {
+    @include cat-prod-img(100%, 300px, cover, center);
+  }
+  overflow: hidden;
+  &:hover {
+    .team-info {
+      transform: translateY(0%);
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .team-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+    transform: translateY(100%);
+    transition: all 0.5s;
+  }
 }

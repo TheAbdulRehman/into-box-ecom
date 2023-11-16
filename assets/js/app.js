@@ -346,3 +346,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   myModal.show();
 });
+// 11/16/2023
+$(document).ready(function () {
+  $(".play-video").magnificPopup({
+    type: "iframe",
+    iframe: {
+      patterns: {
+        youtube: {
+          index: "youtube.com/",
+          id: "v=",
+          src: "https://www.youtube.com/embed/Zzs6kLlkAUQ?si=Ey7Jrir4XKmqDVNy",
+        },
+      },
+    },
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+  });
+});
