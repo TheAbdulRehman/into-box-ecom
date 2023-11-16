@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="assets/css/plugins/aos.css" />
     <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css" />
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/owl.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
     <link
       rel="shortcut icon"
       href="assets/images/favicon.ico"
@@ -24,1049 +27,6 @@
     <meta name="description" content="" />
   </head>
   <body>
-    <!-- off canvas cart  -->
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="cartOffcanvas"
-      aria-labelledby="cartOffcanvas"
-    >
-      <div class="offcanvas-header">
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <h5 class="heading-h4 fw-bold mb-12 mb-lg-60">Shopping Cart</h5>
-        <div class="cart-items">
-          <div
-            class="cart-item d-flex align-items-start justify-content-between mb-8 pe-3"
-          >
-            <div class="cart-img-wrap">
-              <img src="assets/images/cat-prod-2.png" alt="" class="cart-img" />
-            </div>
-            <div>
-              <p class="mb-0 text-dark">4X4X3 Cake Box</p>
-              <div
-                class="counter-container d-flex align-items-center justify-content-between bg-gray-100 px-5 py-3 w-fit mt-5"
-              >
-                <button
-                  class="counter-button border-0 bg-transparent decrement"
-                >
-                  <i class="fas fa-minus fs-18 text-gray-700"></i>
-                </button>
-                <input
-                  type="number"
-                  class="border-0 ms-4 bg-transparent"
-                  name="cart-qty"
-                  id="cart-qty"
-                  value="1"
-                  disabled
-                />
-                <button
-                  class="counter-button border-0 bg-transparent increment ms-1"
-                >
-                  <i class="fas fa-plus fs-18 text-gray-700"></i>
-                </button>
-              </div>
-            </div>
-            <div>
-              <p class="text-dark mb-0">₹4.50</p>
-              <div class="mt-5 text-end py-3">
-                <i class="fas fa-times text-dark"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="cart-item d-flex align-items-start justify-content-between mb-8 pe-3"
-          >
-            <div class="cart-img-wrap">
-              <img src="assets/images/cat-prod-2.png" alt="" class="cart-img" />
-            </div>
-            <div>
-              <p class="mb-0 text-dark">4X4X3 Cake Box</p>
-              <div
-                class="counter-container d-flex align-items-center justify-content-between bg-gray-100 px-5 py-3 w-fit mt-5"
-              >
-                <button
-                  class="counter-button border-0 bg-transparent decrement"
-                >
-                  <i class="fas fa-minus fs-18 text-gray-700"></i>
-                </button>
-                <input
-                  type="number"
-                  class="border-0 ms-4 bg-transparent"
-                  name="cart-qty"
-                  id="cart-qty"
-                  value="1"
-                  disabled
-                />
-                <button
-                  class="counter-button border-0 bg-transparent increment ms-1"
-                >
-                  <i class="fas fa-plus fs-18 text-gray-700"></i>
-                </button>
-              </div>
-            </div>
-            <div>
-              <p class="text-dark mb-0">₹4.50</p>
-              <div class="mt-5 text-end py-3">
-                <i class="fas fa-times text-dark"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="cart-item d-flex align-items-start justify-content-between mb-8 pe-3"
-          >
-            <div class="cart-img-wrap">
-              <img src="assets/images/cat-prod-2.png" alt="" class="cart-img" />
-            </div>
-            <div>
-              <p class="mb-0 text-dark">4X4X3 Cake Box</p>
-              <div
-                class="counter-container d-flex align-items-center justify-content-between bg-gray-100 px-5 py-3 w-fit mt-5"
-              >
-                <button
-                  class="counter-button border-0 bg-transparent decrement"
-                >
-                  <i class="fas fa-minus fs-18 text-gray-700"></i>
-                </button>
-                <input
-                  type="number"
-                  class="border-0 ms-4 bg-transparent"
-                  name="cart-qty"
-                  id="cart-qty"
-                  value="1"
-                  disabled
-                />
-                <button
-                  class="counter-button border-0 bg-transparent increment ms-1"
-                >
-                  <i class="fas fa-plus fs-18 text-gray-700"></i>
-                </button>
-              </div>
-            </div>
-            <div>
-              <p class="text-dark mb-0">₹4.50</p>
-              <div class="mt-5 text-end py-3">
-                <i class="fas fa-times text-dark"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="cart-item d-flex align-items-start justify-content-between mb-8 pe-3"
-          >
-            <div class="cart-img-wrap">
-              <img src="assets/images/cat-prod-2.png" alt="" class="cart-img" />
-            </div>
-            <div>
-              <p class="mb-0 text-dark">4X4X3 Cake Box</p>
-              <div
-                class="counter-container d-flex align-items-center justify-content-between bg-gray-100 px-5 py-3 w-fit mt-5"
-              >
-                <button
-                  class="counter-button border-0 bg-transparent decrement"
-                >
-                  <i class="fas fa-minus fs-18 text-gray-700"></i>
-                </button>
-                <input
-                  type="number"
-                  class="border-0 ms-4 bg-transparent"
-                  name="cart-qty"
-                  id="cart-qty"
-                  value="1"
-                  disabled
-                />
-                <button
-                  class="counter-button border-0 bg-transparent increment ms-1"
-                >
-                  <i class="fas fa-plus fs-18 text-gray-700"></i>
-                </button>
-              </div>
-            </div>
-            <div>
-              <p class="text-dark mb-0">₹4.50</p>
-              <div class="mt-5 text-end py-3">
-                <i class="fas fa-times text-dark"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="cart-item d-flex align-items-start justify-content-between mb-8 pe-3"
-          >
-            <div class="cart-img-wrap">
-              <img src="assets/images/cat-prod-2.png" alt="" class="cart-img" />
-            </div>
-            <div>
-              <p class="mb-0 text-dark">4X4X3 Cake Box</p>
-              <div
-                class="counter-container d-flex align-items-center justify-content-between bg-gray-100 px-5 py-3 w-fit mt-5"
-              >
-                <button
-                  class="counter-button border-0 bg-transparent decrement"
-                >
-                  <i class="fas fa-minus fs-18 text-gray-700"></i>
-                </button>
-                <input
-                  type="number"
-                  class="border-0 ms-4 bg-transparent"
-                  name="cart-qty"
-                  id="cart-qty"
-                  value="1"
-                  disabled
-                />
-                <button
-                  class="counter-button border-0 bg-transparent increment ms-1"
-                >
-                  <i class="fas fa-plus fs-18 text-gray-700"></i>
-                </button>
-              </div>
-            </div>
-            <div>
-              <p class="text-dark mb-0">₹4.50</p>
-              <div class="mt-5 text-end py-3">
-                <i class="fas fa-times text-dark"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="cart-item d-flex align-items-start justify-content-between mb-8 pe-3"
-          >
-            <div class="cart-img-wrap">
-              <img src="assets/images/cat-prod-2.png" alt="" class="cart-img" />
-            </div>
-            <div>
-              <p class="mb-0 text-dark">4X4X3 Cake Box</p>
-              <div
-                class="counter-container d-flex align-items-center justify-content-between bg-gray-100 px-5 py-3 w-fit mt-5"
-              >
-                <button
-                  class="counter-button border-0 bg-transparent decrement"
-                >
-                  <i class="fas fa-minus fs-18 text-gray-700"></i>
-                </button>
-                <input
-                  type="number"
-                  class="border-0 ms-4 bg-transparent"
-                  name="cart-qty"
-                  id="cart-qty"
-                  value="1"
-                  disabled
-                />
-                <button
-                  class="counter-button border-0 bg-transparent increment ms-1"
-                >
-                  <i class="fas fa-plus fs-18 text-gray-700"></i>
-                </button>
-              </div>
-            </div>
-            <div>
-              <p class="text-dark mb-0">₹4.50</p>
-              <div class="mt-5 text-end py-3">
-                <i class="fas fa-times text-dark"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-12 mt-lg-60">
-          <div
-            class="d-flex align-items-center justify-content-between border-top border-bottom py-4"
-          >
-            <p class="text-dark fw-bold mb-0">Subtotal</p>
-            <p class="text-danger mb-0 fw-bold">₹4.50</p>
-          </div>
-        </div>
-        <!-- checkout button -->
-        <div class="checkout-offcanvas-cart-btn mt-8">
-          <a
-            href="#"
-            class="btn btn-danger text-white btn-block w-100 rounded-0 text-uppercase py-3"
-          >
-            PROCEED TO CHECKOUT
-          </a>
-        </div>
-        <!-- checkout button -->
-      </div>
-    </div>
-    <!-- off canvas cart  -->
-    <!-- searchbar for mobile and tab -->
-    <div
-      class="mob-search align-items-center px-4 bg-white py-4 py-md-8 shadow-sm w-100"
-    >
-      <form class="d-flex border align-items-center flex-grow-1">
-        <input
-          type="text"
-          class="form-control text-muted fs-14 border-0 bg-transparent"
-          placeholder="Start Searching . . . ."
-          aria-label="search-bar"
-          aria-describedby="serach-bar"
-        />
-        <button
-          type="submit"
-          class="bg-transparent search-btn pt-2 pe-2 border-0"
-          id="mobile-search-action"
-        >
-          <i class="fas fa-search fs-22 text-gray-600"></i>
-        </button>
-      </form>
-      <div>
-        <i
-          id="hideMobSearch"
-          class="fas fa-times pt-2 fs-28 ms-4 ms-lg-6 text-muted"
-        ></i>
-      </div>
-    </div>
-    <!-- searchbar for mobile and tab -->
-
-    <!-- moile menu -->
-    <div class="mobile-menu">
-      <!-- Slideable (Mobile) Menu-->
-
-      <div class="p-4 text-end">
-        <a id="closeMobileNav" href="#">
-          <i class="fas fa-times fs-20 text-dark"></i>
-        </a>
-      </div>
-
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item" role="presentation99">
-          <span
-            class=""
-            id="mmenu-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#mmenu"
-            role="tab"
-            aria-controls="mmenu"
-            aria-selected="false"
-            >Menu</span
-          >
-        </li>
-        <li class="nav-item" role="presentation99">
-          <span
-            class="active"
-            id="mcat-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#mcat"
-            role="tab"
-            aria-controls="mcat"
-            aria-selected="true"
-            >Category</span
-          >
-        </li>
-      </ul>
-      <div class="tab-content p-0">
-        <div
-          class="tab-pane fade"
-          id="mmenu"
-          role="tabpanel"
-          aria-labelledby="mmenu-tab"
-        >
-          <nav class="slideable-menu">
-            <ul>
-              <li class="">
-                <a href="/codecanyon/omnimart40"
-                  ><i class="icon-chevron-right"></i>Home</a
-                >
-              </li>
-              <li class="active">
-                <a href="/codecanyon/omnimart40/catalog"
-                  ><i class="icon-chevron-right"></i>Shop</a
-                >
-              </li>
-              <li class="">
-                <a href="/codecanyon/omnimart40/campaign/products"
-                  ><i class="icon-chevron-right"></i>Campaign</a
-                >
-              </li>
-              <li class="">
-                <a href="/codecanyon/omnimart40/brands"
-                  ><i class="icon-chevron-right"></i>Brand</a
-                >
-              </li>
-
-              <li class="">
-                <a href="/codecanyon/omnimart40/blog"
-                  ><i class="icon-chevron-right"></i>Blog</a
-                >
-              </li>
-              <li class="t-h-dropdown">
-                <a class="" href="#"
-                  ><i class="icon-chevron-right"></i>Pages
-                  <i class="fas fa-chevron-down"></i
-                ></a>
-                <div class="t-h-dropdown-menu">
-                  <a class="" href="/codecanyon/omnimart40/faq"
-                    ><i class="icon-chevron-right pr-2"></i>Faq</a
-                  >
-                  <a class=" " href="/codecanyon/omnimart40/about-us"
-                    ><i class="icon-chevron-right pr-2"></i>About Us</a
-                  >
-                  <a class=" " href="/codecanyon/omnimart40/privacy-policy"
-                    ><i class="icon-chevron-right pr-2"></i>Privacy Policy</a
-                  >
-                  <a class=" " href="/codecanyon/omnimart40/terms-and-service"
-                    ><i class="icon-chevron-right pr-2"></i>Terms &amp;
-                    Service</a
-                  >
-                  <a class=" " href="/codecanyon/omnimart40/return-policy"
-                    ><i class="icon-chevron-right pr-2"></i>Return Policy</a
-                  >
-                </div>
-              </li>
-
-              <li class="">
-                <a href="/codecanyon/omnimart40/contact"
-                  ><i class="icon-chevron-right"></i>Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div
-          class="tab-pane fade active show"
-          id="mcat"
-          role="tabpanel"
-          aria-labelledby="mcat-tab"
-        >
-          <nav class="slideable-menu">
-            <div class="widget-categories mobile-cat">
-              <ul id="category_list">
-                <li class="has-children">
-                  <a class="category_search mb-0">
-                    Women Clothing
-                    <span
-                      ><i id="expandCategroy" class="fas fa-chevron-down"></i
-                    ></span>
-                  </a>
-                  <ul id="subcategory_list">
-                    <li class="">
-                      <a class="subcategory" href="Womens-Underwear"
-                        >Women's Underwear</a
-                      >
-                      <ul id="childcategory_list">
-                        <li class="">
-                          <a
-                            class="childcategory"
-                            href="childcategory=Pajama-Sets"
-                            >Pajama Sets</a
-                          >
-                        </li>
-                        <li class="">
-                          <a
-                            class="childcategory"
-                            href="childcategory=Women-Socks--Hosiery"
-                            >Women Socks &amp; Hosiery</a
-                          >
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="childcategory=Shapewer"
-                            >Shapewer</a
-                          >
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="childcategory=Bras"
-                            >Bras</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="Weddings--Events"
-                        >Weddings &amp; Events</a
-                      >
-                      <ul id="childcategory_list">
-                        <li class="">
-                          <a
-                            class="childcategory"
-                            href="childcategory=Wedding-Dresses"
-                            >Wedding Dresses</a
-                          >
-                        </li>
-                        <li class="">
-                          <a
-                            class="childcategory"
-                            href="childcategory=Prom-Dresses"
-                            >Prom Dresses</a
-                          >
-                        </li>
-                        <li class="">
-                          <a
-                            class="childcategory"
-                            href="childcategory=Evening-Dresses"
-                            >Evening Dresses</a
-                          >
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="childcategory=Costumes"
-                            >Costumes</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="Bottoms">Bottoms</a>
-                      <ul id="childcategory_list">
-                        <li class="">
-                          <a class="childcategory" href="childcategory=Leggings"
-                            >Leggings</a
-                          >
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="childcategory=Skirt"
-                            >Skirt</a
-                          >
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="childcategory=Jeans"
-                            >Jeans</a
-                          >
-                        </li>
-                        <li class="">
-                          <a
-                            class="childcategory"
-                            href="childcategory=Pants--Capris"
-                            >Pants &amp; Capris</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="Womens-Fashion"
-                        >Women's Fashion</a
-                      >
-                      <ul id="childcategory_list"></ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="Accessories">Accessories</a>
-                      <ul id="childcategory_list"></ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="has-children">
-                  <a class="category_search" href="#"
-                    >Men Clothing
-                    <span><i class="fas fa-chevron-down"></i></span>
-                  </a>
-                  <ul id="subcategory_list">
-                    <li class="">
-                      <a class="subcategory" href="#"
-                        >Outerwear &amp; Jackets</a
-                      >
-                      <ul id="childcategory_list">
-                        <li class="">
-                          <a class="childcategory" href="#">Jackets</a>
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="#">Sweaters</a>
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="#">Parkas</a>
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="#">Down Jackets</a>
-                        </li>
-
-                        <li class="">
-                          <a class="childcategory" href="#">Shirt</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="#">Bottoms</a>
-                      <ul id="childcategory_list"></ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="#">Underwear</a>
-                      <ul id="childcategory_list">
-                        <li class="">
-                          <a class="childcategory" href="#">Boxers</a>
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="#">Briefs</a>
-                        </li>
-
-                        <li class="">
-                          <a class="childcategory" href="c#">Pajama Sets</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="#">Accessories</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="has-children">
-                  <a class="category_search" href="#"
-                    >Men Clothing
-                    <span><i class="fas fa-chevron-down"></i></span>
-                  </a>
-                  <ul id="subcategory_list">
-                    <li class="">
-                      <a class="subcategory" href="#"
-                        >Outerwear &amp; Jackets</a
-                      >
-                      <ul id="childcategory_list">
-                        <li class="">
-                          <a class="childcategory" href="#">Jackets</a>
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="#">Sweaters</a>
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="#">Parkas</a>
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="#">Down Jackets</a>
-                        </li>
-
-                        <li class="">
-                          <a class="childcategory" href="#">Shirt</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="#">Bottoms</a>
-                      <ul id="childcategory_list"></ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="#">Underwear</a>
-                      <ul id="childcategory_list">
-                        <li class="">
-                          <a class="childcategory" href="#">Boxers</a>
-                        </li>
-                        <li class="">
-                          <a class="childcategory" href="#">Briefs</a>
-                        </li>
-
-                        <li class="">
-                          <a class="childcategory" href="c#">Pajama Sets</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="">
-                      <a class="subcategory" href="#">Accessories</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <!-- moile menu -->
-
-    <!-- categories -->
-    <div class="position-relative">
-      <ul
-        class="category-navigation shadow-sm ps-0 mb-0 text-danger"
-        id="navItems"
-      >
-        <li id="closeNav" class="text-end close-btn px-6 py-4">
-          <i class="fas fa-times fs-20 text-dark"></i>
-        </li>
-        <li
-          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
-        >
-          <a href="" class="main-item text-dark fw-semibold fs-14">
-            CAKE BOXES
-          </a>
-          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-          <!-- sub category -->
-          <ul class="sub-category shadow-sm position-absolute mb-0 ps-0">
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-            </li>
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-              <!-- sub sub category -->
-              <ul
-                class="sub-sub-category shadow-sm position-absolute mb-0 ps-0"
-              >
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-              </ul>
-              <!-- sub sub category -->
-            </li>
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-            </li>
-          </ul>
-          <!-- sub category -->
-        </li>
-        <li
-          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
-        >
-          <a href="" class="main-item text-dark fw-semibold fs-14">
-            CAKE BOXES
-          </a>
-          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-        </li>
-        <li
-          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
-        >
-          <a href="" class="main-item text-dark fw-semibold fs-14">
-            CAKE BOXES
-          </a>
-          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-        </li>
-        <li
-          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
-        >
-          <a href="" class="main-item text-dark fw-semibold fs-14">
-            CAKE BOXES
-          </a>
-          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-          <!-- sub category -->
-          <ul class="sub-category shadow-sm position-absolute mb-0 ps-0">
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-            </li>
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-              <!-- sub sub category -->
-              <ul
-                class="sub-sub-category shadow-sm position-absolute mb-0 ps-0"
-              >
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-              </ul>
-              <!-- sub sub category -->
-            </li>
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-            </li>
-          </ul>
-          <!-- sub category -->
-        </li>
-        <li
-          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
-        >
-          <a href="" class="main-item text-dark fw-semibold fs-14">
-            CAKE BOXES
-          </a>
-          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-        </li>
-        <li
-          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
-        >
-          <a href="" class="main-item text-dark fw-semibold fs-14">
-            CAKE BOXES
-          </a>
-          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-        </li>
-        <li
-          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
-        >
-          <a href="" class="main-item text-dark fw-semibold fs-14">
-            CAKE BOXES
-          </a>
-          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-        </li>
-        <li
-          class="main-category d-flex align-items-center justify-content-between px-6 py-4"
-        >
-          <a href="" class="main-item text-dark fw-semibold fs-14">
-            CAKE BOXES
-          </a>
-          <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-          <!-- sub category -->
-          <ul class="sub-category shadow-sm position-absolute mb-0 ps-0">
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-            </li>
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-              <!-- sub sub category -->
-              <ul
-                class="sub-sub-category shadow-sm position-absolute mb-0 ps-0"
-              >
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-                <li
-                  class="sub-sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-                >
-                  <a href="" class="main-item text-dark fw-semibold fs-14">
-                    CAKE BOXES
-                  </a>
-                  <i
-                    class="fas fa-chevron-right fw-semibold text-danger fs-12"
-                  ></i>
-                </li>
-              </ul>
-              <!-- sub sub category -->
-            </li>
-            <li
-              class="sub-category-items d-flex align-items-center justify-content-between px-6 py-4"
-            >
-              <a href="" class="main-item text-dark fw-semibold fs-14">
-                CAKE BOXES
-              </a>
-              <i class="fas fa-chevron-right fw-semibold text-danger fs-12"></i>
-            </li>
-          </ul>
-          <!-- sub category -->
-        </li>
-      </ul>
-    </div>
-    <!-- categories -->
-
-    <!-- top nav -->
-    <div
-      class="container-fluid position-relative top-nav px-4 px-md-10 px-lg-80 pb-6 pt-60 pt-md-100 pt-lg-120 pt-xxl-140 pb-lg-10"
-    >
-      <div class="d-flex align-items-end justify-content-between">
-        <div
-          id="navbarIcon"
-          class="d-flex justify-content-center category-menu"
-        >
-          <i class="fas fa-bars fs-24 text-muted"></i>
-        </div>
-        <div class="d-flex justify-content-center logo-wrap-main">
-          <img
-            src="/assets/images/logo-main.png"
-            alt="Logo"
-            class="img-fluid logo"
-          />
-        </div>
-        <div class="d-flex align-items-center">
-          <div class="d-none d-lg-block">
-            <form class="d-inline-flex">
-              <input
-                type="text"
-                class="form-control text-muted fs-14 border-0 bg-transparent"
-                placeholder="Start Searching . . . ."
-                aria-label="search-bar"
-                aria-describedby="serach-bar"
-              />
-              <button
-                type="submit"
-                class="bg-transparent search-btn border-0"
-                id="serach-bar"
-              >
-                <i class="fas fa-search fs-26 text-gray-600"></i>
-              </button>
-            </form>
-          </div>
-          <div class="d-block d-lg-none">
-            <div class="bg-transparent search-btn border-0" id="showMobSearch">
-              <i class="fas fa-search fs-26 text-gray-600"></i>
-            </div>
-          </div>
-          <div class="position-relative cart-icons">
-            <i class="fa-regular fa-heart ms-3 ms-lg-6 fs-28 text-gray-600"></i>
-            <span> 1 </span>
-          </div>
-          <div
-            class="position-relative cart-icons"
-            data-bs-toggle="offcanvas"
-            href="#cartOffcanvas"
-            role="button"
-            aria-controls="cartOffcanvas"
-          >
-            <svg
-              class="ms-4 ms-lg-6"
-              width="23"
-              height="28"
-              viewBox="0 0 23 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.8 28C2.03 28 1.3706 27.7256 0.821802 27.1768C0.273002 26.628 -0.000930956 25.9691 2.37691e-06 25.2V8.4C2.37691e-06 7.63 0.274402 6.9706 0.823202 6.4218C1.372 5.873 2.03094 5.59907 2.8 5.6H5.6C5.6 4.06 6.14833 2.74167 7.245 1.645C8.34167 0.548333 9.66 0 11.2 0C12.74 0 14.0583 0.548333 15.155 1.645C16.2517 2.74167 16.8 4.06 16.8 5.6H19.6C20.37 5.6 21.0294 5.8744 21.5782 6.4232C22.127 6.972 22.4009 7.63093 22.4 8.4V25.2C22.4 25.97 22.1256 26.6294 21.5768 27.1782C21.028 27.727 20.3691 28.0009 19.6 28H2.8ZM2.8 25.2H19.6V8.4H16.8V11.2C16.8 11.5967 16.6656 11.9294 16.3968 12.1982C16.128 12.467 15.7957 12.6009 15.4 12.6C15.0033 12.6 14.6706 12.4656 14.4018 12.1968C14.133 11.928 13.9991 11.5957 14 11.2V8.4H8.4V11.2C8.4 11.5967 8.2656 11.9294 7.9968 12.1982C7.728 12.467 7.39573 12.6009 7 12.6C6.60333 12.6 6.2706 12.4656 6.0018 12.1968C5.733 11.928 5.59907 11.5957 5.6 11.2V8.4H2.8V25.2ZM8.4 5.6H14C14 4.83 13.7256 4.1706 13.1768 3.6218C12.628 3.073 11.9691 2.79907 11.2 2.8C10.43 2.8 9.7706 3.0744 9.2218 3.6232C8.673 4.172 8.39907 4.83093 8.4 5.6Z"
-                fill="#707070"
-              />
-            </svg>
-            <span> 3 </span>
-          </div>
-          <p
-            class="ms-4 mb-0 fs-14 fw-semibold d-none d-lg-block text-gray-600"
-          >
-            Cart: <span class="text-danger">₹245</span>
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- top nav -->
-
     <!-- center navigation -->
     <div class="w-lg-90 d-none d-lg-block mx-auto py-8 py-lg-10">
       <ul
@@ -1170,59 +130,273 @@
       <div class="container container-5xl">
         <div class="row">
           <div class="col-lg-6">
-            <div class="swiper mySwiper2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide product-slide-container">
-                  <div class="swiper-zoom-container">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                  </div>
-                </div>
-                <div class="swiper-slide product-slide-container">
-                  <div class="swiper-zoom-container">
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                  </div>
-                </div>
-                <div class="swiper-slide product-slide-container">
-                  <div class="swiper-zoom-container">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                  </div>
-                </div>
-                <div class="swiper-slide product-slide-container">
-                  <div class="swiper-zoom-container">
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                  </div>
-                </div>
-                <div class="swiper-slide product-slide-container">
-                  <div class="swiper-zoom-container">
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                  </div>
-                </div>
-                <div class="swiper-slide product-slide-container">
-                  <div class="swiper-zoom-container">
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                  </div>
+            <div class="product-gallery">
+              <div class="gallery-wrapper">
+                <div
+                  class="gallery-item d-flex align-items-center shadow-sm bg-white rounded-pill px-6 py-4 video-btn text-center"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=6ZVEAXmupEo"
+                    title="Watch video"
+                    class="product-video"
+                  >
+                    <svg
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.409 7.35331C17.8893 7.60872 18.291 7.99 18.5712 8.45629C18.8514 8.92259 18.9994 9.45632 18.9994 10.0003C18.9994 10.5443 18.8514 11.078 18.5712 11.5443C18.291 12.0106 17.8893 12.3919 17.409 12.6473L4.597 19.6143C2.534 20.7363 0 19.2763 0 16.9683V3.03331C0 0.723308 2.534 -0.735693 4.597 0.385307L17.409 7.35331Z"
+                        fill="#FF6363"
+                      />
+                    </svg>
+                    <span class="ms-1 text-danger product-video">
+                      Play Video
+                    </span>
+                  </a>
                 </div>
               </div>
-            </div>
-            <div thumbsSlider="" class="swiper mySwiper mt-12">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              <span class="product-badge bg-success">New</span>
+              <div class="product-thumbnails insize">
+                <div
+                  class="product-details-slider owl-carousel owl-loaded owl-drag"
+                >
+                  <div class="owl-stage-outer">
+                    <div
+                      class="owl-stage"
+                      style="
+                        transform: translate3d(-2730px, 0px, 0px);
+                        transition: all 0s ease 0s;
+                        width: 4368px;
+                      "
+                    >
+                      <div class="owl-item cloned" style="width: 546px">
+                        <div
+                          class="item"
+                          style="position: relative; overflow: hidden"
+                        >
+                          <img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1K4CyX6DuK1Rjy1zjq6zraFXaj.jpg"
+                            alt="zoom"
+                          /><img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1K4CyX6DuK1Rjy1zjq6zraFXaj.jpg"
+                            class="zoomImg"
+                            style="
+                              position: absolute;
+                              top: 0px;
+                              left: 0px;
+                              opacity: 0;
+                              width: 750px;
+                              height: 750px;
+                              border: none;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <div class="owl-item cloned" style="width: 546px">
+                        <div
+                          class="item"
+                          style="position: relative; overflow: hidden"
+                        >
+                          <img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg"
+                            alt="zoom"
+                          /><img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg"
+                            class="zoomImg"
+                            style="
+                              position: absolute;
+                              top: 0px;
+                              left: 0px;
+                              opacity: 0;
+                              width: 640px;
+                              height: 640px;
+                              border: none;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 546px">
+                        <div
+                          class="item"
+                          style="position: relative; overflow: hidden"
+                        >
+                          <img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134273Hcfd42cbddf7b40b08d3f9048f4d425e5A.jpg"
+                            alt="zoom"
+                          /><img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134273Hcfd42cbddf7b40b08d3f9048f4d425e5A.jpg"
+                            class="zoomImg"
+                            style="
+                              position: absolute;
+                              top: -120.263px;
+                              left: -394.929px;
+                              opacity: 0;
+                              width: 1040px;
+                              height: 1040px;
+                              border: none;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 546px">
+                        <div
+                          class="item"
+                          style="position: relative; overflow: hidden"
+                        >
+                          <img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1HSCEe25G3KVjSZPxq6zI3XXao.jpg"
+                            alt="zoom"
+                          /><img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1HSCEe25G3KVjSZPxq6zI3XXao.jpg"
+                            class="zoomImg"
+                            style="
+                              position: absolute;
+                              top: 0px;
+                              left: 0px;
+                              opacity: 0;
+                              width: 1000px;
+                              height: 1000px;
+                              border: none;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 546px">
+                        <div
+                          class="item"
+                          style="position: relative; overflow: hidden"
+                        >
+                          <img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1K4CyX6DuK1Rjy1zjq6zraFXaj.jpg"
+                            alt="zoom"
+                          /><img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1K4CyX6DuK1Rjy1zjq6zraFXaj.jpg"
+                            class="zoomImg"
+                            style="
+                              position: absolute;
+                              top: -147.039px;
+                              left: -187px;
+                              opacity: 0;
+                              width: 750px;
+                              height: 750px;
+                              border: none;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="owl-item animated owl-animated-in fadeIn active"
+                        style="width: 546px"
+                      >
+                        <div
+                          class="item"
+                          style="position: relative; overflow: hidden"
+                        >
+                          <img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg"
+                            alt="zoom"
+                          /><img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg"
+                            class="zoomImg"
+                            style="
+                              position: absolute;
+                              top: -56.2187px;
+                              left: -61.7198px;
+                              opacity: 1;
+                              width: 640px;
+                              height: 640px;
+                              border: none;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <div class="owl-item cloned" style="width: 546px">
+                        <div
+                          class="item"
+                          style="position: relative; overflow: hidden"
+                        >
+                          <img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134273Hcfd42cbddf7b40b08d3f9048f4d425e5A.jpg"
+                            alt="zoom"
+                          /><img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134273Hcfd42cbddf7b40b08d3f9048f4d425e5A.jpg"
+                            class="zoomImg"
+                            style="
+                              position: absolute;
+                              top: 0px;
+                              left: 0px;
+                              opacity: 0;
+                              width: 1040px;
+                              height: 1040px;
+                              border: none;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <div class="owl-item cloned" style="width: 546px">
+                        <div
+                          class="item"
+                          style="position: relative; overflow: hidden"
+                        >
+                          <img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1HSCEe25G3KVjSZPxq6zI3XXao.jpg"
+                            alt="zoom"
+                          /><img
+                            src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1HSCEe25G3KVjSZPxq6zI3XXao.jpg"
+                            class="zoomImg"
+                            style="
+                              position: absolute;
+                              top: 0px;
+                              left: 0px;
+                              opacity: 0;
+                              width: 1000px;
+                              height: 1000px;
+                              border: none;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-nav disabled">
+                    <div class="owl-prev">prev</div>
+                    <div class="owl-next">next</div>
+                  </div>
+                  <div class="owl-dots disabled"></div>
+                  <div class="owl-thumbs">
+                    <button class="owl-thumb-item">
+                      <img
+                        src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134273Hcfd42cbddf7b40b08d3f9048f4d425e5A.jpg"
+                        alt="zoom"
+                      /></button
+                    ><button class="owl-thumb-item">
+                      <img
+                        src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1HSCEe25G3KVjSZPxq6zI3XXao.jpg"
+                        alt="zoom"
+                      /></button
+                    ><button class="owl-thumb-item">
+                      <img
+                        src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1K4CyX6DuK1Rjy1zjq6zraFXaj.jpg"
+                        alt="zoom"
+                      /></button
+                    ><button class="owl-thumb-item active">
+                      <img
+                        src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634491092HTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg"
+                        alt="zoom"
+                      />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1683,6 +857,7 @@
       <!-- product review and extra information and reviews -->
 
       <!-- featured products -->
+
       <section class="fetured-prodcuts pb-12 pb-lg-60">
         <div class="container">
           <h2
@@ -1692,142 +867,150 @@
           </h2>
 
           <div class="mt-6 mt-8">
-            <div class="row g-4">
-              <div
-                class="col-md-6 col-lg-3 d-flex flex-column prod-column align-items-center position-relative overflow-hidden"
-              >
-                <img
-                  src="assets/images/box-prod-1.png"
-                  alt="Image 1"
-                  class="img-fluid cat-prod-img"
-                />
-                <p class="text-muted fw-semibold mt-4 mb-3">
-                  Handle Chocolate Box
-                </p>
-                <div class="d-flex">
-                  <p
-                    class="text-gray-300 fs-18 fw-bold text-decoration-line-through mb-0"
-                  >
-                    ₹48.00
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div
+                  class="d-flex flex-column prod-column align-items-center position-relative overflow-hidden"
+                >
+                  <img
+                    src="assets/images/box-prod-1.png"
+                    alt="Image 1"
+                    class="img-fluid cat-prod-img"
+                  />
+                  <p class="text-muted fw-semibold mt-4 mb-3">
+                    Handle Chocolate Box
                   </p>
-                  <p class="text-danger fw-bold fs-18 mb-0 ms-4">₹14.00</p>
-                </div>
-                <!-- floating content -->
-                <p
-                  class="position-absolute off-price bg-danger text-white fw-bold fs-14 mb-0"
-                >
-                  - 20%
-                </p>
-                <!-- timer -->
-                <div
-                  class="timer position-absolute mx-auto align-items-center justify-content-between bg-white p-2"
-                >
-                  <div class="time">
-                    <p class="mb-0 fs-16 fw-bold text-dark">14</p>
-                    <p class="mb-0 fs-12 font-smeibold text-muted">Days</p>
-                  </div>
-                  <div class="">:</div>
-                  <div class="time">
-                    <p class="mb-0 fs-16 fw-bold text-dark">14</p>
-                    <p class="mb-0 fs-12 font-smeibold text-muted">Hours</p>
-                  </div>
-                  <div>:</div>
-                  <div class="time">
-                    <p class="mb-0 fs-16 fw-bold text-dark">14</p>
-                    <p class="mb-0 fs-12 font-smeibold text-muted">Mins</p>
-                  </div>
-                  <div>:</div>
-                  <div class="time">
-                    <p class="mb-0 fs-16 fw-bold text-dark">14</p>
-                    <p class="mb-0 fs-12 font-smeibold text-muted">Hours</p>
-                  </div>
-                </div>
-                <!-- timer -->
-                <!-- floating content -->
-              </div>
-              <div
-                class="col-md-6 col-lg-3 d-flex prod-column position-relative overflow-hidden flex-column align-items-center"
-              >
-                <img
-                  src="assets/images/box-prod-2.png "
-                  alt="Image 1"
-                  class="cat-prod-img"
-                />
-                <p class="text-muted fw-semibold mt-4 mb-3">
-                  Thank You Gift Box
-                </p>
-                <div class="d-flex">
-                  <p class="text-dark fs-18 fw-bold mb-0">₹18.00</p>
-                </div>
-                <!-- floating content -->
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-center cart-actions text-white fw-bold fs-14 mb-0"
-                >
-                  <div class="action-btn bg-white shadow-lg">
-                    <i class="fas fa-search fs-20 text-gray-600"></i>
-                  </div>
-                  <div class="ms-4 action-btn bg-danger text-white shadow-lg">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 23 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                  <div class="d-flex">
+                    <p
+                      class="text-gray-300 fs-18 fw-bold text-decoration-line-through mb-0"
                     >
-                      <path
-                        d="M2.8 28C2.03 28 1.3706 27.7256 0.821802 27.1768C0.273002 26.628 -0.000930956 25.9691 2.37691e-06 25.2V8.4C2.37691e-06 7.63 0.274402 6.9706 0.823202 6.4218C1.372 5.873 2.03094 5.59907 2.8 5.6H5.6C5.6 4.06 6.14833 2.74167 7.245 1.645C8.34167 0.548333 9.66 0 11.2 0C12.74 0 14.0583 0.548333 15.155 1.645C16.2517 2.74167 16.8 4.06 16.8 5.6H19.6C20.37 5.6 21.0294 5.8744 21.5782 6.4232C22.127 6.972 22.4009 7.63093 22.4 8.4V25.2C22.4 25.97 22.1256 26.6294 21.5768 27.1782C21.028 27.727 20.3691 28.0009 19.6 28H2.8ZM2.8 25.2H19.6V8.4H16.8V11.2C16.8 11.5967 16.6656 11.9294 16.3968 12.1982C16.128 12.467 15.7957 12.6009 15.4 12.6C15.0033 12.6 14.6706 12.4656 14.4018 12.1968C14.133 11.928 13.9991 11.5957 14 11.2V8.4H8.4V11.2C8.4 11.5967 8.2656 11.9294 7.9968 12.1982C7.728 12.467 7.39573 12.6009 7 12.6C6.60333 12.6 6.2706 12.4656 6.0018 12.1968C5.733 11.928 5.59907 11.5957 5.6 11.2V8.4H2.8V25.2ZM8.4 5.6H14C14 4.83 13.7256 4.1706 13.1768 3.6218C12.628 3.073 11.9691 2.79907 11.2 2.8C10.43 2.8 9.7706 3.0744 9.2218 3.6232C8.673 4.172 8.39907 4.83093 8.4 5.6Z"
-                        fill="white"
-                      ></path>
-                    </svg>
+                      ₹48.00
+                    </p>
+                    <p class="text-danger fw-bold fs-18 mb-0 ms-4">₹14.00</p>
                   </div>
-                  <div class="ms-4 action-btn bg-white shadow-lg">
-                    <i
-                      class="fa-solid fa-arrow-right-arrow-left fs-18 text-gray-600"
-                    ></i>
+                  <!-- floating content -->
+                  <p
+                    class="position-absolute off-price bg-danger text-white fw-bold fs-14 mb-0"
+                  >
+                    - 20%
+                  </p>
+                  <!-- timer -->
+                  <div
+                    class="timer position-absolute mx-auto align-items-center justify-content-between bg-white p-2"
+                  >
+                    <div class="time">
+                      <p class="mb-0 fs-16 fw-bold text-dark">14</p>
+                      <p class="mb-0 fs-12 font-smeibold text-muted">Days</p>
+                    </div>
+                    <div class="">:</div>
+                    <div class="time">
+                      <p class="mb-0 fs-16 fw-bold text-dark">14</p>
+                      <p class="mb-0 fs-12 font-smeibold text-muted">Hours</p>
+                    </div>
+                    <div>:</div>
+                    <div class="time">
+                      <p class="mb-0 fs-16 fw-bold text-dark">14</p>
+                      <p class="mb-0 fs-12 font-smeibold text-muted">Mins</p>
+                    </div>
+                    <div>:</div>
+                    <div class="time">
+                      <p class="mb-0 fs-16 fw-bold text-dark">14</p>
+                      <p class="mb-0 fs-12 font-smeibold text-muted">Hours</p>
+                    </div>
                   </div>
+                  <!-- timer -->
+                  <!-- floating content -->
                 </div>
+              </div>
+              <div class="item">
                 <div
-                  class="position-absolute heart-action bg-white text-dark shadow-lg"
+                  class="d-flex prod-column position-relative overflow-hidden flex-column align-items-center"
                 >
-                  <i class="fa-regular fa-heart fs-20 text-gray-600"></i>
+                  <img
+                    src="assets/images/box-prod-2.png "
+                    alt="Image 1"
+                    class="cat-prod-img"
+                  />
+                  <p class="text-muted fw-semibold mt-4 mb-3">
+                    Thank You Gift Box
+                  </p>
+                  <div class="d-flex">
+                    <p class="text-dark fs-18 fw-bold mb-0">₹18.00</p>
+                  </div>
+                  <!-- floating content -->
+                  <div
+                    class="position-absolute d-flex align-items-center justify-content-center cart-actions text-white fw-bold fs-14 mb-0"
+                  >
+                    <div class="action-btn bg-white shadow-lg">
+                      <i class="fas fa-search fs-20 text-gray-600"></i>
+                    </div>
+                    <div class="ms-4 action-btn bg-danger text-white shadow-lg">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 23 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.8 28C2.03 28 1.3706 27.7256 0.821802 27.1768C0.273002 26.628 -0.000930956 25.9691 2.37691e-06 25.2V8.4C2.37691e-06 7.63 0.274402 6.9706 0.823202 6.4218C1.372 5.873 2.03094 5.59907 2.8 5.6H5.6C5.6 4.06 6.14833 2.74167 7.245 1.645C8.34167 0.548333 9.66 0 11.2 0C12.74 0 14.0583 0.548333 15.155 1.645C16.2517 2.74167 16.8 4.06 16.8 5.6H19.6C20.37 5.6 21.0294 5.8744 21.5782 6.4232C22.127 6.972 22.4009 7.63093 22.4 8.4V25.2C22.4 25.97 22.1256 26.6294 21.5768 27.1782C21.028 27.727 20.3691 28.0009 19.6 28H2.8ZM2.8 25.2H19.6V8.4H16.8V11.2C16.8 11.5967 16.6656 11.9294 16.3968 12.1982C16.128 12.467 15.7957 12.6009 15.4 12.6C15.0033 12.6 14.6706 12.4656 14.4018 12.1968C14.133 11.928 13.9991 11.5957 14 11.2V8.4H8.4V11.2C8.4 11.5967 8.2656 11.9294 7.9968 12.1982C7.728 12.467 7.39573 12.6009 7 12.6C6.60333 12.6 6.2706 12.4656 6.0018 12.1968C5.733 11.928 5.59907 11.5957 5.6 11.2V8.4H2.8V25.2ZM8.4 5.6H14C14 4.83 13.7256 4.1706 13.1768 3.6218C12.628 3.073 11.9691 2.79907 11.2 2.8C10.43 2.8 9.7706 3.0744 9.2218 3.6232C8.673 4.172 8.39907 4.83093 8.4 5.6Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="ms-4 action-btn bg-white shadow-lg">
+                      <i
+                        class="fa-solid fa-arrow-right-arrow-left fs-18 text-gray-600"
+                      ></i>
+                    </div>
+                  </div>
+                  <div
+                    class="position-absolute heart-action bg-white text-dark shadow-lg"
+                  >
+                    <i class="fa-regular fa-heart fs-20 text-gray-600"></i>
+                  </div>
+                  <!-- floating content -->
                 </div>
-                <!-- floating content -->
               </div>
-              <div
-                class="col-md-6 col-lg-3 d-flex flex-column align-items-center prod-column position-relative overflow-hidden"
-              >
-                <img
-                  src="assets/images/box-prod-3.png"
-                  alt="Image 1"
-                  class="cat-prod-img"
-                />
-                <p class="text-muted fw-semibold mt-4 mb-3">
-                  Best Wishes Handle Box
-                </p>
-                <div class="d-flex">
-                  <p class="text-dark fs-18 fw-bold mb-0">₹22.00</p>
-                </div>
-                <!-- floating content -->
-                <p
-                  class="position-absolute off-price bg-success text-white fw-bold fs-14 mb-0"
+              <div class="item">
+                <div
+                  class="d-flex flex-column align-items-center prod-column position-relative overflow-hidden"
                 >
-                  New
-                </p>
-                <!-- floating content -->
+                  <img
+                    src="assets/images/box-prod-3.png"
+                    alt="Image 1"
+                    class="cat-prod-img"
+                  />
+                  <p class="text-muted fw-semibold mt-4 mb-3">
+                    Best Wishes Handle Box
+                  </p>
+                  <div class="d-flex">
+                    <p class="text-dark fs-18 fw-bold mb-0">₹22.00</p>
+                  </div>
+                  <!-- floating content -->
+                  <p
+                    class="position-absolute off-price bg-success text-white fw-bold fs-14 mb-0"
+                  >
+                    New
+                  </p>
+                  <!-- floating content -->
+                </div>
               </div>
-              <div
-                class="col-md-6 col-lg-3 d-flex flex-column align-items-center prod-column position-relative overflow-hidden"
-              >
-                <img
-                  src="assets/images/box-prod-4.png"
-                  alt="Image 1"
-                  class="cat-prod-img"
-                />
-                <p class="text-muted fw-semibold mt-4 mb-3">
-                  Birthday Ribbon Box
-                </p>
-                <div class="d-flex">
-                  <p class="text-dark fs-18 fw-bold mb-0">₹12.00</p>
+              <div class="item">
+                <div
+                  class="d-flex flex-column align-items-center prod-column position-relative overflow-hidden"
+                >
+                  <img
+                    src="assets/images/box-prod-4.png"
+                    alt="Image 1"
+                    class="cat-prod-img"
+                  />
+                  <p class="text-muted fw-semibold mt-4 mb-3">
+                    Birthday Ribbon Box
+                  </p>
+                  <div class="d-flex">
+                    <p class="text-dark fs-18 fw-bold mb-0">₹12.00</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2150,6 +1333,9 @@
     <script src="assets/js/plugins/jquery.plugin.min.js"></script>
     <script src="assets/js/plugins/jquery.countdown.min.js"></script>
     <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/leaflet.js"></script>
+    <script src="assets/js/plugins/magnific.popup.js"></script>
+    <script src="assets/js/plugins/owl.carousel.min.js"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

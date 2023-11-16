@@ -365,6 +365,24 @@ $(document).ready(function () {
     fixedContentPos: false,
   });
 });
+$(document).ready(function () {
+  $(".product-video").magnificPopup({
+    type: "iframe",
+    iframe: {
+      patterns: {
+        youtube: {
+          index: "youtube.com/",
+          id: "v=",
+          src: "https://geniusdevs.com/codecanyon/omnimart40/product/CGtFace-Lift-Band-Facial-Beauty-Slimming-Double-Chin-Bandage-Strap-Weight1U",
+        },
+      },
+    },
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+  });
+});
 
 // leaflet map settings
 document.addEventListener("DOMContentLoaded", function () {
@@ -394,4 +412,18 @@ document.addEventListener("DOMContentLoaded", function () {
     content:
       "<h5 class='heading-h5 fw-bold mb-0 text-center'>In Too Box</h5><p class='text-muted mb-0 mt-1 text-center'>Phone: 0891 - 2507678 <br/> D. No. 48-7-55/1, Srinagar, VIZAG - 530 016.</p>",
   }).openOn(map);
+});
+
+// featured products owl carousal
+
+$(function () {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 3,
+    margin: 10,
+    loop: true,
+    nav: false,
+    dots: true,
+  });
 });
