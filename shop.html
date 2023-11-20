@@ -44,7 +44,7 @@
       aria-hidden="true"
     >
       <div
-        class="modal-dialog modal-dialog-centered modal-lg position-relative rounded-0"
+        class="modal-dialog modal-dialog-centered modal-xl position-relative rounded-0"
         role="document"
       >
         <div class="modal-content rounde-0 bg-white">
@@ -55,46 +55,98 @@
             aria-label="Close"
           ></button>
 
-          <div class="modal-body p-6 p-lg-0">
-            <div class="row align-items-lg-center">
-              <!-- Left Column -->
-              <div class="col-md-6">
-                <img
-                  src="assets/images/modal-img.png"
-                  alt="Image"
-                  class="modal-img"
-                />
+          <div class="modal-body p-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="h-100 bg-info">product gallery here...</div>
               </div>
-
-              <!-- Right Column -->
-              <div class="col-md-6 mt-8 mt-lg-0 px-lg-6">
-                <p
-                  class="bg-danger px-6 py-3 fs-16 text-white w-fit text-uppercase"
-                >
-                  Get 10% Sale off
-                </p>
-                <h3 class="heading-h3 text-dark fw-bold">
-                  Subscribe & Get 15% Special Discount On Email
+              <div class="col-lg-6 mt-6 mt-lg-0 ps-lg-80 pe-lg-12">
+                <h3 class="text-dark fw-bold heading-h3 mb-0">
+                  4X4X3 Cake Box
                 </h3>
-                <p class="text-muted fs-16">
-                  Join our newsletter to receive the latest updates and
-                  promotion
+                <div class="d-flex align-items-center mt-5">
+                  <div class="d-flex">
+                    <i class="fas fa-star filled-star text-warning"></i>
+                    <i class="fas fa-star filled-star ms-2 text-warning"></i>
+                    <i class="fas fa-star filled-star ms-2 text-warning"></i>
+                    <i class="far fa-star ms-2 text-warning"></i>
+                    <i class="far fa-star ms-2 text-warning"></i>
+                  </div>
+                  <p class="text-danger mb-0 ms-6">(18 reviews)</p>
+                </div>
+                <h5
+                  class="mt-7 mt-lg-9 mb-0 text-danger heading-h3 fw-semibold"
+                >
+                  ₹4.50
+                </h5>
+                <p class="mt-5 fs-16 text-gray-700 mb-0">
+                  The box for a cake is thick cardboard box especially designed
+                  for take away food, food trucks or cake shops.
                 </p>
-
-                <!-- Form -->
-                <form>
-                  <div class="d-inline-flex">
+                <div
+                  class="mt-8 mt-lg-12 d-flex align-items-center justify-content-cetner"
+                >
+                  <div
+                    class="counter-container d-flex align-items-center justify-content-cetner bg-gray-100 px-3 py-2 w-fit"
+                  >
+                    <button
+                      class="counter-button border-0 bg-transparent decrement"
+                    >
+                      <i class="fas fa-minus fs-18 text-gray-700"></i>
+                    </button>
                     <input
-                      type="text"
-                      class="border border-e-0 modal-input px-6 py-3"
-                      id="exampleInput"
-                      placeholder="Your email address..."
+                      type="number"
+                      class="border-0 cart-qty bg-transparent"
+                      name="cart-qty"
+                      id="cart-qty"
+                      value="1"
+                      disabled=""
                     />
-                    <button type="button" class="btn submit-btn-modal">
-                      SUBSCRIBE
+                    <button
+                      class="counter-button border-0 bg-transparent increment"
+                    >
+                      <i class="fas fa-plus fs-18 text-gray-700"></i>
                     </button>
                   </div>
-                </form>
+                  <div class="ms-4">
+                    <a
+                      href=""
+                      class="btn px-8 py-4 border-0 text-white text-uppercase rounded-0 d-flex align-items-center justify-content-center btn-danger"
+                    >
+                      Add to Cart
+                    </a>
+                  </div>
+                  <div class="ms-4 bg-gray-100 p-4">
+                    <i class="fa-regular fa-heart text-muted fs-20"></i>
+                  </div>
+                </div>
+                <div class="my-12 my-lg-60 devider"></div>
+                <div>
+                  <span class="text-dark fs-16"> Availability </span>
+                  <span class="ms-8 text-dark fs-16"> : </span>
+                  <span class="ms-8 text-success fs-16"> In Stcok </span>
+                </div>
+                <div class="mt-5">
+                  <span class="text-dark fs-16"> Dimensions </span>
+                  <span class="ms-8 text-dark fs-16"> : </span>
+                  <span class="ms-8 text-muted fs-16"
+                    >W 4.0” D 4.0” H 3.0”
+                  </span>
+                </div>
+                <div class="mt-5">
+                  <span class="text-dark fs-16"> Share on </span>
+                  <span class="ms-8 text-dark fs-16"> : </span>
+                  <span class="ms-8 fs-16">
+                    <a href="#" class="fab fa-facebook text-muted ms-4"></a>
+                    <!-- Facebook -->
+                    <a href="#" class="fab fa-twitter ms-3 text-muted"></a>
+                    <!-- Instagram -->
+                    <a href="#" class="fab fa-instagram ms-3 text-muted"></a>
+                    <!-- YouTube -->
+                    <a href="#" class="fab fa-pinterest ms-3 text-muted"></a>
+                    <!-- Pinterest -->
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -102,59 +154,6 @@
       </div>
     </div>
     <!-- subscription modal -->
-
-    <!-- omni modal -->
-    <div id="announcement-modal" class="mfp-hide white-popup">
-      @if ($setting->announcement_type == 'newletter')
-      <div class="announcement-with-content">
-        <div class="left-area">
-          <img
-            src="{{ asset('assets/images/'.$setting->announcement) }}"
-            alt=""
-          />
-        </div>
-        <div class="right-area">
-          <h3 class="">{{ $setting->announcement_title }}</h3>
-          <p>{{ $setting->announcement_details }}</p>
-          <form
-            class="subscriber-form"
-            action="{{route('front.subscriber.submit')}}"
-            method="post"
-          >
-            @csrf
-            <div class="input-group">
-              <input
-                class="form-control"
-                type="email"
-                name="email"
-                placeholder="{{__('Your e-mail')}}"
-              />
-              <span class="input-group-addon"><i class="icon-mail"></i></span>
-            </div>
-            <div aria-hidden="true">
-              <input
-                type="hidden"
-                name="b_c7103e2c981361a6639545bd5_1194bb7544"
-                tabindex="-1"
-              />
-            </div>
-
-            <button class="btn btn-primary btn-block mt-2" type="submit">
-              <span>{{__('Subscribe')}}</span>
-            </button>
-          </form>
-        </div>
-      </div>
-      @else
-      <a href="{{ $setting->announcement_link }}">
-        <img
-          src="{{ asset('assets/images/'.$setting->announcement) }}"
-          alt=""
-        />
-      </a>
-      @endif
-    </div>
-    <!-- omni modal -->
 
     <!-- searchbar for mobile and tab -->
     <div
