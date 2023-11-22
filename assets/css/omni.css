@@ -4246,7 +4246,7 @@ a.alert {
   /* 11/16/2023 width and height updated */
   width: 10px;
   height: 10px;
-    /* 11/16/2023 width and height updated */
+  /* 11/16/2023 width and height updated */
   margin: 0 6px;
   transition: opacity 0.25s;
   border-radius: 50%;
@@ -9740,4 +9740,18 @@ span.cookie-consent__message p {
 
 .free-shippin-aa {
   font-size: 13px;
+}
+/* 11/22/2023 */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.moving-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: moveText 15s linear infinite; /* Adjust the duration as needed */
 }
