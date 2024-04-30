@@ -414,16 +414,4 @@ document.addEventListener("DOMContentLoaded", function () {
   }).openOn(map);
 });
 
-// featured products owl carousal
-
-$(function () {
-  // Owl Carousel
-  var owl = $(".owl-carousel");
-  owl.owlCarousel({
-    items: 3,
-    margin: 10,
-    loop: true,
-    nav: false,
-    dots: true,
-  });
-});
+// promo swiper

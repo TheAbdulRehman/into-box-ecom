@@ -309,9 +309,9 @@ li {
     @include cat-prod-img(100%, 300px, cover, center);
   }
   transition: all 0.3s;
-  &:hover {
-    transform: scale(1.1);
-  }
+  // &:hover {
+  //   transform: scale(1.1);
+  // }
 }
 .cat-left-col-img {
   @include cat-prod-img(100%, 1055px, cover, top);
@@ -373,10 +373,10 @@ li {
 }
 // css changes on 11/13/2023
 .cart-actions {
-  bottom: 15%;
-  left: 50%;
-  transform: translate(-50%, -15%);
+  top: 12px;
+  right: 16px;
   opacity: 0;
+  transform: translateX(100%);
   transition: all 0.4s;
   .action-btn {
     @include dimension(48px, 48px);
@@ -430,13 +430,11 @@ li {
 }
 
 .prod-column {
-  transition: all 0.4s;
+  transition: all 0.5s;
   &:hover {
     .cart-actions {
       opacity: 1;
-      bottom: 24%;
-      left: 50%;
-      transform: translate(-50%, -24%);
+      transform: translateX(0%);
     }
     .heart-action {
       transform: translateX(0%);
@@ -470,8 +468,7 @@ li {
     transform: translateX(-36%);
   }
   @media (max-width: 991px) {
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
   }
   // 11/13/2023 this media query removed
   // @media (max-width: 767px) {

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/fontsawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/omni.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <title>Modal</title>
+  </head>
+  <style>
+    .btn-close {
+      position: absolute;
+      top: -24px !important;
+      right: -16px !important;
+      background-color: #ffffff;
+      border-radius: 0px;
+      opacity: 1;
+      padding: 8px;
+      z-index: 99999 !important;
+    }
+    @media (max-width: 767px) {
+      .modal-img {
+        min-height: auto;
+      }
+      .btn-close {
+        top: 12px !important;
+        right: 12px !important;
+      }
+    }
+    .modal-img {
+      width: 100%;
+      min-height: 70vh;
+      object-fit: cover;
+    }
+    .modal-scl-icons a {
+      font-size: 20px;
+    }
+    .quick-add-btn {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateY(50%);
+      transition: all 0.5s;
+      opacity: 0;
+      bottom: 15%;
+    }
+    .prod-column:hover .quick-add-btn {
+      opacity: 1;
+      bottom: 22.5%;
+      transform: translateY(0%);
+    }
+  </style>
+  <body>
+    <main class="main-content py-120">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Launch static backdrop modal
+      </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-xl p-0">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="row align-items-lg-center g-0">
+              <div class="col-lg-6 p-0">
+                <img
+                  src="assets/images/backgrounds/vday.webp"
+                  alt="img"
+                  class="modal-img"
+                />
+              </div>
+              <div
+                class="col-lg-6 px-4 px-md-8 px-lg-12 d-flex flex-column align-items-center"
+              >
+                <h3 class="mb-3 fw-bold">Heading here ioef efwinew fef wefe</h3>
+                <p class="mb-3">
+                  body text here ihef we fwef pojde wef qff wef
+                </p>
+                <form action="#" class="mt-4">
+                  <div class="row justify-content-md-center">
+                    <div class="col-12">
+                      <input
+                        class="form-control border rounded-0 border-1 py-4"
+                        type="email"
+                        id="name"
+                        name="email"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <button
+                        class="btn btn-dark text-white btn-block w-100 py-4 shadow-0 outline-0 rounded-0 text-uppercase"
+                      >
+                        Subscribe Now
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div class="modal-scl-icons mt-2">
+                  <a href="#" class="fab fa-facebook text-dark bg-white"></a>
+                  <!-- Facebook -->
+                  <a
+                    href="#"
+                    class="fab fa-instagram ms-3 text-dark bg-white"
+                  ></a>
+                  <!-- Instagram -->
+                  <a
+                    href="#"
+                    class="fab fa-youtube ms-3 text-dark bg-white"
+                  ></a>
+                  <!-- YouTube -->
+                  <a
+                    href="#"
+                    class="fab fa-pinterest ms-3 text-dark bg-white"
+                  ></a>
+                  <!-- Pinterest -->
+                </div>
+
+                <div class="form-check mt-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No thanks
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 w-100 w-lg-90 w-5xl-100 mx-auto mt-8">
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-3 d-flex prod-column position-relative overflow-hidden flex-column align-items-center"
+          >
+            <img
+              src="assets/images/box-prod-2.png "
+              alt="Image 1"
+              class="cat-prod-img mb-0"
+            />
+            <div class="d-block d-md-none w-100 m-0">
+              <button
+                class="btn btn-outline-danger py-3 m-0 rounded-0 btn-block w-100"
+              >
+                Quick Add
+              </button>
+            </div>
+            <p class="text-muted fw-semibold mt-4 mb-3">Thank You Gift Box</p>
+            <div class="d-flex">
+              <p class="text-dark fs-18 fw-bold mb-0">₹18.00</p>
+            </div>
+            <!-- floating content -->
+            <div
+              class="position-absolute cart-actions text-white fw-bold fs-14 mb-0"
+            >
+              <div class="action-btn bg-danger text-white shadow-lg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 23 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.8 28C2.03 28 1.3706 27.7256 0.821802 27.1768C0.273002 26.628 -0.000930956 25.9691 2.37691e-06 25.2V8.4C2.37691e-06 7.63 0.274402 6.9706 0.823202 6.4218C1.372 5.873 2.03094 5.59907 2.8 5.6H5.6C5.6 4.06 6.14833 2.74167 7.245 1.645C8.34167 0.548333 9.66 0 11.2 0C12.74 0 14.0583 0.548333 15.155 1.645C16.2517 2.74167 16.8 4.06 16.8 5.6H19.6C20.37 5.6 21.0294 5.8744 21.5782 6.4232C22.127 6.972 22.4009 7.63093 22.4 8.4V25.2C22.4 25.97 22.1256 26.6294 21.5768 27.1782C21.028 27.727 20.3691 28.0009 19.6 28H2.8ZM2.8 25.2H19.6V8.4H16.8V11.2C16.8 11.5967 16.6656 11.9294 16.3968 12.1982C16.128 12.467 15.7957 12.6009 15.4 12.6C15.0033 12.6 14.6706 12.4656 14.4018 12.1968C14.133 11.928 13.9991 11.5957 14 11.2V8.4H8.4V11.2C8.4 11.5967 8.2656 11.9294 7.9968 12.1982C7.728 12.467 7.39573 12.6009 7 12.6C6.60333 12.6 6.2706 12.4656 6.0018 12.1968C5.733 11.928 5.59907 11.5957 5.6 11.2V8.4H2.8V25.2ZM8.4 5.6H14C14 4.83 13.7256 4.1706 13.1768 3.6218C12.628 3.073 11.9691 2.79907 11.2 2.8C10.43 2.8 9.7706 3.0744 9.2218 3.6232C8.673 4.172 8.39907 4.83093 8.4 5.6Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="mt-3 action-btn bg-white shadow-lg">
+                <i
+                  class="fa-solid fa-arrow-right-arrow-left fs-18 text-gray-600"
+                ></i>
+              </div>
+              <div class="action-btn mt-3 bg-white text-dark shadow-lg">
+                <i class="fa-regular fa-heart fs-20 text-gray-600"></i>
+              </div>
+            </div>
+            <div class="quick-add-btn d-none d-md-block position-absolute">
+              <button
+                class="btn btn-light py-3 btn-block w-100 text-dark border border-dark"
+              >
+                Quick Add
+              </button>
+            </div>
+            <!-- floating content -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/jquery.plugin.min.js"></script>
+    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

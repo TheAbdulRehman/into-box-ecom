@@ -26,6 +26,13 @@
     />
     <meta name="description" content="" />
   </head>
+  <style>
+    .options-label {
+      width: 220px;
+      font-weight: 600;
+      color: #333333;
+    }
+  </style>
   <body>
     <!-- center navigation -->
     <div class="w-lg-90 d-none d-lg-block mx-auto py-8 py-lg-10">
@@ -400,6 +407,49 @@
                 </div>
               </div>
             </div>
+            <div class="mt-8 mt-lg-12">
+              <h5 class="fw-medium mb-4">Bulk Deal</h5>
+              <table class="table border rounded-2">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      class="text-danger fw-semibold py-4 px-6 w-50"
+                    >
+                      Quantity
+                    </th>
+                    <th
+                      scope="col"
+                      class="text-danger fw-semibold py-4 px-6 w-50"
+                    >
+                      Price Per Box
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-4 px-6 w-50">200</td>
+                    <td class="py-4 px-6 w-50">₹ 8.00</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 w-50">400</td>
+                    <td class="py-4 px-6 w-50">₹ 7.00</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 w-50">600</td>
+                    <td class="py-4 px-6 w-50">₹ 6.00</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 w-50">800</td>
+                    <td class="py-4 px-6 w-50">₹5.00</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-6 w-50">800</td>
+                    <td class="py-4 px-6 w-50">₹ 4.50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="col-lg-6 mt-6 mt-lg-0 ps-lg-80 pe-lg-12">
             <h3 class="text-dark fw-bold heading-h3 mb-0">4X4X3 Cake Box</h3>
@@ -416,10 +466,58 @@
             <h5 class="mt-7 mt-lg-9 mb-0 text-danger heading-h3 fw-semibold">
               ₹4.50
             </h5>
-            <p class="mt-5 fs-16 text-gray-700 mb-0">
-              The box for a cake is thick cardboard box especially designed for
-              take away food, food trucks or cake shops.
-            </p>
+            <div class="mt-7">
+              <form action="">
+                <div class="mb-5 d-flex align-items-center">
+                  <label for="printing-type" class="options-label">
+                    Printing Type
+                  </label>
+                  <span class="ms-4">:</span>
+                  <input
+                    id="printing-type"
+                    name="printing-type"
+                    type="text"
+                    class="form-control ms-6"
+                  />
+                </div>
+                <div class="mb-5 d-flex align-items-center">
+                  <label for="lamination-type" class="options-label">
+                    Lamination Type
+                  </label>
+                  <span class="ms-4">:</span>
+                  <input
+                    type="text"
+                    id="lamination-type"
+                    name="lamination-type"
+                    class="form-control ms-6"
+                  />
+                </div>
+                <div class="mb-5 d-flex align-items-center">
+                  <label for="pattern-type" class="options-label">
+                    Pattern Type
+                  </label>
+                  <span class="ms-4">:</span>
+                  <input
+                    id="pattern-type"
+                    name="pattern-type"
+                    type="text"
+                    class="form-control ms-6"
+                  />
+                </div>
+                <div class="mb-5 d-flex align-items-center">
+                  <label for="finishing-type" class="options-label">
+                    Finishing Type
+                  </label>
+                  <span class="ms-4">:</span>
+                  <input
+                    id="finishing-type"
+                    name="finishing-type"
+                    type="text"
+                    class="form-control ms-6"
+                  />
+                </div>
+              </form>
+            </div>
             <div
               class="mt-8 mt-lg-12 d-flex align-items-center justify-content-cetner"
             >
@@ -457,8 +555,8 @@
                 <i class="fa-regular fa-heart text-muted fs-20"></i>
               </div>
             </div>
-            <div class="my-12 my-lg-60 devider"></div>
-            <div>
+            <div class="mt-5 mt-lg-8 devider"></div>
+            <div class="mt-5">
               <span class="text-dark fs-16"> Availability </span>
               <span class="ms-8 text-dark fs-16"> : </span>
               <span class="ms-8 text-success fs-16"> In Stcok </span>
@@ -471,16 +569,25 @@
             <div class="mt-5">
               <span class="text-dark fs-16"> Share on </span>
               <span class="ms-8 text-dark fs-16"> : </span>
-              <span class="ms-8 fs-16">
-                <a href="#" class="fab fa-facebook text-muted ms-4"></a>
-                <!-- Facebook -->
-                <a href="#" class="fab fa-twitter ms-3 text-muted"></a>
-                <!-- Instagram -->
-                <a href="#" class="fab fa-instagram ms-3 text-muted"></a>
-                <!-- YouTube -->
-                <a href="#" class="fab fa-pinterest ms-3 text-muted"></a>
-                <!-- Pinterest -->
-              </span>
+              <span class="ms-8 text-muted fs-16">#nvT345 </span>
+            </div>
+            <div class="mt-5 mt-lg-8 devider"></div>
+            <div class="mt-5">
+              <h5 class="fw-medium mb-4">DESCRIPTION</h5>
+              <p class="text-muted">
+                The box for a cake is thick cardboard box especially designed
+                for take away food, food trucks or cake shops. The search for
+                the gorgeous-looking cake box ends here. Give your cake boxes
+                the wow factor with Idea Spot’s custom printing packaging
+                solutions. Have a special message? Or a logo that you’d like to
+                place, we’ll do it all. Get the advantage of professional
+                high-quality printing solutions with a personalized touch.
+                Designed with simplicity and sophistication in mind, our cake
+                box features a clean, modern aesthetic, allowing your cakes to
+                take center stage. The sleek exterior is versatile enough to
+                suit any occasion, from birthdays to weddings, making it the
+                ideal choice for all your cake presentation needs.
+              </p>
             </div>
           </div>
         </div>
@@ -626,7 +733,6 @@
                         class="lazy"
                         alt="Comment author"
                         src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16385217454444.jpg"
-                        style=""
                       />
                     </div>
                     <div class="comment-body">
@@ -857,7 +963,6 @@
       <!-- product review and extra information and reviews -->
 
       <!-- featured products -->
-
       <section class="fetured-prodcuts pb-12 pb-lg-60">
         <div class="container">
           <h2
